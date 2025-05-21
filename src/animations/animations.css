@@ -1,0 +1,18 @@
+@keyframes slideIn {
+    0% {
+        /* scale: 0; */
+      transform: translateX(-500px); /* Start from the left */
+      opacity: 0; /* Make the text invisible initially */
+    }
+    100% {
+        /* scale: 1; */
+      transform: translateX(0); /* End at its original position */
+      opacity: 1; /* Fade into view */
+    }
+  }
+  
+  .animated-heading {
+    display: inline-block;
+    animation: slideIn 1s forwards ease-in-out; /* Apply the slide animation */
+    opacity: 0; /* Ensure it's hidden initially */
+  }

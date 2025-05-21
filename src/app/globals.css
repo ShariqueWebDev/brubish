@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.sjcontainer {
+  @apply container mx-auto px-4 md:px-10 lg:px-12;
+}
+
+
+/* //////////////////////////////// */
+/* about faq */
+.faq-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.faq-item {
+  perspective: 1000px; /* For 3D flip effect */
+}
+
+.faq-inner {
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: rotate(45deg); /* Diamond shape */
+  transition: transform 0.6s;
+  position: relative;
+}
+
+.faq-inner:hover {
+  transform: rotateY(180deg) rotate(-45deg); /* Flip on hover, keep diamond shape */
+}
+
+.faq-front, .faq-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.faq-front {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.faq-back {
+  background-color: #4caf50;
+  color: white;
+  transform: rotateY(180deg); /* Flip the back side */
+}
+
+/* The new 'content' div inside keeps the content horizontal */
+.content {
+  transform: rotate(-45deg); /* Undo the diamond rotation */
+  text-align: center;
+}
+
+.faq-front img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+
+.shadow-paper {
+  box-shadow: 
+    inset 0 1px 3px rgba(0, 0, 0, 0.12),  /* Soft inner shadow */
+    inset 0 -1px 2px rgba(0, 0, 0, 0.06), /* Slight inner shadow at the bottom */
+    0 4px 6px rgba(0, 0, 0, 0.1),         /* Outer shadow for depth */
+    0 1px 3px rgba(0, 0, 0, 0.08);        /* Light outer shadow */
+  background: #fff;                        /* Paper-like background */
+  border-radius: 8px;                      /* Soft rounded corners */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+.group:hover .shadow-paper {
+  box-shadow: 
+    inset 0 2px 5px rgba(0, 0, 0, 0.15),   /* Slightly deeper inner shadow on hover */
+    0 6px 8px rgba(0, 0, 0, 0.2);         /* Stronger outer shadow on hover */
+}
+
+
+
+/* ////////////////////// */
+
+.neumorphism-input {
+  background: #E9EAEE; /* Light background color for neumorphism effect */
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.1),  /* Slightly darker inner shadow */
+              inset -4px -4px 6px rgba(255, 255, 255, 0.5); /* Softer outer shadow */
+  border-radius: 10px;
+  border: none; /* Remove border for a clean look */
+  transition: box-shadow 0.3s ease; /* Smooth transition on hover/focus */
+}
+
+.neumorphism-input:focus {
+  /* Keep the focus state, but you can optionally make it more pronounced */
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.15), /* Slightly darker inset effect on focus */
+              inset -4px -4px 10px rgba(255, 255, 255, 0.5); /* Pure white outer shadow */
+  outline: none; /* Remove default focus outline */
+}
+
+
+/* Neumorphism effect for the button */
+.neu-button {
+  background-color: #c8cace;
+  border-radius: 5px;
+  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #f1f0f0;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 40px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+}
+
+.neu-button:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+.neu-button:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.large-bullets li::marker {
+  font-size: 1.5em; /* Adjust the size as needed */
+  color: black;     /* You can also change the color */
+}
