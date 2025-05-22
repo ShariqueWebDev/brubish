@@ -1,16 +1,15 @@
-import { Metadata } from 'next';
-import React from 'react'
-import { WEBSITE_URL } from '../layout';
-
+import { Metadata } from "next";
+import React from "react";
+import { WEBSITE_URL } from "../layout";
 
 export const metadata: Metadata = {
-  title: "Book My Logistics",
+  title: "Brubish Logistics",
   description:
-    "BML offer duty free economic activity in line with local trade and commerce regulations.",
+    "Brubish offer duty free economic activity in line with local trade and commerce regulations.",
   openGraph: {
-    title: "Book My Logistics",
+    title: "Brubish Logistics",
     description:
-      "BML offer duty free economic activity in line with local trade and commerce regulations.",
+      "Brubish offer duty free economic activity in line with local trade and commerce regulations.",
     url: WEBSITE_URL,
     type: "website",
     images: [
@@ -18,15 +17,15 @@ export const metadata: Metadata = {
         url: `${WEBSITE_URL}/opengraph.png`,
         width: 1200,
         height: 630,
-        alt: "Book My Logistics",
+        alt: "Brubish Logistics",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Book My Logistics",
+    title: "Brubish Logistics",
     description:
-      "BML offer duty free economic activity in line with local trade and commerce regulations.",
+      "Brubish offer duty free economic activity in line with local trade and commerce regulations.",
     images: [`${WEBSITE_URL}/opengraph.png`],
   },
   alternates: {
@@ -34,15 +33,8 @@ export const metadata: Metadata = {
   },
 };
 
-const layout = ({children}:any) => {
+const layout = ({ children }: any) => {
+  return <div className="">{children}</div>;
+};
 
-
-
-  return (
-    <div className=''>
-      {children}
-    </div>
-  )
-}
-
-export default layout
+export default layout;

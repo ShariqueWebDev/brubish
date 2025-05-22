@@ -1,23 +1,24 @@
-import Ftwz1 from '@/components/ftwz/Ftwz1';
-import Ftwz2 from '@/components/ftwz/Ftwz2';
-import Ftwz3 from '@/components/ftwz/Ftwz3';
-import Ftwz4 from '@/components/ftwz/Ftwz4';
-import Eximmap from '@/components/services/Eximmap';
-import FAQSection from '@/components/shared/Faqs';
-import Servicebanner3 from '@/components/shared/Servicebanner3';
-import Submenu from '@/components/shared/Submenu';
+import Ftwz1 from "@/components/ftwz/Ftwz1";
+import Ftwz2 from "@/components/ftwz/Ftwz2";
+import Ftwz3 from "@/components/ftwz/Ftwz3";
+import Ftwz4 from "@/components/ftwz/Ftwz4";
+import Eximmap from "@/components/services/Eximmap";
+import FAQSection from "@/components/shared/Faqs";
+import Servicebanner3 from "@/components/shared/Servicebanner3";
+import Submenu from "@/components/shared/Submenu";
 
-import React from 'react'
-
+import React from "react";
 
 export const ftwzDatadata = [
   {
     question: "What is a Free Trade Warehousing Zone (FTWZ)?",
-    answer: "A Free Trade Warehousing Zone is a Special Economic Zone where trading, warehousing, and related activities are conducted. It is considered a deemed foreign territory within India for tariff and trade purposes."
+    answer:
+      "A Free Trade Warehousing Zone is a Special Economic Zone where trading, warehousing, and related activities are conducted. It is considered a deemed foreign territory within India for tariff and trade purposes.",
   },
   {
     question: "What is the governing Act and Rule for FTWZ?",
-    answer: "The FTWZ operates under the Special Economic Zones Act, 2005, and the Special Economic Zones Rules, 2006. The Ministry of Commerce & Industries also issues instructions to clarify various operational aspects."
+    answer:
+      "The FTWZ operates under the Special Economic Zones Act, 2005, and the Special Economic Zones Rules, 2006. The Ministry of Commerce & Industries also issues instructions to clarify various operational aspects.",
   },
   {
     question: "What are the activities allowed inside the FTWZ?",
@@ -27,8 +28,8 @@ export const ftwzDatadata = [
       "Packaging and repacking",
       "Re-sale, re-invoice, or re-export of goods",
       "Assembly of complete and semi-knockdown goods",
-      "Kitting and other value optimization services"
-    ]
+      "Kitting and other value optimization services",
+    ],
   },
   {
     question: "In what ways can companies operate through FTWZ?",
@@ -36,73 +37,78 @@ export const ftwzDatadata = [
     There are two ways in which companies can operate through FTWZ:
 Trading Unit: A company can become a Unit in the FTWZ for the purpose of trading, warehousing and other related activities called authorized operations.
 
-Service Unit: Company can avail the services of Arshiya Logistics Services.(ALSL), which is a Unit in the FTWZ, for trading, warehousing and other related activities called authorised operations. ALSL will provide various value optimization services to its clients.`
+Service Unit: Company can avail the services of Arshiya Logistics Services.(ALSL), which is a Unit in the FTWZ, for trading, warehousing and other related activities called authorised operations. ALSL will provide various value optimization services to its clients.`,
   },
   {
     question: "What is the nature of authorized operations in the FTWZ?",
-    answer: "Authorized operations in an FTWZ include trading, warehousing, packing, labeling, lashing, shrink wrapping, strapping, palletization, bottling, clubbing, consolidation, quality checking, testing, kitting, combination packing, and others as approved by the Unit Approval Committee."
+    answer:
+      "Authorized operations in an FTWZ include trading, warehousing, packing, labeling, lashing, shrink wrapping, strapping, palletization, bottling, clubbing, consolidation, quality checking, testing, kitting, combination packing, and others as approved by the Unit Approval Committee.",
   },
   {
     question: "What is a Letter of Approval (LOA)?",
-    answer: "The Letter of Approval is permission granted by the Unit Approval Committee to establish a unit in the FTWZ for authorized operations. It is valid for five years from the commencement of activity and is extendable in five-year increments."
+    answer:
+      "The Letter of Approval is permission granted by the Unit Approval Committee to establish a unit in the FTWZ for authorized operations. It is valid for five years from the commencement of activity and is extendable in five-year increments.",
   },
   {
     question: "Who can become a Unit in the FTWZ?",
-    answer: "Any Indian entity, including Traders, Importers/Exporters, 3PLs, CHAs, Freight Forwarders, Shipping Lines, and Manufacturers, can become Units in the FTWZ. Units must execute a bond-cum-legal undertaking for import and warehousing inside the FTWZ."
+    answer:
+      "Any Indian entity, including Traders, Importers/Exporters, 3PLs, CHAs, Freight Forwarders, Shipping Lines, and Manufacturers, can become Units in the FTWZ. Units must execute a bond-cum-legal undertaking for import and warehousing inside the FTWZ.",
   },
   {
-    question: "What kind of export benefit is available in BML FTWZ?",
-    answer: "Export entitlements are available for goods supplied from Domestic Tariff Area (DTA) to FTWZ for authorized operations. Drawbacks or Duty Entitlement Pass Books can be claimed for goods procured from DTA, or claimed by the DTA supplier on the basis of a disclaimer from the Unit or Developer."
+    question: "What kind of export benefit is available in Brubish FTWZ?",
+    answer:
+      "Export entitlements are available for goods supplied from Domestic Tariff Area (DTA) to FTWZ for authorized operations. Drawbacks or Duty Entitlement Pass Books can be claimed for goods procured from DTA, or claimed by the DTA supplier on the basis of a disclaimer from the Unit or Developer.",
   },
   {
     question: "Is service tax exempt in an FTWZ?",
-    answer: "Yes, inbound taxable services and those performed within the FTWZ for authorized operations are exempt from service tax. This exemption also applies to transportation of goods from Port to FTWZ or between FTWZs."
+    answer:
+      "Yes, inbound taxable services and those performed within the FTWZ for authorized operations are exempt from service tax. This exemption also applies to transportation of goods from Port to FTWZ or between FTWZs.",
   },
   {
     question: "Is customs duty exempt for import into FTWZ?",
-    answer: "Customs duty is exempt on goods imported into the FTWZ for authorized operations."
+    answer:
+      "Customs duty is exempt on goods imported into the FTWZ for authorized operations.",
   },
   {
     question: "At what stage is customs duty payable in the FTWZ?",
-    answer: "Customs duty and GST become payable when goods are cleared into the Domestic Tariff Area (DTA). For piecemeal clearance, customs duty applies only to the quantity cleared, not the total quantity imported into the FTWZ, allowing duty deferment by importing into FTWZ."
+    answer:
+      "Customs duty and GST become payable when goods are cleared into the Domestic Tariff Area (DTA). For piecemeal clearance, customs duty applies only to the quantity cleared, not the total quantity imported into the FTWZ, allowing duty deferment by importing into FTWZ.",
   },
   {
-    question: "How long can goods be stored in the FTWZ without payment of customs duty?",
-    answer: "Goods can be stored in the FTWZ until the validity of the Unit's LOA, making FTWZ the only scheme in India that allows customs duty deferment without incurring interest or penalties."
+    question:
+      "How long can goods be stored in the FTWZ without payment of customs duty?",
+    answer:
+      "Goods can be stored in the FTWZ until the validity of the Unit's LOA, making FTWZ the only scheme in India that allows customs duty deferment without incurring interest or penalties.",
   },
   {
     question: "How is the treatment for supply of goods from DTA to FTWZ?",
-    answer: "Supply of goods from DTA to FTWZ is treated as an export per the SEZ Act. Export benefits for shipments outside India are also available for supplies from DTA to FTWZ."
-  }
+    answer:
+      "Supply of goods from DTA to FTWZ is treated as an export per the SEZ Act. Export benefits for shipments outside India are also available for supplies from DTA to FTWZ.",
+  },
 ];
 
-
-
-const sections =[
+const sections = [
   {
-      id:1,
-      name:"BML FTWZ",
-      url:"#section1",
-      
+    id: 1,
+    name: "Brubish FTWZ",
+    url: "#section1",
   },
   {
-      id:3,
-      name:"Benefits",
-      url:"#section3"
+    id: 3,
+    name: "Benefits",
+    url: "#section3",
   },
   {
-      id:4,
-      name:"Key Activities",
-      url:"#section4"
+    id: 4,
+    name: "Key Activities",
+    url: "#section4",
   },
   {
-    id:6,
-    name:"FAQ's",
-    url:"#section6"
-},
-]
-
-
+    id: 6,
+    name: "FAQ's",
+    url: "#section6",
+  },
+];
 
 export const ftwzData = [
   {
@@ -169,7 +175,7 @@ export const ftwzData = [
       "Foreign e-commerce and tech companies can leverage FTWZ to establish a foothold in India, enabling efficient distribution and logistics solutions. By utilizing these zones, businesses can navigate the complexities of the Indian market, ensuring timely delivery of products while minimizing compliance risks. This approach enhances market entry strategies and allows for greater flexibility in meeting customer demands.",
     imageSrc: "/ftwz/foreign-ecommerce.webp",
   },
- 
+
   {
     id: 10,
     name: "FTWZ For Global Supply Chain Innovation",
@@ -180,49 +186,55 @@ export const ftwzData = [
   },
 ];
 
-
 const Page = () => {
   return (
-    <div className=''>
-        <Servicebanner3
-      icon="/services/icons/ftwz.png" heading="FTWZ Services" title="Global Trade Made Easy" description="BML's FTWZ services provide duty-free storage, customs clearance, and inventory management. Simplify global trade with unmatched flexibility." buttontext="Get Started" buttonlink="/services" bannerImage="/services/ftwz/1.png"
+    <div className="">
+      <Servicebanner3
+        icon="/services/icons/ftwz.png"
+        heading="FTWZ Services"
+        title="Global Trade Made Easy"
+        description="Brubish's FTWZ services provide duty-free storage, customs clearance, and inventory management. Simplify global trade with unmatched flexibility."
+        buttontext="Get Started"
+        buttonlink="/services"
+        bannerImage="/services/ftwz/1.png"
       />
 
-    <div className=''>
+      <div className="">
+        <Submenu sections={sections} />
 
-    <Submenu sections={sections} />
+        <div className="scroll-mt-[25vh] md:scroll-mt-[22vh]" id="section1">
+          <Ftwz1 />
+        </div>
 
-    <div className='scroll-mt-[25vh] md:scroll-mt-[22vh]' id="section1">
-      <Ftwz1/>
+        <div className="scroll-mt-[25vh] md:scroll-mt-[22vh]" id="section2">
+          <Ftwz2 />
+        </div>
+
+        <div className="scroll-mt-[25vh] md:scroll-mt-[22vh]" id="section3">
+          <Ftwz3 />
+        </div>
+
+        <div className="scroll-mt-[25vh] md:scroll-mt-[22vh]" id="section4">
+          <Ftwz4 />
+        </div>
+
+        <div
+          className="scroll-mt-[35vh] md:scroll-mt-[22vh]  sjcontainer "
+          id="section5"
+        >
+          {/* <Ftwz5/> */}
+
+          <Eximmap />
+        </div>
+
+        <div className="scroll-mt-[16vh] md:scroll-mt-[15vh]" id="section6">
+          {/* <Ftwz6/> */}
+          {/* <Servicefaq data ={ftwzDatadata} /> */}
+          <FAQSection faqData={ftwzDatadata} />
+        </div>
       </div>
-
-      <div className='scroll-mt-[25vh] md:scroll-mt-[22vh]' id="section2">
-      <Ftwz2/>
-      </div>
-
-      <div className='scroll-mt-[25vh] md:scroll-mt-[22vh]' id="section3">
-      <Ftwz3/>
-      </div>
-
-      <div className='scroll-mt-[25vh] md:scroll-mt-[22vh]' id="section4">
-      <Ftwz4/>
-      </div>
-
-      <div className='scroll-mt-[35vh] md:scroll-mt-[22vh]  sjcontainer ' id="section5">
-      {/* <Ftwz5/> */}
-
-     <Eximmap/>
-      </div>
-
-      <div className='scroll-mt-[16vh] md:scroll-mt-[15vh]' id="section6">
-      {/* <Ftwz6/> */}
-      {/* <Servicefaq data ={ftwzDatadata} /> */}
-      <FAQSection faqData={ftwzDatadata}/>
-      </div>
-
-  </div>
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

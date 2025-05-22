@@ -6,17 +6,16 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { VscChromeClose } from "react-icons/vsc";
 import MenuMobile from "./MenuMobile";
 
-
 const NewHeader = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [showCatMenu, setShowCatMenu] = useState(false);
   const [showContactMenu, setShowContactMenu] = useState(false);
- 
+
   useEffect(() => {
     if (mobileMenu) {
-      document.body.style.overflow = 'hidden';  // Disable scroll
+      document.body.style.overflow = "hidden"; // Disable scroll
     } else {
-      document.body.style.overflow = 'auto';  // Re-enable scroll
+      document.body.style.overflow = "auto"; // Re-enable scroll
     }
   }, [mobileMenu]);
 
@@ -30,97 +29,90 @@ const NewHeader = () => {
         // setHeaderClass("sticky top-0 ");
       }
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  
-
   return (
     <header
       className={`   shadow-[0_3px_10px_rgb(0,0,0,0.2)] sticky top-0 z-50 bg-white `}
     >
-      <div className="sjcontainer flex  px-5   lg:px-10  h-[10vh] w-full  mx-auto items-center justify-between transition-transform duration-300">
-
-    
-      <Link href={"/"} className="  max-lg:hidden">
-          <img
+      <div className="sjcontainer flex px-5 lg:px-10  h-[10vh] w-full  mx-auto items-center justify-between transition-transform duration-300">
+        <Link href={"/"} className="  max-lg:hidden">
+          {/* <img
             src="/bml.png"
             className="w-[120px] lg:w-[150px]"
             alt="BML"
             onClick={() => setMobileMenu(false)}
-          />
+          /> */}
+          <div className="text-[#ffb200] text-4xl font-semibold">Brubish</div>
         </Link>
-      <Menu
-        showCatMenu={showCatMenu}
-        setShowCatMenu={setShowCatMenu}
-        showContactMenu={showContactMenu}
-        setShowContactMenu={setShowContactMenu}
-      setMobileMenu={setMobileMenu}
-      />
+        <Menu
+          showCatMenu={showCatMenu}
+          setShowCatMenu={setShowCatMenu}
+          showContactMenu={showContactMenu}
+          setShowContactMenu={setShowContactMenu}
+          setMobileMenu={setMobileMenu}
+        />
 
-      
-<>
+        <>
+          {mobileMenu && (
+            <div
+              className=" max-md:hidden fixed inset-0 bg-black opacity-50 z-10"
+              onClick={() => setMobileMenu(false)} // Clicking on overlay closes the menu
+            ></div>
+          )}
 
-{
-  mobileMenu &&
-<div
-      className=" max-md:hidden fixed inset-0 bg-black opacity-50 z-10"
-      onClick={() => setMobileMenu(false)} // Clicking on overlay closes the menu
-      ></div>
-    }
+          <div
+            className={`fixed top-0 z-30 right-0 h-full w-full md:w-[400px] bg-white shadow-lg transition-transform duration-300 ease-in-out`}
+            style={{
+              transform: mobileMenu ? "translateX(0)" : "translateX(100%)",
+            }}
+          >
+            <MenuMobile
+              showCatMenu={showCatMenu}
+              showContactMenu={showContactMenu}
+              setShowCatMenu={setShowCatMenu}
+              setShowContactMenu={setShowContactMenu}
+              setMobileMenu={setMobileMenu}
+            />
+          </div>
+        </>
 
-
-  <div
-    className={`fixed top-0 z-30 right-0 h-full w-full md:w-[400px] bg-white shadow-lg transition-transform duration-300 ease-in-out`}
-    style={{
-      transform: mobileMenu ? 'translateX(0)' : 'translateX(100%)',
-    }}
-  >
-    <MenuMobile
-      showCatMenu={showCatMenu}
-      showContactMenu={showContactMenu}
-      setShowCatMenu={setShowCatMenu}
-      setShowContactMenu={setShowContactMenu}
-      setMobileMenu={setMobileMenu}
-    />
-  </div>
-  </>
-
-      <div className="flex  lg:hidden  h-[10vh] overflow-hidden  items-center gap-2 justify-between w-full lg:w-auto text-black">
-        {/* <div className="hidden lg:flex gap-3 rounded-full justify-center lg:justify-between items-center cursor-pointer relative">
+        <div className="flex  lg:hidden  h-[10vh] overflow-hidden  items-center gap-2 justify-between w-full lg:w-auto text-black">
+          {/* <div className="hidden lg:flex gap-3 rounded-full justify-center lg:justify-between items-center cursor-pointer relative">
           <SocialIcons />
         </div> */}
-        <Link href={"/"} className="block  lg:hidden">
-          <img
-            src="/bml.png"
-            className="w-[150px]"
-            alt="BML"
-            onClick={() => setMobileMenu(false)}
-          />
-        </Link>
-        {/* <Link href="/" className='text-gray-500 font-bold text-xl tracking-wider z-30'>BML</Link> */}
-      
-        {/* Mobile Icon Start */}
-        <div className="w-8 lg:w-12 h-8 lg:h-12 rounded-full flex lg:hidden justify-center items-center cursor-pointer relative -mr-2 z-30">
-          {mobileMenu ? (
-            <VscChromeClose
-              className="text-[20px]"
-              color="#FFBA0C"
+          <Link href={"/"} className="block  lg:hidden">
+            <img
+              src="/bml.png"
+              className="w-[150px]"
+              alt="BML"
               onClick={() => setMobileMenu(false)}
             />
-          ) : (
-            <BiMenuAltRight
-            color="#FFBA0C"
-              className="text-[30px]"
-              onClick={() => setMobileMenu(true)}
-            />
-          )}
+          </Link>
+          {/* <Link href="/" className='text-gray-500 font-bold text-xl tracking-wider z-30'>BML</Link> */}
+
+          {/* Mobile Icon Start */}
+          <div className="w-8 lg:w-12 h-8 lg:h-12 rounded-full flex lg:hidden justify-center items-center cursor-pointer relative -mr-2 z-30">
+            {mobileMenu ? (
+              <VscChromeClose
+                className="text-[20px]"
+                color="#FFBA0C"
+                onClick={() => setMobileMenu(false)}
+              />
+            ) : (
+              <BiMenuAltRight
+                color="#FFBA0C"
+                className="text-[30px]"
+                onClick={() => setMobileMenu(true)}
+              />
+            )}
+          </div>
         </div>
-      </div>
       </div>
     </header>
   );
