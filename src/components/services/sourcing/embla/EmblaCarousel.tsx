@@ -17,30 +17,31 @@ type PropType = {
 
 
 const slides = [
-    {
-        id:2,
-   
-        title:"The BML Platform allows our company constant visibility to our supply chain. From shipment consolidation options, booking alternatives and data analytics, we have been able to lower freight costs and receive goods in a timely manner.",
-        name:"Ernee Ong",
-        position:"Managing Director"
-    },
-    {
-        id:1,
-       
-        title:"The BML Platform has made it easy for anyone in the organization to follow the status of a shipment which allows us to work better as a team and provide better support to our customers.!",
-        name:"Willy Kwa",
-        position:"Regional Director, Head APAC"
-    },
-    {
-      id:3,
-     
-      title:"We have a well-managed and attentive account team. Platform visibility and milestones are key and BML does a great job of tracking each one for real-time decision making.",
-      name:"Willy Kwa",
-      position:"Regional Director, Head APAC"
-  },
-    
+  {
+    id: 2,
 
-]
+    title:
+      "The Brubish Platform allows our company constant visibility to our supply chain. From shipment consolidation options, booking alternatives and data analytics, we have been able to lower freight costs and receive goods in a timely manner.",
+    name: "Ernee Ong",
+    position: "Managing Director",
+  },
+  {
+    id: 1,
+
+    title:
+      "The Brubish Platform has made it easy for anyone in the organization to follow the status of a shipment which allows us to work better as a team and provide better support to our customers.!",
+    name: "Willy Kwa",
+    position: "Regional Director, Head APAC",
+  },
+  {
+    id: 3,
+
+    title:
+      "We have a well-managed and attentive account team. Platform visibility and milestones are key and Brubish does a great job of tracking each one for real-time decision making.",
+    name: "Willy Kwa",
+    position: "Regional Director, Head APAC",
+  },
+];
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const {  options } = props

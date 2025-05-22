@@ -6,54 +6,53 @@ import "./thumbs.css"
 import Image from 'next/image'
 
 type PropType = {
-  slides: number[]
-  options?: EmblaOptionsType
-}
+  slides: any[];
+  options?: EmblaOptionsType;
+  setActiveindex: any;
+};
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
-  const { slides, options,setActiveindex } = props
-  const [selectedIndex, setSelectedIndex] = useState(0)
-  const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options)
+  const { slides, options, setActiveindex } = props;
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
-    containScroll: 'keepSnaps',
-    dragFree: true
-  })
-
+    containScroll: "keepSnaps",
+    dragFree: true,
+  });
 
   useEffect(() => {
-    setActiveindex(selectedIndex)
-  },[selectedIndex])
+    setActiveindex(selectedIndex);
+  }, [selectedIndex]);
 
   const onThumbClick = useCallback(
     (index: number) => {
-      if (!emblaMainApi || !emblaThumbsApi) return
-      emblaMainApi.scrollTo(index)
+      if (!emblaMainApi || !emblaThumbsApi) return;
+      emblaMainApi.scrollTo(index);
     },
     [emblaMainApi, emblaThumbsApi]
-  )
+  );
 
   const onSelect = useCallback(() => {
-    if (!emblaMainApi || !emblaThumbsApi) return
-    setSelectedIndex(emblaMainApi.selectedScrollSnap())
-    emblaThumbsApi.scrollTo(emblaMainApi.selectedScrollSnap())
-  }, [emblaMainApi, emblaThumbsApi, setSelectedIndex])
+    if (!emblaMainApi || !emblaThumbsApi) return;
+    setSelectedIndex(emblaMainApi.selectedScrollSnap());
+    emblaThumbsApi.scrollTo(emblaMainApi.selectedScrollSnap());
+  }, [emblaMainApi, emblaThumbsApi, setSelectedIndex]);
 
   useEffect(() => {
-    if (!emblaMainApi) return
-    onSelect()
+    if (!emblaMainApi) return;
+    onSelect();
 
-    emblaMainApi.on('select', onSelect).on('reInit', onSelect)
-  }, [emblaMainApi, onSelect])
+    emblaMainApi.on("select", onSelect).on("reInit", onSelect);
+  }, [emblaMainApi, onSelect]);
 
   return (
     <div className="embla ">
-    
-    <div className="embla-thumbs  max-md:mx-auto  w-[320px] md:w-[550px]   mb-4 -ml-0 md:-ml-32">
+      <div className="embla-thumbs  max-md:mx-auto  w-[320px] md:w-[550px]   mb-4 -ml-0 md:-ml-32">
         <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
           <div className="embla-thumbs__container  ">
-            {slides.map((data,index) => (
+            {slides.map((data: any, index) => (
               <Thumb
-              data={data}
+                data={data}
                 key={index}
                 onClick={() => onThumbClick(index)}
                 selected={index === selectedIndex}
@@ -64,22 +63,25 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         </div>
       </div>
 
-      
       <div className="embla__viewport" ref={emblaMainRef}>
         <div className="embla__container">
-          {slides.map((data,index) => (
-            <div className="embla__slide"  key={index}>
+          {slides.map((data, index) => (
+            <div className="embla__slide" key={index}>
               <div className="  md:mx-4 ">
-                <Image src={data.image} alt={data.name} height={400} width={500} className='w-full h-full mx-auto !object-contain max-w-[400px]' />
+                <Image
+                  src={data.image}
+                  alt={data.name}
+                  height={400}
+                  width={500}
+                  className="w-full h-full mx-auto !object-contain max-w-[400px]"
+                />
               </div>
             </div>
           ))}
         </div>
       </div>
-
-      
     </div>
-  )
-}
+  );
+};
 
 export default EmblaCarousel

@@ -6,20 +6,23 @@ const data = [
     id: 1,
     name: "Global Market Reach",
     icon: <FaGlobe size={52} />, // React Icon for the globe
-    content: "Expand your business footprint with BML Marketing. Our tailored Commodities solutions ensure your products reach global markets efficiently, helping you connect with customers worldwide."
+    content:
+      "Expand your business footprint with Brubish Marketing. Our tailored Commodities solutions ensure your products reach global markets efficiently, helping you connect with customers worldwide.",
   },
   {
     id: 2,
     name: "Data-Driven Campaigns",
     icon: <FaChartLine size={52} />, // React Icon for analytics/chart
-    content: "Leverage our advanced analytics tools to optimize your marketing efforts. With real-time insights into Commodities operations, we help you target the right audience and drive meaningful engagement."
+    content:
+      "Leverage our advanced analytics tools to optimize your marketing efforts. With real-time insights into Commodities operations, we help you target the right audience and drive meaningful engagement.",
   },
   {
     id: 3,
     name: "Seamless Customer Experience",
     icon: <FaUsers size={52} />, // React Icon for users/customers
-    content: "Ensure customer satisfaction with our integrated Commodities solutions. From on-time delivery to tracking updates, BML Marketing guarantees a seamless experience that builds trust and loyalty."
-  }
+    content:
+      "Ensure customer satisfaction with our integrated Commodities solutions. From on-time delivery to tracking updates, Brubish Marketing guarantees a seamless experience that builds trust and loyalty.",
+  },
 ];
 
 const Sourcingtwo = () => {

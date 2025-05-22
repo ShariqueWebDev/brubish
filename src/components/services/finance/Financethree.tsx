@@ -65,29 +65,32 @@ const data = [
 
 const Financethree = () => {
   return (
-  
     <div className="sjcontainer px-3 py-6 my-8 md:my-16">
-      <Heading title="BML Finance Benefits"  />
-       <div className='w-40 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-1 mb-3'></div>
+      <Heading title=" Finance Benefits" />
+      <div className="w-40 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-1 mb-3"></div>
 
-       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-8">
-      {data.map((item) => (
-        <div
-          key={item.id}
-          className={`px-4 py-8 border rounded-lg shadow-[inset_-12px_-8px_40px_#46464620] my-4 ${item.color}`}
-        >
-          <img
-            src={item.icon}
-            alt={item.title}
-            className=" w-16 md:w-20 h-16 md:h-20 -mt-14 md:-mt-16 mb-4 md:mb-4"
-          />
-          <h3 className=" text-lg md:text-xl font-[500] text-gray-800">{item.title}</h3>
-          <p className=" text-sm md:text-[15px] mt-2  text-gray-500">{item.text}</p>
-        </div>
-      ))}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-8">
+        {data.map((item) => (
+          <div
+            key={item.id}
+            className={`px-4 py-8 border rounded-lg shadow-[inset_-12px_-8px_40px_#46464620] my-4 ${item.color}`}
+          >
+            <img
+              src={item.icon}
+              alt={item.title}
+              className=" w-16 md:w-20 h-16 md:h-20 -mt-14 md:-mt-16 mb-4 md:mb-4"
+            />
+            <h3 className=" text-lg md:text-xl font-[500] text-gray-800">
+              {item.title}
+            </h3>
+            <p className=" text-sm md:text-[15px] mt-2  text-gray-500">
+              {item.text}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-  )
+  );
 }
 
 export default Financethree

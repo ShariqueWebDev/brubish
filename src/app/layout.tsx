@@ -129,6 +129,59 @@ export const ftwzData = [
   },
 ];
 
+export const productsData = [
+  {
+    id: 1,
+    logo: "/products-icons/cargo-ship.png",
+
+    name: "Vessel Spares & Parts",
+    url: "vessel-spares",
+  },
+  {
+    id: 2,
+    logo: "/products-icons/crucible.png",
+
+    name: "Steel",
+    url: "steel",
+  },
+  {
+    id: 3,
+    logo: "/products-icons/paper.png",
+
+    name: "Paper & Pulp",
+    url: "paper-pulp",
+  },
+
+  {
+    id: 4,
+    logo: "/products-icons/goods.png",
+
+    name: "Consumer Goods",
+    url: "consumer-goods",
+  },
+  {
+    id: 5,
+    logo: "/products-icons/app.png",
+
+    name: " Household Appliances",
+    url: "household-appliances",
+  },
+
+  {
+    id: 6,
+    logo: "/products-icons/agri.png",
+    name: "Agricultural Products ",
+    url: "agri-products",
+  },
+  {
+    id: 7,
+    logo: "/products-icons/fashion.png",
+    name: "Fashion ",
+    url: "fashion",
+  },
+];
+
+
 export default async function RootLayout({
   children,
 }: Readonly<{

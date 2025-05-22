@@ -7,9 +7,9 @@ const ftwzServicesData = [
   "Income tax waiver on all profits generated through re-exports activity through the FTWZ",
   "Hassle-free re-export process by routing cargo through FTWZ",
   "One can take advantage of the advantages offered by India like manpower cost and technical skill, India's geo-position and location, and others to make their products globally competitive",
-  "GST exemption on services offered within BML FTWZ",
-  "Permission of 100% FDI for the set-up of units by the unit holder of the FTWZ"
-]
+  "GST exemption on services offered within Brubish FTWZ",
+  "Permission of 100% FDI for the set-up of units by the unit holder of the FTWZ",
+];
 
 
 const Two = () => {

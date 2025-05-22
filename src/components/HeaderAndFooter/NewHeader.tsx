@@ -5,11 +5,13 @@ import Menu from "./Menu";
 import { BiMenuAltRight } from "react-icons/bi";
 import { VscChromeClose } from "react-icons/vsc";
 import MenuMobile from "./MenuMobile";
+import Image from "next/image";
 
 const NewHeader = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [showCatMenu, setShowCatMenu] = useState(false);
   const [showContactMenu, setShowContactMenu] = useState(false);
+  const [showProductsMenu, setShowProductsMenu] = useState(false);
 
   useEffect(() => {
     if (mobileMenu) {
@@ -40,15 +42,18 @@ const NewHeader = () => {
     <header
       className={`   shadow-[0_3px_10px_rgb(0,0,0,0.2)] sticky top-0 z-50 bg-white `}
     >
-      <div className="sjcontainer flex px-5 lg:px-10  h-[10vh] w-full  mx-auto items-center justify-between transition-transform duration-300">
-        <Link href={"/"} className="  max-lg:hidden">
-          {/* <img
-            src="/bml.png"
-            className="w-[120px] lg:w-[150px]"
-            alt="BML"
-            onClick={() => setMobileMenu(false)}
-          /> */}
-          <div className="text-[#ffb200] text-4xl font-semibold">Brubish</div>
+      <div className="sjcontainer flex px-5 lg:px-10  h-[13vh] w-full  mx-auto items-center justify-between transition-transform duration-300">
+        <Link href={"/"} className=" max-lg:hidden ">
+          {/* <div className="text-[#ffb200] text-4xl font-semibold">Brubish</div> */}
+          <div className="w-12">
+            <Image
+              src={"/logo/logo.png"}
+              className="w-full h-full bg-cover bg-center"
+              width={300}
+              height={400}
+              alt="Brubish"
+            />
+          </div>
         </Link>
         <Menu
           showCatMenu={showCatMenu}
@@ -56,6 +61,8 @@ const NewHeader = () => {
           showContactMenu={showContactMenu}
           setShowContactMenu={setShowContactMenu}
           setMobileMenu={setMobileMenu}
+          setShowProductsMenu={setShowProductsMenu}
+          showProductsMenu={showProductsMenu}
         />
 
         <>
@@ -78,6 +85,8 @@ const NewHeader = () => {
               setShowCatMenu={setShowCatMenu}
               setShowContactMenu={setShowContactMenu}
               setMobileMenu={setMobileMenu}
+              showProductsMenu={showProductsMenu}
+              setShowProductsMenu={setShowProductsMenu}
             />
           </div>
         </>
@@ -87,12 +96,16 @@ const NewHeader = () => {
           <SocialIcons />
         </div> */}
           <Link href={"/"} className="block  lg:hidden">
-            <img
-              src="/bml.png"
-              className="w-[150px]"
-              alt="BML"
-              onClick={() => setMobileMenu(false)}
-            />
+            <div className="w-12">
+              <Image
+                width={300}
+                height={400}
+                src="/logo/logo.png"
+                className="w-[150px]"
+                alt="Brubish"
+                onClick={() => setMobileMenu(false)}
+              />
+            </div>
           </Link>
           {/* <Link href="/" className='text-gray-500 font-bold text-xl tracking-wider z-30'>BML</Link> */}
 
