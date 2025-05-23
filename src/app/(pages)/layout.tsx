@@ -3,30 +3,30 @@ import React from "react";
 import { WEBSITE_URL } from "../layout";
 
 export const metadata: Metadata = {
-  title: "Book My Logistics",
+  title: "Brubish Logistics",
   description:
-    "BML offer duty free economic activity in line with local trade and commerce regulations.",
+    "Brubish offer duty free economic activity in line with local trade and commerce regulations.",
   openGraph: {
-    title: "Book My Logistics",
+    title: "Brubish Logistics",
     description:
-      "BML offer duty free economic activity in line with local trade and commerce regulations.",
+      "Brubish offer duty free economic activity in line with local trade and commerce regulations.",
     url: WEBSITE_URL,
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/opengraph.png`,
+        url: `${WEBSITE_URL}/logo/logo.png`,
         width: 1200,
         height: 630,
-        alt: "Book My Logistics",
+        alt: "Brubish Logistics",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Book My Logistics",
+    title: "Brubish Logistics",
     description:
-      "BML offer duty free economic activity in line with local trade and commerce regulations.",
-    images: [`${WEBSITE_URL}/opengraph.png`],
+      "Brubish offer duty free economic activity in line with local trade and commerce regulations.",
+    images: [`${WEBSITE_URL}/logo/logo.png`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}`,

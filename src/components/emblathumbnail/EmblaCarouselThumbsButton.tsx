@@ -1,10 +1,11 @@
 import React from 'react'
 
 type PropType = {
-  selected: boolean
-  index: number
-  onClick: () => void
-}
+  data: any;
+  selected: boolean;
+  index: number;
+  onClick: () => void;
+};
 
 export const Thumb: React.FC<PropType> = (props) => {
   const { selected, index, onClick,data } = props

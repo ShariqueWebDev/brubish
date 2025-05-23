@@ -32,80 +32,99 @@ const data2 =     {
 
 const Freightthreex = () => {
   return (
-    <div className=' my-6 bg-gray-50 md:my-12 py-8 md:py-12 '>
-        <div className='sjcontainer'>
-            <Heading className='mb-2 text-center md:text-left' title="Benefits of BML Freight" />
-         <p className=' text-base text-center md:text-left md:text-lg text-gray-600'>Take complete control of your supply chain processes with the help of our digital platform and dedicated team</p>
-
+    <div className=" my-6 bg-gray-50 md:my-12 py-8 md:py-12 ">
+      <div className="sjcontainer">
+        <Heading
+          className="mb-2 text-center md:text-left"
+          title="Benefits of Brubish Freight"
+        />
+        <p className=" text-base text-center md:text-left md:text-lg text-gray-600">
+          Take complete control of your supply chain processes with the help of
+          our digital platform and dedicated team
+        </p>
+      </div>
+      <div className="grid sjcontainer lg:grid-cols-[25%,75%] max-lg:space-y-10 md:space-x-5 mt-8 md:mt-16 mb-24   ">
+        <div className="border shadow-lg  font-[500] text-center">
+          <div className=" bg-amber-100">
+            <h2 className="border-b text-lg font-bold border-secondary px-2 py-12 ">
+              {data1?.title}
+            </h2>
+          </div>
+          <div>
+            {data1.desc?.map((items) => {
+              return (
+                <p
+                  className=" border-b border-secondary bg-gray-50 text-base text-gray-700 hover:text-black duration-200 py-5 md:py-10 px-2"
+                  key={items}
+                >
+                  {items}
+                </p>
+              );
+            })}
+          </div>
         </div>
-            <div className='grid sjcontainer lg:grid-cols-[25%,75%] max-lg:space-y-10 md:space-x-5 mt-8 md:mt-16 mb-24   '>
-                <div className='border shadow-lg  font-[500] text-center'>
-                    <div className=' bg-amber-100'>
+        <div className=" text-center text-2xl md:text-3xl">
+          <div className=" mb-12 md:mb-28 mx-auto  max-lg:border-b border-dashed  border-gray-600">
+            <h2 className="lg:mb-8  text-amber-500 font-[600]">
+              THE TRADITIONAL WAY
+            </h2>
+            <Image
+              className="w-full object-cover "
+              src={data1?.img1}
+              width={1600}
+              height={1000}
+              alt="benefits"
+            />
+          </div>
+          <div>
+            <h2 className="mb-8 text-amber-500  font-[600]">THE Brubish WAY</h2>
+            <Image
+              className="w-full object-cover  mix-blend-multiply"
+              src={data1?.img2}
+              width={1500}
+              height={800}
+              alt="benefits"
+            />
+          </div>
+        </div>
+      </div>
+      <Freightthree />
+      <Freightfour />
 
-                    <h2 className="border-b text-lg font-bold border-secondary px-2 py-12 ">{data1?.title}</h2>
-                    </div>
-                    <div>
-
-                        {
-                            data1.desc?.map((items) => {
-                                return (
-                                    <p className=" border-b border-secondary bg-gray-50 text-base text-gray-700 hover:text-black duration-200 py-5 md:py-10 px-2" key={items}>{items}</p>
-                                )
-                            })
-                        }
-                                </div>
-                </div>
-                <div className=' text-center text-2xl md:text-3xl'>
-                    <div className=' mb-12 md:mb-28 mx-auto  max-lg:border-b border-dashed  border-gray-600'>
-                        <h2 className='lg:mb-8  text-amber-500 font-[600]'>THE TRADITIONAL WAY</h2>
-                        <Image className='w-full object-cover ' src={data1?.img1} width={1600} height={1000} alt="benefits" />
-                    </div>
-                    <div>
-                        <h2 className='mb-8 text-amber-500  font-[600]'>THE BML WAY</h2>
-                        <Image 
-    className="w-full object-cover  mix-blend-multiply" 
-    src={data1?.img2} 
-    width={1500} 
-    height={800} 
-    alt="benefits" 
-/>
-                    </div>
-                </div>
-            </div>
-            <Freightthree/>
-            <Freightfour/>
-
-
-            <div className='sjcontainer grid lg:grid-cols-[25%,75%] space-x-5 my-16 max-lg:space-y-10   '>
-                <div className='border shadow-lg  font-[500] text-center'>
-                    <div className=' bg-amber-100'>
-
-                    <h2 className="border-b text-lg font-[600] border-secondary px-2 py-12 ">{data2?.title}</h2>
-                    </div>
-                    <div>
-                        {
-                            data2.desc?.map((items) => {
-                                return (
-                                    <p className=" border-b border-secondary bg-gray-50 text-base text-gray-700 hover:text-black duration-200 py-5 md:py-10 px-2" key={items}>{items}</p>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
-                <div className=' text-center text-3xl'>
-                    <div className='mb-20'>
-                        <Image className='w-full ' src={data2?.img1} width={2000} height={1600} alt="benefits" />
-                    </div>
-                    
-                </div>
-            </div>
-
-
-
-
-
+      <div className="sjcontainer grid lg:grid-cols-[25%,75%] space-x-5 my-16 max-lg:space-y-10   ">
+        <div className="border shadow-lg  font-[500] text-center">
+          <div className=" bg-amber-100">
+            <h2 className="border-b text-lg font-[600] border-secondary px-2 py-12 ">
+              {data2?.title}
+            </h2>
+          </div>
+          <div>
+            {data2.desc?.map((items) => {
+              return (
+                <p
+                  className=" border-b border-secondary bg-gray-50 text-base text-gray-700 hover:text-black duration-200 py-5 md:py-10 px-2"
+                  key={items}
+                >
+                  {items}
+                </p>
+              );
+            })}
+          </div>
+        </div>
+        <div className=" text-center text-3xl">
+          <div className="mb-20">
+            <Image
+              className="w-full "
+              src={data2?.img1}
+              width={2000}
+              height={1600}
+              alt="benefits"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Freightthreex

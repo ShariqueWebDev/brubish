@@ -41,19 +41,29 @@ const Tabswithimg = () => {
     console.log(activeindex);
 
     return (
-        <div className=' sjcontainer py-16'>
-            <h2 className=' text-xl md:text-3xl text-center font-[500] mb-2'>BML Insurance Services</h2>
-            <div className='flex items-center flex-col-reverse md:flex-row'>
-                <div className='md:w-[30%] mx-auto text-center my-auto'>
-                    <h2 className=' text-xl max-md:mt-4 md:text-xl font-[500]'>{SLIDES[activeindex].title}</h2>
-                    <p className=' px-2 text-xs md:text-sm mt-2 text-gray-500'>{SLIDES[activeindex].description}</p>
-                </div>
-                <div className='md:w-[70%]'>
-                    <EmblaCarousel setActiveindex={setActiveindex} slides={SLIDES} options={OPTIONS} />
-                </div>
-            </div>
+      <div className=" sjcontainer py-16">
+        <h2 className=" text-xl md:text-3xl text-center font-[500] mb-2">
+          Brubish Insurance Services
+        </h2>
+        <div className="flex items-center flex-col-reverse md:flex-row">
+          <div className="md:w-[30%] mx-auto text-center my-auto">
+            <h2 className=" text-xl max-md:mt-4 md:text-xl font-[500]">
+              {SLIDES[activeindex].title}
+            </h2>
+            <p className=" px-2 text-xs md:text-sm mt-2 text-gray-500">
+              {SLIDES[activeindex].description}
+            </p>
+          </div>
+          <div className="md:w-[70%]">
+            <EmblaCarousel
+              setActiveindex={setActiveindex}
+              slides={SLIDES}
+              options={OPTIONS}
+            />
+          </div>
         </div>
-    )
+      </div>
+    );
 }
 
 export default Tabswithimg

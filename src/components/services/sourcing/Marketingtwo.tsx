@@ -7,7 +7,8 @@ export default function HowItWorks() {
       title: "We Source",
       description: (
         <p>
-          Sourcing from where the commmodity is plentiful to where they are needed
+          Sourcing from where the commmodity is plentiful to where they are
+          needed
         </p>
       ),
     },
@@ -16,8 +17,8 @@ export default function HowItWorks() {
       title: "We Move",
       description: (
         <p>
-          Ensure on-time, reliable transportation with cutting-edge 
-          tracking and expert handling for smooth delivery.
+          Ensure on-time, reliable transportation with cutting-edge tracking and
+          expert handling for smooth delivery.
         </p>
       ),
     },
@@ -26,11 +27,11 @@ export default function HowItWorks() {
       title: "We Store",
       description: (
         <p>
-         With BML FTWZ from warehousing to providing last mile delivery, we have got you covered
+          With Brubish FTWZ from warehousing to providing last mile delivery, we
+          have got you covered
         </p>
       ),
     },
-   
   ];
     return (
       <div className="sjcontainer mx-auto px-4 py-16">

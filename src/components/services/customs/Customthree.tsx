@@ -23,18 +23,24 @@ const data = [
 
 const Customthree = () => { 
   return (
-    <div className=' sjcontainer my-10 md:my-20'>
-      <Heading title='Why BML?' className='text-center mb-4 md:mb-8' />
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4  gap-x-6">
-      {data.map((item) => (
-        <div key={item.id} className=" py-4 md:p-4  rounded-lg text-left">
-          <img src={item.icon} alt={item.name} className=" w-24 md:w-28  !object-contain mb-4" />
-          <h3 className=" text-lg md:text-xl font-[500] mb-2 mt-4 ">{item.name}</h3>
-          <p className="text-gray-600 text-[15px]">{item.content}</p>
-        </div>
-      ))}
-    </div>
+    <div className=" sjcontainer my-10 md:my-20">
+      <Heading title="Why Brubish?" className="text-center mb-4 md:mb-8" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4  gap-x-6">
+        {data.map((item) => (
+          <div key={item.id} className=" py-4 md:p-4  rounded-lg text-left">
+            <img
+              src={item.icon}
+              alt={item.name}
+              className=" w-24 md:w-28  !object-contain mb-4"
+            />
+            <h3 className=" text-lg md:text-xl font-[500] mb-2 mt-4 ">
+              {item.name}
+            </h3>
+            <p className="text-gray-600 text-[15px]">{item.content}</p>
+          </div>
+        ))}
       </div>
+    </div>
   );
 };
 

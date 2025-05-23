@@ -17,7 +17,7 @@ const data = [
   {
     id: 3,
     title: "Save on Working Capital",
-    text: "Benefit from duty-free imports with BML FTWZ, paying duties only when products are sold.",
+    text: "Benefit from duty-free imports with Brubish FTWZ, paying duties only when products are sold.",
     icon: "/icons/capital.svg",
   },
   {
@@ -40,33 +40,32 @@ const data = [
   },
 ];
 
-
 const Whybml = () => {
   return (
-  
-    <div className={`  bg-[url('/background/map.svg')]  sjcontainer pb-6 pt-6  md:py-16 `}>
- {/* <h2 className=' text-2xl md:text-3xl '></h2> */}
-       <Heading title="Why BML" className='text-center' />
-       {/* <div className='w-40 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-1 mb-3'></div> */}
+    <div
+      className={`  bg-[url('/background/map.svg')]  sjcontainer pb-6 pt-6  md:py-16 `}
+    >
+      {/* <h2 className=' text-2xl md:text-3xl '></h2> */}
+      <Heading title="Why Brubish" className="text-center" />
+      {/* <div className='w-40 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-1 mb-3'></div> */}
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  my-8">
-      {data.map((item) => (
-        <div
-          key={item.id}
-          className={` my-0 md:my-4  `}
-        >
-          <img
-            src={item.icon}
-            alt={item.title}
-            className=" w-16 md:w-14 h-16 md:h-14 mb-3"
-          />
-          <h3 className=" text-xl   font-[500] text-gray-700 capitalize">{item.title}</h3>
-          <p className=" text-sm mt-1  text-gray-500">{item.text}</p>
-        </div>
-      ))}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  my-8">
+        {data.map((item) => (
+          <div key={item.id} className={` my-0 md:my-4  `}>
+            <img
+              src={item.icon}
+              alt={item.title}
+              className=" w-16 md:w-14 h-16 md:h-14 mb-3"
+            />
+            <h3 className=" text-xl   font-[500] text-gray-700 capitalize">
+              {item.title}
+            </h3>
+            <p className=" text-sm mt-1  text-gray-500">{item.text}</p>
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
 export default Whybml

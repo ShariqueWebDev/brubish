@@ -75,61 +75,79 @@ const data3 = [
   
 const Financesix = () => {
   return (
-    <div className='sjcontainer my-8 md:my-16'>
-      <Heading  title="BML Finance Eligibility & Documents" className='text-left' />
-      <p className='text-base md:text-lg mb-12 mt-1  text-gray-500'>Apply with minimal documentation</p>
+    <div className="sjcontainer my-8 md:my-16">
+      <Heading
+        title="Brubish Finance Eligibility & Documents"
+        className="text-left"
+      />
+      <p className="text-base md:text-lg mb-12 mt-1  text-gray-500">
+        Apply with minimal documentation
+      </p>
 
+      <div className="mb-12">
+        <h2 className=" text-xl md:text-2xl ">Eligiblity</h2>
+        <div className="w-40 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-1 mb-3"></div>
 
-
-
-      <div className='mb-12'>
-
-      <h2 className=' text-xl md:text-2xl '>Eligiblity</h2>
-       <div className='w-40 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-1 mb-3'></div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-2 mt-6 md:mt-8">
-      {data1.map((item) => (
-        <div key={item.id} className="p-4 border shadow-lg flex items-center space-x-2 hover:shadow-md text-left  rounded-lg ">
-          <img src={item.icon} alt={item.name} className="w-16  " />
-          <div className='-mb-2'>
-          <h3 className=" text-lg md:text-xl font-[500] ">{item.name}</h3>
-          <p className="text-gray-600 text-sm md:text-base">{item.content}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-2 mt-6 md:mt-8">
+          {data1.map((item) => (
+            <div
+              key={item.id}
+              className="p-4 border shadow-lg flex items-center space-x-2 hover:shadow-md text-left  rounded-lg "
+            >
+              <img src={item.icon} alt={item.name} className="w-16  " />
+              <div className="-mb-2">
+                <h3 className=" text-lg md:text-xl font-[500] ">{item.name}</h3>
+                <p className="text-gray-600 text-sm md:text-base">
+                  {item.content}
+                </p>
+              </div>
             </div>
+          ))}
         </div>
-      ))}
+      </div>
+      <div className="mb-12">
+        <h2 className=" text-xl md:text-2xl ">Required Documents</h2>
+        <div className="w-40 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-1 mb-3"></div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-2 mt-6 md:mt-8">
+          {data2.map((item) => (
+            <div
+              key={item.id}
+              className="p-4 border shadow-lg hover:shadow-md text-left  rounded-lg "
+            >
+              <img src={item.icon} alt={item.name} className="w-20  mb-6 " />
+              <h3 className=" text-lg md:text-xl font-[500] mb-2">
+                {item.name}
+              </h3>
+              <p className="text-gray-600 text-sm md:text-base">
+                {item.content}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="">
+        <h2 className=" text-xl md:text-2xl ">Our Terms</h2>
+        <div className="w-40 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-1 mb-3"></div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-2 mt-6 md:mt-8">
+          {data3.map((item) => (
+            <div
+              key={item.id}
+              className="p-4 border shadow-lg hover:shadow-md text-left  rounded-lg "
+            >
+              {/* <img src={item.icon} alt={item.name} className="w-20  mb-6 " /> */}
+              <h3 className=" text-lg md:text-xl font-[500] mb-2">
+                {item.name}
+              </h3>
+              <p className="text-gray-600 text-sm md:text-base">
+                {item.content}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-      </div>
-      <div className='mb-12'>
-
-<h2 className=' text-xl md:text-2xl '>Required Documents</h2>
- <div className='w-40 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-1 mb-3'></div>
-
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-2 mt-6 md:mt-8">
-{data2.map((item) => (
-  <div key={item.id} className="p-4 border shadow-lg hover:shadow-md text-left  rounded-lg ">
-    <img src={item.icon} alt={item.name} className="w-20  mb-6 " />
-    <h3 className=" text-lg md:text-xl font-[500] mb-2">{item.name}</h3>
-    <p className="text-gray-600 text-sm md:text-base">{item.content}</p>
-  </div>
-))}
-</div>
-</div>
-<div className=''>
-
-<h2 className=' text-xl md:text-2xl '>Our Terms</h2>
- <div className='w-40 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-1 mb-3'></div>
-
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-2 mt-6 md:mt-8">
-{data3.map((item) => (
-  <div key={item.id} className="p-4 border shadow-lg hover:shadow-md text-left  rounded-lg ">
-    {/* <img src={item.icon} alt={item.name} className="w-20  mb-6 " /> */}
-    <h3 className=" text-lg md:text-xl font-[500] mb-2">{item.name}</h3>
-    <p className="text-gray-600 text-sm md:text-base">{item.content}</p>
-  </div>
-))}
-</div>
-</div>
-      </div>
   );
 };
 

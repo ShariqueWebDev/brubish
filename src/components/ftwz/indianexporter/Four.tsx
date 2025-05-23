@@ -5,19 +5,18 @@ import Image from 'next/image'
 import React from 'react'
 
 const exports = [
-  'Global buying + selling on same platform; global market; boost exports',
+  "Global buying + selling on same platform; global market; boost exports",
 
-  'APEDA/MPEDA + international approved labs; no overseas rejection; peace of mind',
- 
-  'Boost price / profit for commodities; Double Farmers’ Income (DFI) by 2022',
- 
-  'All support activities under 1 roof in an integrated manner',
- 
-  'Incentivize Make in India',
- 
-  'End point collection facility available for BML FTWZ linked exporters'
- 
-]
+  "APEDA/MPEDA + international approved labs; no overseas rejection; peace of mind",
+
+  "Boost price / profit for commodities; Double Farmers’ Income (DFI) by 2022",
+
+  "All support activities under 1 roof in an integrated manner",
+
+  "Incentivize Make in India",
+
+  "End point collection facility available for Brubish FTWZ linked exporters",
+];
 
 
 const Four = () => {

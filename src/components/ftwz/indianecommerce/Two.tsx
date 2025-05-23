@@ -16,42 +16,42 @@ export const list = [
 
 export const list02 = [
   {
-    "heading": "e-Commerce player indents",
-    "list": [
-      "An assortment of ball and globe-type needle valves with flanged and threaded connections, featuring an integrally forged body, is prepared as per the indent request."
-    ]
+    heading: "e-Commerce player indents",
+    list: [
+      "An assortment of ball and globe-type needle valves with flanged and threaded connections, featuring an integrally forged body, is prepared as per the indent request.",
+    ],
   },
   {
-    "heading": "Overseas MP stocks goods as per that indent in BML FTWZ",
-    "list": [
-      "Goods like needle valves and other components with precise specifications are stocked in the BML FTWZ by the overseas MP based on the provided indent."
-    ]
+    heading: "Overseas MP stocks goods as per that indent in Brubish FTWZ",
+    list: [
+      "Goods like needle valves and other components with precise specifications are stocked in the Brubish FTWZ by the overseas MP based on the provided indent.",
+    ],
   },
   {
-    "heading": "As per customer order goods are shipped after paying duty",
-    "list": [
-      "Customer orders are processed and goods such as needle valves are shipped after completing duty payments, ensuring compliance with regulations."
-    ]
+    heading: "As per customer order goods are shipped after paying duty",
+    list: [
+      "Customer orders are processed and goods such as needle valves are shipped after completing duty payments, ensuring compliance with regulations.",
+    ],
   },
   {
-    "heading": "BML Last mile Delivery (or any other) does delivery",
-    "list": [
-      "The last-mile delivery is handled by BML or an alternate service, ensuring the goods reach the customer's doorstep efficiently."
-    ]
+    heading: "Brubish Last mile Delivery (or any other) does delivery",
+    list: [
+      "The last-mile delivery is handled by Brubish or an alternate service, ensuring the goods reach the customer's doorstep efficiently.",
+    ],
   },
   {
-    "heading": "(in case of customer return) Goods brought back to BML FTWZ",
-    "list": [
-      "Returned goods are carefully brought back to the BML FTWZ for inspection, storage, or reprocessing as required."
-    ]
+    heading: "(in case of customer return) Goods brought back to Brubish FTWZ",
+    list: [
+      "Returned goods are carefully brought back to the Brubish FTWZ for inspection, storage, or reprocessing as required.",
+    ],
   },
   {
-    "heading": "Unsold inventory is shipped back / re-exported to overseas MP",
-    "list": [
-      "Unsold inventory is either re-exported to the overseas manufacturing partner or handled per the agreed protocols for redistribution."
-    ]
-  }
-]
+    heading: "Unsold inventory is shipped back / re-exported to overseas MP",
+    list: [
+      "Unsold inventory is either re-exported to the overseas manufacturing partner or handled per the agreed protocols for redistribution.",
+    ],
+  },
+];
 
 const Two = () => {
   return (

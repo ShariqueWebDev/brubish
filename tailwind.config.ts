@@ -11,17 +11,17 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#DE030B", 
+        primary: "#ffb200",
         secondary: " #FFBA0C ",
         //  primary: "#ae0a46",
         // secondary: "#662372",
-        primary1:"#2121bd",
-        secondary1:"#FFD65C",
-        
+        primary1: "#2121bd",
+        secondary1: "#FFD65C",
+
         greish: "#626262",
-        primary2:"#6ED0E5",
-        secondary2:"#F0B56C"
-      },  
+        primary2: "#6ED0E5",
+        secondary2: "#F0B56C",
+      },
     },
   },
   plugins: [],

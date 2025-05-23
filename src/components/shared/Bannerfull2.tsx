@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Bannerfull2 = ({ title, bgImg, icon,description,page }) => {
+const Bannerfull2 = ({ title, bgImg, page }) => {
   return (
     <div className="relative ">
       <div
@@ -31,7 +31,6 @@ const Bannerfull2 = ({ title, bgImg, icon,description,page }) => {
           </div>
         </div>
       </div>
-     
     </div>
   );
 };

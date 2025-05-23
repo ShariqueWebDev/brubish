@@ -3,118 +3,98 @@ import Image from 'next/image'
 import React from 'react'
 
 const data = [
-    {
-        id: 1,
-        name: "Factory Floor",
-        heading: "CFS",
-        icon: "/icons/factory.svg"
-    },
-    {
-        id: 2,
-        name: "BML Transport",
-        heading: "Transport",
-        icon: "/icons/truck.svg"
-    },
-    {
-        id: 3,
-        name: "BML Foreign Customs",
-        heading: "Foreign",
-        icon: "/icons/foreign.svg"
-    },
-    // {
-    //     id: 4,
-    //     name: "BML Handling",
-    //     heading: "Handling",
-    //     icon: "/icons/handling.svg"
-    // },
-    {
-        id: 5,
-        name: "BML Freight",
-        heading: "Freight",
-        icon: "/icons/freight2.svg"
-    },
-    // {
-    //     id: 6,
-    //     name: "BML VAS",
-    //     heading: "VAS",
-    //     icon: "/icons/vas.svg"
-    // },
-    {
-        id: 7,
-        name: "BML Indian Customs",
-        heading: "Customs",
-        icon: "/icons/customs2.svg"
-    },
-    {
-        id: 8,
-        name: "BML FTWZ",
-        heading: "FTWZ",
-        icon: "/icons/ftwz.svg"
-    },
-    {
-        id: 9,
-        name: "End Consumer",
-        heading: "consumer",
-        icon: "/icons/consumer.svg"
-    },
-]
+  {
+    id: 1,
+    name: "Factory Floor",
+    heading: "CFS",
+    icon: "/icons/factory.svg",
+  },
+  {
+    id: 2,
+    name: "Brubish Transport",
+    heading: "Transport",
+    icon: "/icons/truck.svg",
+  },
+  {
+    id: 3,
+    name: "Brubish Foreign Customs",
+    heading: "Foreign",
+    icon: "/icons/foreign.svg",
+  },
+
+  {
+    id: 5,
+    name: "Brubish Freight",
+    heading: "Freight",
+    icon: "/icons/freight2.svg",
+  },
+
+  {
+    id: 7,
+    name: "Brubish Indian Customs",
+    heading: "Customs",
+    icon: "/icons/customs2.svg",
+  },
+  {
+    id: 8,
+    name: "Brubish FTWZ",
+    heading: "FTWZ",
+    icon: "/icons/ftwz.svg",
+  },
+  {
+    id: 9,
+    name: "End Consumer",
+    heading: "consumer",
+    icon: "/icons/consumer.svg",
+  },
+];
 
 const data1 = [
   {
-      id: 1,
-      name: "Factory<br/>Floor",
-      heading: "CFS",
-      icon: "/icons/factory.svg"
+    id: 1,
+    name: "Factory<br/>Floor",
+    heading: "CFS",
+    icon: "/icons/factory.svg",
   },
   {
-      id: 2,
-      name: "BML<br/>Transport",
-      heading: "Transport",
-      icon: "/icons/truck.svg"
+    id: 2,
+    name: "Brubish<br/>Transport",
+    heading: "Transport",
+    icon: "/icons/truck.svg",
   },
   {
-      id: 3,
-      name: "BML<br/>Foreign Customs",
-      heading: "Foreign",
-      icon: "/icons/foreign.svg"
+    id: 3,
+    name: "Brubish<br/>Foreign Customs",
+    heading: "Foreign",
+    icon: "/icons/foreign.svg",
   },
-  // {
-  //     id: 4,
-  //     name: "BML<br/>Handling",
-  //     heading: "Handling",
-  //     icon: "/icons/handling.svg"
-  // },
+
   {
-      id: 5,
-      name: "BML<br/>Freight",
-      heading: "Freight",
-      icon: "/icons/freight2.svg"
+    id: 5,
+    name: "Brubish<br/>Freight",
+    heading: "Freight",
+    icon: "/icons/freight2.svg",
   },
-  // {
-  //     id: 6,
-  //     name: "BML<br/>VAS",
-  //     heading: "VAS",
-  //     icon: "/icons/vas.svg"
-  // },
+
   {
-      id: 7,
-      name: "BML<br/>Indian Customs",
-      heading: "Customs",
-      icon: "/icons/customs2.svg"
+    id: 7,
+    name: "Brubish<br/>Indian Customs",
+    heading: "Customs",
+    icon: "/icons/customs2.svg",
   },
   {
-      id: 8,
-      name: "BML<br/>FTWZ",
-      heading: "FTWZ",
-      icon: "/icons/ftwz.svg"
+    id: 8,
+    name: "Brubish<br/>FTWZ",
+    heading: "FTWZ",
+    icon: "/icons/ftwz.svg",
   },
   {
-      id: 9,
-      name: "End<br/>Consumer",
-      heading: "consumer",
-      icon: "/icons/consumer.svg"
+    id: 9,
+    name: "End<br/>Consumer",
+    heading: "consumer",
+    icon: "/icons/consumer.svg",
   },
-]
+];
 
 
 const Freightthree = () => {
