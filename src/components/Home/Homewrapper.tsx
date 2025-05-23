@@ -64,7 +64,7 @@ const sections = [
     banner_description:
       "Brubish connects businesses worldwide, optimizing the flow of commodities to bridge the gap between regions of surplus and demand.",
 
-    slug: "/contact",
+    slug: "/contact-us",
     icon: <BiWorld size={30} className="text-white" />,
   },
   // {
@@ -103,14 +103,14 @@ const Homewrapper = () => {
   return (
     <div className="">
       <Homebanner />
-      <div className="mt-4 md:px-4 px-0  md:my-16 md:sjcontainer">
+      <div className="mt-4 px-4 md:my-16 md:sjcontainer">
         <div className="md:px-16 ">
           <div className=" mb-8 mt-10">
-            <h3 className="text-black  md:text-3xl text-2xl font-bold  mb-4 md:text-start text-center">
+            <h3 className="text-black uppercase  md:text-3xl text-2xl font-bold  mb-4 text-center">
               About Us{" "}
             </h3>
 
-            <p className="text-black/[0.7] md:text-lg text-base md:text-start text-center">
+            <p className="text-black/[0.7] text-sm text-center md:px-60 ">
               We transform commodities by bridging the gap between regions of
               abundance and areas of demand, ensuring they reach where they are
               needed most.
@@ -120,7 +120,7 @@ const Homewrapper = () => {
             {sections.map((section, index) => (
               <div
                 key={index}
-                className="relative w-full bg-black h-[270px] md:h-[400px] overflow-hidden group rounded-lg overflow-hidden"
+                className="relative w-full bg-black h-[270px] md:h-[400px] group rounded-lg overflow-hidden"
               >
                 {/* Background Image */}
                 <Image
@@ -147,26 +147,26 @@ const Homewrapper = () => {
                   />
 
                   {/* Link positioned at the bottom */}
-                  <Link
+                  {/* <Link
                     href={`${section.slug}`}
                     className="absolute flex items-center duration-300 translate-y-10 group-hover:translate-y-0 bottom-2 right-2 text-white hover:text-primary-dark font-bold hover:text-primary"
                   >
                     Explore <ArrowRight strokeWidth={3} size={15} />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="px-16">
-        <div className="py-12 md:px-4 px-1">
+      <div className="md:px-16">
+        <div className="max-sm:pt-10 px-4 ">
           <div className=" mb-8">
-            <h3 className="text-black  md:text-3xl text-2xl font-bold  mb-4 md:text-start text-center">
+            <h3 className="text-black uppercase  md:text-3xl text-2xl font-bold  mb-4 text-center">
               Our Commodities{" "}
             </h3>
 
-            <p className="text-black/[0.7] md:text-sm text-sm md:text-start text-center">
+            <p className="text-black/[0.7] md:text-sm text-sm  text-center">
               Responsibly sourcing the commodities that advance everyday life.
             </p>
           </div>{" "}
@@ -183,11 +183,11 @@ const Homewrapper = () => {
           </div>
         </div>
 
-        <div className="px-4 rounded-lg overflow-hidden ">
+        <div className="px-4 rounded-lg mt-12 overflow-hidden ">
           <BinfinitMainDivCompReversed data={reverseData[3]} />
         </div>
 
-        <div className="py-12 md:px-4 px-1 rounded-lg overflow-hidden ">
+        <div className="py-12 px-4 rounded-lg overflow-hidden ">
           <BinfinitMainDivComp
             title={"Brubish Marketing"}
             desc={
@@ -198,7 +198,7 @@ const Homewrapper = () => {
             viewmoreredirect={"/our-commodities"}
           />
         </div>
-        <div className="">
+        <div className="px-4">
           <WhyChooseUsSection />
         </div>
 

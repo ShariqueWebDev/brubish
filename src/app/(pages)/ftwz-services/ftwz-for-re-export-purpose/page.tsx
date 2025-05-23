@@ -11,6 +11,8 @@ import One from "@/components/ftwz/reexport/One";
 import Two from "@/components/ftwz/reexport/Two";
 import Ftwz4 from "@/components/ftwz/Ftwz4";
 import Image from "next/image";
+import { Metadata } from "next";
+import { WEBSITE_URL } from "@/app/layout";
 
 const sections = [
   {
@@ -34,6 +36,37 @@ const sections = [
     url: "#section4",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Re-Export Services from FTWZ India | Brubish Logistics",
+  description:
+    "Streamline global trade through Brubish FTWZ with re-export services. Perform VAS like repackaging, labeling, blending, assembly and benefit from income tax waiver, GST exemption, and deferred customs duties.",
+  openGraph: {
+    title: "Re-Export Services from FTWZ India | Brubish Logistics",
+    description:
+      "Boost your global trade strategy with Brubish FTWZ’s re-export logistics. Enjoy customs duty deferment, income tax waiver, GST exemption, and 50+ value-added services under one roof.",
+    url: `${WEBSITE_URL}/ftwz-services/ftwz-for-re-export-purpose`,
+    type: "website",
+    images: [
+      {
+        url: `${WEBSITE_URL}/logo/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "FTWZ Re-Export Services Brubish",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Re-Export Services from FTWZ India | Brubish Logistics",
+    description:
+      "Enable re-export efficiency via Brubish FTWZ: enjoy GST exemptions, income tax waivers, and advanced processing like kitting, packaging, labeling, and repairs for global logistics.",
+    images: [`${WEBSITE_URL}/logo/logo.png`],
+  },
+  alternates: {
+    canonical: `${WEBSITE_URL}/ftwz-services/ftwz-for-re-export-purpose`,
+  },
+};
 
 const Page = () => {
   return (

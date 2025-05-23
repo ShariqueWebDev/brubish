@@ -1,108 +1,164 @@
-"use client"
-// import { handleformasubmit } from '@/lib/actions';
-import { sendContactForm } from '@/lib/ContactForm';
-import React, { ChangeEvent, FormEvent, useRef, useState } from "react";
-import { toast } from "react-toastify";
-import { Bounce, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import Button from './Button';
-import { handleformasubmit } from '@/lib/actions';
-// import Button from './Button';
+"use client";
+import { sendContactEnquiry } from "../Contact/sendContactEnquiry";
+// import { message } from "antd";
+import { Loader2Icon, Mail, MessageCircle, Phone, User } from "lucide-react";
+import React, { useState } from "react";
+import Swal from "sweetalert2";
+// import toast from "react-hot-toast";
 
+const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
 
-const Contactform = () => {
+  // Update formData based on input name and value
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value, // Dynamically update formData based on the input name
+    }));
+  };
 
-    const ref=useRef<HTMLFormElement>()
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const response = await sendContactEnquiry({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      });
+      if (response) {
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+        // toast.success("Form Submitted!");
+        setLoading(false);
+        Swal.fire({
+          title: "Email have been sent successfully!",
+          icon: "success",
+          draggable: true,
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      Swal.fire({
+        title: "Some error occured!",
+        icon: "error",
+        draggable: true,
+      });
+      // toast("Something went wrong, please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    return (
-        <div className="relative p-3 border-t-4 border-b-4 border-primary rounded-lg shadow-lg sm:p-12">
-            <form ref={ref}  action={async formData => {
-                console.log("STARTED FUNCTIION");
-                
-                const name = formData.get("name");
-                const email = formData.get("email");
-                const phone = formData.get("phone");
-                const message = formData.get("message");
-
-                const newErrors = {};
-                console.log("AA gya  reset karn111e");
-            
-                    if (!name) {
-                        newErrors.name = "Name is required";
-
-                    }
-                    if (!email) {
-                        newErrors.email = "Email is required";
-                    }
-            
-                    if (!phone) {
-                        newErrors.phone = "Phone is required";
-                    } else if (!/^\d{10}$/.test(phone)) {
-                        newErrors.phone = "Phone must be a valid 10-digit number";
-                    }
-                    if (!message) {
-                        newErrors.message = "Message is required";
-                    }
-                    if (Object.keys(newErrors).length > 0) {
-                        const errorMessages = Object.values(newErrors).join("\n");
-                        alert(errorMessages);
-                        console.log(errorMessages,"sssddd");
-                        return
-                    }
-                    console.log("AA gya  reset karne");
-                    
-                   const status =  await handleformasubmit(formData)
-                   if (status) {
-                    alert("SUCCESSFULLY SENT")
-                    ref.current?.reset()
-                   }
-                   else {
-
-                       alert("Failed to send email")
-                    }
-            }} >
-                <div className="mb-6">
-                    <input
-                        type="text"
-                        required
-                        name="name"
-                        placeholder="Your Name"
-                        className="border rounded-md text-gray-800 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] py-3 px-4 w-full text-base focus:border-primary outline-none"
-                    />
-                </div>
-                <div className="mb-6">
-                    <input
-                        type="email"
-                        required
-                        name="email"
-                        placeholder="Your Email"
-                        className="shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] border rounded-md text-gray-800  py-3 px-4 w-full text-base focus:border-primary outline-none"
-                    />
-                </div>
-                <div className="mb-6 flex gap-2 w-full">
-                    <input
-                        type="number"
-                        required
-                        name="phone"
-                        placeholder="9876543210"
-                        className="shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] border rounded-md text-gray-800  py-3 px-4 w-full text-base focus:border-primary outline-none"
-                    />
-                </div>
-                <div className="mb-6">
-                    <textarea
-                        rows="6"
-                        required
-                        name="message"
-                        placeholder="Your Message"
-                        className="shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] border rounded-md text-gray-800 py-3 px-4 w-full text-base focus:border-primary outline-none"
-                    ></textarea>
-                </div>
-           
-                   <Button/>
-                
-            </form>
+  return (
+    <div className="w-full lg:w-[100%]">
+      <form className="space-y-3" onSubmit={handleSubmit}>
+        <div
+          className="flex gap-3 items-center border-b py-2"
+          data-aos="fade-up"
+        >
+          <User size={20} color="#ffb200" strokeWidth={1} />
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            required
+            onChange={handleChange}
+            className=" placeholder:text-gray-500 text-sm text-black  w-full focus:outline-none  rounded-md pl-3  py-1.5"
+            placeholder="Your Name"
+          />
         </div>
-    )
-}
+        <div
+          className="flex gap-3 items-center border-b py-2"
+          data-aos="fade-up"
+        >
+          <Mail size={20} color="#ffb200" strokeWidth={1} />
+          <input
+            type="email"
+            name="email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+            className="placeholder:text-gray-500 text-sm text-black  w-full focus:outline-none  rounded-md pl-3 py-1.5"
+            placeholder="Your Email"
+          />
+        </div>
+        <div
+          className="flex gap-3 items-center border-b py-2"
+          data-aos="fade-up"
+        >
+          <Phone size={20} color="#ffb200" strokeWidth={1} />
+          <input
+            type="text"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="placeholder:text-gray-500 text-sm text-black  w-full focus:outline-none rounded-md pl-3 py-1.5"
+            required
+            placeholder="Your Contact"
+          />
+        </div>
+        <div
+          className="flex gap-3 items-start border-b py-2"
+          data-aos="fade-up"
+        >
+          <MessageCircle size={20} color="#ffb200" strokeWidth={1} />
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            className="placeholder:text-gray-500 text-sm text-black capitalize w-full focus:outline-none  rounded-md pl-3  py-1.5"
+            required
+            rows={5}
+            placeholder="Message"
+          />
+        </div>
+        <div
+          className="!mt-7 flex justify-center items-center"
+          data-aos="fade-up"
+        >
+          <button
+            type="submit"
+            className="bg-gradient-to-r font-medium border w-fit hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py- text-sm border-primary rounded text-black" // Add transition classes
+          >
+            {/* Loader with transition */}
+            {loading && (
+              <span
+                className="loader block transition-all duration-300 ease-in-out"
+                style={{
+                  width: loading ? "16px" : "0px",
+                  opacity: loading ? 1 : 0,
+                }}
+              ></span>
+            )}
+            {/* Button text with transition */}
+            <span
+              className={`transition-opacity flex items-center gap-2 justify-center py-1.5 duration-300 ease-in-out cursor-pointer ${
+                loading ? "opacity-50" : "opacity-100"
+              }`}
+            >
+              {loading && <Loader2Icon className="animate-spin" size={16} />}
+              {loading ? "SUBMITTING..." : "SUBMIT"}
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+};
 
-export default Contactform
+export default ContactForm;

@@ -31,7 +31,7 @@ const BinfinitMainDivComp: React.FC<reverseDataProps> = ({
       </div>
 
       {/* Content Section */}
-      <div className="bg-[#f4f5f6] md:w-[41.66%] w-full flex justify-center items-start md:px-20 px-8 py-6 md:py-0 flex-col">
+      <div className="bg-[#f4f5f6] md:w-[41.66%] w-full flex justify-center items-start md:px-20 px-4 py-6 md:py-0 flex-col">
         <div>
           <h3 className="text-2xl md:text-3xl font-semibold mb-3 text-black">
             {title || "Marketing"}

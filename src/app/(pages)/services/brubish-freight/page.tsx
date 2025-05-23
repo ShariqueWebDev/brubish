@@ -1,4 +1,5 @@
 // import Emblabanner from '@/components/services/freight/EBrubishabanner'
+import { WEBSITE_URL } from "@/app/layout";
 import Freightfive from "@/components/services/freight/Freightfive";
 import Freightfour from "@/components/services/freight/Freightfour";
 import Freightseven from "@/components/services/freight/Freightseven";
@@ -9,8 +10,42 @@ import Freighttwo from "@/components/services/freight/Freighttwo";
 import Freighttwox from "@/components/services/freight/Freighttwox";
 import Servicebanner2 from "@/components/shared/Servicebanner2";
 import Submenu from "@/components/shared/Submenu";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Brubish Freight – Seamless Ocean & Air Freight Forwarding Solutions",
+  description:
+    "Brubish Freight offers a one-stop digital platform for ocean and air freight forwarding, instant quotes, real-time tracking, and end-to-end shipment management for SMEs and enterprises.",
+  openGraph: {
+    title:
+      "Brubish Freight – Seamless Ocean & Air Freight Forwarding Solutions",
+    description:
+      "Experience simplified costing, door-to-door shipments, and competitive freight rates with Brubish Freight. Manage your global supply chain smoothly on one dedicated platform.",
+    url: `${WEBSITE_URL}/services/brubish-freight`,
+    type: "website",
+    images: [
+      {
+        url: `${WEBSITE_URL}/logo/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "Brubish Freight Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Brubish Freight – Seamless Ocean & Air Freight Forwarding Solutions",
+    description:
+      "Get instant freight quotes, transparent pricing, and real-time shipment updates with Brubish Freight’s comprehensive logistics platform.",
+    images: [`${WEBSITE_URL}/logo/logo.png`],
+  },
+  alternates: {
+    canonical: `${WEBSITE_URL}/services/brubish-freight`,
+  },
+};
 
 const sections = [
   {

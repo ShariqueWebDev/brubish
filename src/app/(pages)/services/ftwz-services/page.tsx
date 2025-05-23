@@ -1,3 +1,4 @@
+import { WEBSITE_URL } from "@/app/layout";
 import Ftwz1 from "@/components/ftwz/Ftwz1";
 import Ftwz2 from "@/components/ftwz/Ftwz2";
 import Ftwz3 from "@/components/ftwz/Ftwz3";
@@ -6,8 +7,43 @@ import Eximmap from "@/components/services/Eximmap";
 import FAQSection from "@/components/shared/Faqs";
 import Servicebanner3 from "@/components/shared/Servicebanner3";
 import Submenu from "@/components/shared/Submenu";
+import { Metadata } from "next";
 
 import React from "react";
+
+export const metadata: Metadata = {
+  title:
+    "Brubish FTWZ Services – Duty-Free Warehousing & Global Trade Solutions",
+  description:
+    "Simplify your global trade with Brubish FTWZ services. Get customs-free warehousing, value-added services, and seamless import-export operations from India's top Free Trade Warehousing Zone.",
+  openGraph: {
+    title:
+      "Brubish FTWZ Services – Duty-Free Warehousing & Global Trade Solutions",
+    description:
+      "Access end-to-end FTWZ logistics solutions with Brubish. Enjoy tax exemptions, duty deferment, and faster customs clearance for global re-exports and storage.",
+    url: `${WEBSITE_URL}/services/ftwz-services`,
+    type: "website",
+    images: [
+      {
+        url: `${WEBSITE_URL}/logo/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "Brubish FTWZ Warehousing Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Brubish FTWZ Services – Duty-Free Warehousing & Global Trade Solutions",
+    description:
+      "Brubish Free Trade Warehousing Zone (FTWZ) offers value-added services, duty-free import storage, and re-export flexibility for global traders and logistics providers.",
+    images: [`${WEBSITE_URL}/logo/logo.png`],
+  },
+  alternates: {
+    canonical: `${WEBSITE_URL}/services/ftwz-services`,
+  },
+};
 
 export const ftwzDatadata = [
   {

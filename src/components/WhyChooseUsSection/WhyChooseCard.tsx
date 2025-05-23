@@ -16,19 +16,20 @@ const WhyChooseCard: React.FC<WhyChooseCardProps> = ({
   iconSize = 70,
 }) => {
   return (
-    <div className="flex md:flex-row flex-col md:gap-5 gap-2 ">
+    <div className=" mb-5 ">
       <div
-        className="bg-primary flex items-center justify-center px-4 py-1"
+        className="flex gap-3 items-center !w-full py-1"
         style={{
           width: iconSize,
           height: iconSize,
         }}
       >
-        <Icon size={iconSize} color={"#fff"} />
-      </div>
-      <div>
+        <Icon size={40} color={"#ffb200 "} />
         <h4 className="text-2xl font-semibold">{title}</h4>
-        <h6 className="md:text-sm text-xs text-gray-600 line-clamp-4">
+      </div>
+      <hr className="mb-5 mt-1" />
+      <div>
+        <h6 className="md:text-sm text-xs !leading-6 tracking-wide text-gray-600 line-clamp-">
           {description}
         </h6>
       </div>

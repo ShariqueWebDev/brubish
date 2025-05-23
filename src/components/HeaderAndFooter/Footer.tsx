@@ -1,14 +1,7 @@
-
-import { ftwzData } from "@/app/layout";
-import {
-  ArrowRight,
-  MailIcon,
-  MapPin,
-  PhoneCall,
-} from "lucide-react";
+import { ftwzData, productsData } from "@/app/layout";
+import { ArrowRight, MailIcon, MapPin, PhoneCall } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-
 
 const servicesfooterdata = [
   {
@@ -105,25 +98,23 @@ const Footer = async () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className={` overflow-x-hidden `}>
-      <div className=" border-t mt-10  py-10 container px-4 mx-auto ">
+      <div className=" border-t mt-10  pt-10 pb-5 container px-4 mx-auto ">
         <div className="space-y-6">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[30%,70%]">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[20%,80%]">
             <div className="">
               <img
-                src="/bml.png"
-                className="mr-5 w-[150px] "
+                src="/logo/logo.png"
+                className="mr-5 w-[60px] mb-3 "
                 alt="Footer Logo"
               />
-              <p className="mt-2 text-sm xl:text-sm text-gray-800 ">
+              <p className="mt-2 text-sm  text-gray-800 ">
                 Brubish is a tech enabled platform aiming to transform SME’s
                 into large business with it’s end to end supply chain solutions
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-5   sm:grid-cols-2  lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-5   sm:grid-cols-2  lg:grid-cols-5">
               <div className="space-y-2">
-                <p className="font-bold text-amber-500 text-lg md:text-xl">
-                  Quick Links
-                </p>
+                <p className="font-bold text-amber-500 text-lg ">Quick Links</p>
                 <div className="w-20 h-0.5 bg-amber-500 rounded-full"></div>
                 <div className="flex text-gray-800 flex-col mt-4 space-y-2 text-sm xl:text-sm">
                   <Link
@@ -156,11 +147,11 @@ const Footer = async () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <p className="font-bold text-amber-500 text-lg md:text-xl">
+                <p className="font-bold text-amber-500 text-lg ">
                   Brubish Services
                 </p>
                 <div className="w-20 h-0.5 bg-amber-500 rounded-full"></div>
-                <div className="flex flex-col mt-4 space-y-2  text-sm xl:text-sm">
+                <div className="flex flex-col mt-4 space-y-2  text-sm ">
                   {servicesfooterdata?.map((data) => {
                     return (
                       <Link
@@ -174,7 +165,25 @@ const Footer = async () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <p className="font-bold text-lg text-amber-500 md:text-xl">
+                <p className="font-bold text-amber-500 text-lg ">
+                  Brubish Products
+                </p>
+                <div className="w-20 h-0.5 bg-amber-500 rounded-full"></div>
+                <div className="flex flex-col mt-4 space-y-2  text-sm xl:text-sm">
+                  {productsData?.map((data) => {
+                    return (
+                      <Link
+                        className="hover:text-amber-600 text-gray-800"
+                        href={`/services/${data?.url}`}
+                      >
+                        {data?.name}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="space-y-2">
+                <p className="font-bold text-lg text-amber-500 ">
                   Brubish FTWZ Services
                 </p>
                 <div className="w-20 h-0.5 bg-amber-500 text-gray-800 rounded-full"></div>
@@ -192,12 +201,12 @@ const Footer = async () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <p className="font-bold text-amber-500 text-xl">Contact Info</p>
+                <p className="font-bold text-amber-500 text-lg">Contact Info</p>
                 <div className="w-20 h-0.5 bg-amber-500 rounded-full"></div>
                 <div className="space-y-3 text-gray-800 mt-4 text-[12px] xl:text-[14px]">
                   <div className="flex  items-center space-x-2">
                     <div>
-                      <MapPin size={20} color="#000" className="min-w-5" />
+                      <MapPin size={17} color="#000" className="min-w-5" />
                     </div>
                     <h2>
                       Plot No D-9/10 ,Duvvada, Vishakhapatnam, Andhra
@@ -205,16 +214,16 @@ const Footer = async () => {
                     </h2>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <PhoneCall size={20} color="#000" />
+                    <PhoneCall size={17} color="#000" />
                     <a href="tel:+917901790164">+7901790164</a>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <PhoneCall size={20} color="#000" />
+                    <PhoneCall size={17} color="#000" />
                     <a href="tel:919631963163">9631963163</a>
                   </div>
 
                   <div className="flex items-center space-x-2">
-                    <MailIcon size={20} className="min-w-[20px]" color="#000" />
+                    <MailIcon size={17} className="min-w-[20px]" color="#000" />
                     <a href="mailto:Info@bookmylogistic.com">
                       Info@bookmylogistic.com
                     </a>

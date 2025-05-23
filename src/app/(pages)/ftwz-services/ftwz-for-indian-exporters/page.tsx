@@ -10,6 +10,8 @@ import Eximmap from "@/components/services/Eximmap";
 import One from "@/components/ftwz/indianexporter/One";
 import Ftwz4 from "@/components/ftwz/Ftwz4";
 import Image from "next/image";
+import { WEBSITE_URL } from "@/app/layout";
+import { Metadata } from "next";
 
 const sections = [
   {
@@ -33,6 +35,37 @@ const sections = [
     url: "#section4",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "FTWZ Solutions for Indian Exporters | Brubish Logistics",
+  description:
+    "Brubish FTWZ offers Indian exporters duty deferment, express clearance, GST exemption on value-added services, and seamless global trade support with integrated quality control and logistics.",
+  openGraph: {
+    title: "FTWZ Solutions for Indian Exporters | Brubish Logistics",
+    description:
+      "Export globally with Brubish FTWZ. Enjoy duty deferment, GST-free VAS, on-wheel clearance, and seamless logistics under one roof. Ideal for small and medium exporters.",
+    url: `${WEBSITE_URL}/ftwz-services/ftwz-for-indian-exporters`,
+    type: "website",
+    images: [
+      {
+        url: `${WEBSITE_URL}/logo/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "Brubish FTWZ for Indian Exporters",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FTWZ Solutions for Indian Exporters | Brubish Logistics",
+    description:
+      "FTWZ logistics tailored for Indian exporters. Access global markets, reduce overhead, get GST-free services, and ensure quality with Brubish FTWZ.",
+    images: [`${WEBSITE_URL}/logo/logo.png`],
+  },
+  alternates: {
+    canonical: `${WEBSITE_URL}/ftwz-services/ftwz-for-indian-exporters`,
+  },
+};
 
 const Page = () => {
   return (

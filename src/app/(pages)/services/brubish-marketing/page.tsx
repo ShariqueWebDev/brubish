@@ -1,3 +1,4 @@
+import { WEBSITE_URL } from "@/app/layout";
 import Ftwz4 from "@/components/ftwz/Ftwz4";
 import Sectors from "@/components/Home/Sectors";
 import Eximmap from "@/components/services/Eximmap";
@@ -14,6 +15,7 @@ import Servicebanner2 from "@/components/shared/Servicebanner2";
 import Servicebanner3 from "@/components/shared/Servicebanner3";
 import Servicebanner5 from "@/components/shared/Servicebanner5";
 import Submenu from "@/components/shared/Submenu";
+import { Metadata } from "next";
 import React from "react";
 
 const sections = [
@@ -39,6 +41,37 @@ const sections = [
     url: "#section4",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Brubish Marketing – Global Sourcing & Commodity Delivery Solutions",
+  description:
+    "Accelerate your commodity sourcing and delivery with Brubish Marketing. Reach global markets, optimize logistics, and enhance customer satisfaction with our FTWZ-based E2E supply chain services.",
+  openGraph: {
+    title: "Brubish Marketing – Global Sourcing & Commodity Delivery Solutions",
+    description:
+      "Revolutionize your sourcing journey with Brubish. We connect commodities from abundant regions to high-demand markets with FTWZ storage, last-mile delivery, and real-time visibility.",
+    url: `${WEBSITE_URL}/services/brubish-marketing`,
+    type: "website",
+    images: [
+      {
+        url: `${WEBSITE_URL}/logo/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "Brubish Marketing Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Brubish Marketing – Global Sourcing & Commodity Delivery Solutions",
+    description:
+      "Brubish offers full-spectrum commodity marketing and logistics from sourcing to last-mile delivery. Trusted by pharma, FMCG, electronics, auto, and luxury brands.",
+    images: [`${WEBSITE_URL}/logo/logo.png`],
+  },
+  alternates: {
+    canonical: `${WEBSITE_URL}/services/brubish-marketing`,
+  },
+};
 
 const Page = () => {
   return (

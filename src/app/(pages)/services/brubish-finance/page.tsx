@@ -10,6 +10,41 @@ import React from "react";
 import Submenu from "@/components/shared/Submenu";
 import Financeeight from "@/components/services/finance/Financeeight";
 import FAQSection from "@/components/shared/Faqs";
+import { Metadata } from "next";
+import { WEBSITE_URL } from "@/app/layout";
+
+export const metadata: Metadata = {
+  title: "Brubish Finance – Flexible Trade Credit & Working Capital Solutions",
+  description:
+    "Brubish Finance offers unsecured trade credit, quick approvals, and flexible payment options to help SMEs manage cash flow and grow. Apply online with minimal documents.",
+  openGraph: {
+    title:
+      "Brubish Finance – Flexible Trade Credit & Working Capital Solutions",
+    description:
+      "Unlock working capital with Brubish Finance's collateral-free loans and revolving credit. Enjoy instant disbursement, affordable rates, and simplified digital process.",
+    url: `${WEBSITE_URL}/services/finance`,
+    type: "website",
+    images: [
+      {
+        url: `${WEBSITE_URL}/logo/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: "Brubish Finance - Trade Credit & Working Capital",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Brubish Finance – Flexible Trade Credit & Working Capital Solutions",
+    description:
+      "Get unsecured working capital, flexible credit limits, and fast approvals with Brubish Finance. Perfect for SMEs needing hassle-free financing.",
+    images: [`${WEBSITE_URL}/logo/logo.png`],
+  },
+  alternates: {
+    canonical: `${WEBSITE_URL}/services/finance`,
+  },
+};
 
 const purchaseFinanceInfo = [
   {
