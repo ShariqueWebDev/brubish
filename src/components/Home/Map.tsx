@@ -26,7 +26,7 @@ const Homemap = () => {
         className="aspect-[4/1.8]   max-sm:hidden w-full !object-contain"
       />
       <Image
-        src="/home/map-image-mobile.png"
+        src="/home/small-map.png"
         width={800}
         height={800}
         alt="Brubish Mobile"

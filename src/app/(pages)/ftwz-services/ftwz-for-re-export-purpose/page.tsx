@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/logo.png`,
+        url: `${WEBSITE_URL}/logo/logo2.png`,
         width: 1200,
         height: 630,
         alt: "FTWZ Re-Export Services Brubish",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Re-Export Services from FTWZ India | Brubish Logistics",
     description:
       "Enable re-export efficiency via Brubish FTWZ: enjoy GST exemptions, income tax waivers, and advanced processing like kitting, packaging, labeling, and repairs for global logistics.",
-    images: [`${WEBSITE_URL}/logo/logo.png`],
+    images: [`${WEBSITE_URL}/logo/logo2.png`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/ftwz-services/ftwz-for-re-export-purpose`,

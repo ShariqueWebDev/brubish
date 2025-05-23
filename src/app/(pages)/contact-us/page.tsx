@@ -1,9 +1,9 @@
 // import ContactForm from '@/components/Contact/Contactform'
 import { WEBSITE_URL } from "@/app/layout";
-import ContactCard from "@/components/Contact/ContactCard";
-import ContactForm from "@/components/Contact/ContactForm";
+// import ContactCard from "@/components/Contact/ContactCard";
+import ContactForm from "../../../components/Contact/ContactForm";
 import Homemap from "@/components/Home/Map";
-import Bannerfull2 from "@/components/shared/Bannerfull2";
+// import Bannerfull2 from "@/components/shared/Bannerfull2";
 import Ftwzbanner from "@/components/shared/ftwzbanner";
 import {
   ChevronRight,
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/logo.png`,
+        url: `${WEBSITE_URL}/logo/logo2.png`,
         width: 1200,
         height: 630,
         alt: "Brubish Logistics",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Contact Brubish Logistics | Global Supply Chain & Delivery Experts",
     description:
       "Partner with Brubish to transform your logistics—from sourcing to delivery. Secure, reliable, tech-powered solutions tailored to your business.",
-    images: [`${WEBSITE_URL}/logo/logo.png`],
+    images: [`${WEBSITE_URL}/logo/logo2.png`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/contact`,

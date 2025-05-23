@@ -103,7 +103,7 @@ const Footer = async () => {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-[20%,80%]">
             <div className="">
               <img
-                src="/logo/logo.png"
+                src="/logo/logo2.png"
                 className="mr-5 w-[60px] mb-3 "
                 alt="Footer Logo"
               />

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/logo.png`,
+        url: `${WEBSITE_URL}/logo/logo2.png`,
         width: 1200,
         height: 630,
         alt: "FTWZ Consolidation Services Brubish",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Consolidation & VMI Services in FTWZ India | Brubish Logistics",
     description:
       "Reduce costs, optimize lead time, and manage inventory smarter with Brubish FTWZ's consolidation & JIT logistics model. Multi-supplier shipments simplified.",
-    images: [`${WEBSITE_URL}/logo/logo.png`],
+    images: [`${WEBSITE_URL}/logo/logo2.png`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/ftwz-services/ftwz-for-consolidation`,

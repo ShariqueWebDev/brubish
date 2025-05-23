@@ -45,9 +45,9 @@ const NewHeader = () => {
       <div className="sjcontainer flex px-5 lg:px-10  h-[13vh] w-full  mx-auto items-center justify-between transition-transform duration-300">
         <Link href={"/"} className=" max-lg:hidden ">
           {/* <div className="text-[#ffb200] text-4xl font-semibold">Brubish</div> */}
-          <div className="w-12">
+          <div className="w-14">
             <Image
-              src={"/logo/logo.png"}
+              src={"/logo/logo2.png"}
               className="w-full h-full bg-cover bg-center"
               width={300}
               height={400}
@@ -100,7 +100,7 @@ const NewHeader = () => {
               <Image
                 width={300}
                 height={400}
-                src="/logo/logo.png"
+                src="/logo/logo2.png"
                 className="w-[150px]"
                 alt="Brubish"
                 onClick={() => setMobileMenu(false)}
