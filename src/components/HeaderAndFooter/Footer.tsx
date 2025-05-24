@@ -232,9 +232,11 @@ const Footer = async () => {
 
                   <div className="flex items-center space-x-2">
                     <MailIcon size={17} className="min-w-[20px]" color="#000" />
-                    <a href="mailto:Info@bookmylogistic.com">
-                      Info@bookmylogistic.com
-                    </a>
+                    <a href="mailto:sales@brubish.com">sales@brubish.com</a>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <MailIcon size={17} className="min-w-[20px]" color="#000" />
+                    <a href="mailto:spares@brubish.co">spares@brubish.co</a>
                   </div>
                 </div>
               </div>
