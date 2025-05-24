@@ -18,7 +18,7 @@ import { Check } from "lucide-react";
 const WhyChooseUsSection = () => {
   return (
     <>
-      <div className=" md:py-4  md:px-4 ">
+      <div className=" md:pb-10 md:pt-6 md:px-4 ">
         <div className="w-full flex justify-center gap-5 items-center md:flex-row flex-col ">
           <div className="md:w-[50%] w-full ">
             <h3 className="text-primary font-semibold md:text-2xl text-base uppercase">
@@ -26,9 +26,9 @@ const WhyChooseUsSection = () => {
             </h3>
 
             <div className="md:mt-5 mt-1">
-              <h4 className="md:text-5xl text-3xl font-bold md:leading-[50px] leading-0">
+              <h4 className="md:text-5xl text-2xl font-bold md:leading-[50px] leading-0">
                 We Deliver{" "}
-                <span className="text-mainColor4 md:text-5xl text-3xl font-bold">
+                <span className="text-mainColor4 md:text-5xl text-2xl font-bold">
                   Excellence{" "}
                 </span>
                 Globally

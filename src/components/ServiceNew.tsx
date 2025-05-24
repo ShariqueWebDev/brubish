@@ -42,20 +42,20 @@ const ServiceNew: React.FC = () => {
 
   return (
     <section
-      className="pb-16"
+      className=" pt-10 pb-20  "
       style={{
         backgroundColor: "#f7f7f9",
         backgroundImage:
-          "radial-gradient(circle closest-corner at 60% 40%, #f5d14254, #fff0 52%), radial-gradient(circle farthest-side at 0 100%, #866bf04d, #fff0 31%)",
+          "radial-gradient(circle closest-corner at 60% 40%, #f5d14254, #fff0 52%),  radial-gradient(circle farthest-side at 0 100%, #866bf04d, #fff0 31%)",
       }}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-28">
+      <div className="container mx-auto px-4 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 space-y-8 md:pl-22">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <span className="bg-[#feba0d] text-black text-sm font-semibold px-3 py-1 rounded-full">
+                <span className="bg-[#feba0d] !text-xs text-black inline-block font-semibold px-3 py-1 rounded-full">
                   Brubish India Private Limited
                 </span>
                 <div className="w-2 h-2 bg-gray-300 rounded-full" />
@@ -71,7 +71,7 @@ const ServiceNew: React.FC = () => {
               Leaders in shipping Solution
             </h1>
 
-            <p className="text-lg text-gray-600 max-w-xl">
+            <p className="text-sm text-gray-600 max-w-xl tracking-wide leading-6">
               Our vision is to become a leader in the field of{" "}
               <span className="font-semibold">shipping </span> solutions with
               timely supply of high quality services to the marine business
@@ -80,14 +80,14 @@ const ServiceNew: React.FC = () => {
 
             <a
               href="/contact"
-              className="inline-flex items-center bg-[#fdcc4f] text-white px-6 py-3 rounded-lg hover:bg-[#9f833b] transition-colors duration-300 group"
+              className="inline-flex items-center bg-[#fdcc4f] text-white px-5 py-2 rounded-lg hover:bg-[#9f833b] transition-colors duration-300 group"
             >
-              <span className="text-base font-medium">Inquire Now</span>
+              <span className="text-sm font-medium">Inquire Now</span>
               <Image
                 src="https://cdn.prod.website-files.com/6787a0ca9071ad357581470a/67969a629020ff1b34e0680b_Primary%20Button%20Icon.svg"
                 alt="Arrow"
-                width={15}
-                height={15}
+                width={10}
+                height={10}
                 className="ml-2 group-hover:translate-x-1 transition-transform"
               />
             </a>
@@ -95,7 +95,7 @@ const ServiceNew: React.FC = () => {
 
           {/* Right Slider */}
           <div className="w-full lg:w-1/2 relative">
-            <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden rounded-lg">
+            <div className="relative w-full h-[230px]  md:!h-[450px]  overflow-hidden rounded-lg">
               {/* {images.map((image, index) => (
                 <div
                   key={index}
@@ -116,7 +116,7 @@ const ServiceNew: React.FC = () => {
               {images.map((image) => (
                 <div
                   key={image.src}
-                  className={`absolute inset-0 transition-opacity duration-500 ${
+                  className={`absolute inset-0 transition-opacity rounded-lg overflow-hidden duration-500 ${
                     image === images[currentSlide] ? "opacity-100" : "opacity-0"
                   }`}
                 >
@@ -124,7 +124,7 @@ const ServiceNew: React.FC = () => {
                     src={image.src}
                     alt={image.alt}
                     fill
-                    className="object-contain rounded-sm"
+                    className="object-contain rounded-lg"
                     sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                   />
                 </div>
@@ -132,7 +132,7 @@ const ServiceNew: React.FC = () => {
             </div>
 
             {/* Slider Navigation */}
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-4">
+            <div className="absolute md:-bottom-12 -bottom-14 xl:-bottom-8 left-0 right-0 flex justify-center gap-4 ">
               <button
                 onClick={prevSlide}
                 className="bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md transition-colors"

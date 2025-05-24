@@ -14,6 +14,7 @@ import {
   GalleryItem3,
   galleryItems,
 } from "../../../../lib/productsData/products_data";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection/WhyChooseUsSection";
 
 const ProductPage = () => {
   const params = useParams();
@@ -33,8 +34,13 @@ const ProductPage = () => {
   return (
     <section>
       <ServiceNew />
-      <AboutTech />
-      <AdvantageWeb />
+      {/* <AboutTech /> */}
+      <div className="md:px-16 px-4  py-10">
+        <WhyChooseUsSection />
+      </div>
+      <div className="md:px-20 px-4">
+        <AdvantageWeb />
+      </div>
       <AwardWay />
 
       {currentGallery?.products?.map((item: any, index: number) => {

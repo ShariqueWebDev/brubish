@@ -44,11 +44,11 @@ export default function Lightbox({
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="pt-16 md:px-12 ">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <span className="inline-block mb-4 bg-blue-100 text-blue-600 text-sm font-semibold px-4 py-2 rounded-full">
+        <div className="text-center mb-7">
+          <span className="inline-block mb-5 md:text-3xl text-2xl uppercase text-gray-800  font-semibold ">
             {main_title}
           </span>
         </div>
@@ -59,7 +59,7 @@ export default function Lightbox({
             <div
               key={index}
               onClick={() => openGallery(index)}
-              className="cursor-pointer bg-gray-100 text-gray-900 rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105"
+              className="cursor-pointer bg-gray-100 border border-gray-100 text-gray-900 rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105"
             >
               <div className="max-w-[300px] ">
                 <Image

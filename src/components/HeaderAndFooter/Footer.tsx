@@ -111,6 +111,14 @@ const Footer = async () => {
                 Brubish is a tech enabled platform aiming to transform SME’s
                 into large business with it’s end to end supply chain solutions
               </p>
+              <div className=" mt-3 bg-primary rounded-md p-3">
+                <p className="text-sm font-semibold text-gray-900 mb-1">
+                  Ship Server ID : TN-316609
+                </p>
+                <p className="text-sm font-semibold text-gray-900">
+                  Procure PS ID : 15743
+                </p>
+              </div>
             </div>
             <div className="grid grid-cols-1 gap-5   sm:grid-cols-2  lg:grid-cols-5">
               <div className="space-y-2">

@@ -133,32 +133,14 @@ export default function AwardWay(): JSX.Element {
   ];
 
   return (
-    <section className="bg-gray-100/50 md:py-15">
+    <section className=" md:!py-16 py-10">
       <div className="mx-auto max-w-screen-xl px-4">
         {/* Header Section */}
         <div className="mb-10 text-center">
-          <div className="inline-flex items-center gap-1.5 rounded-lg bg-blue-500/10 p-2 text-xs font-bold uppercase text-blue-600 lg:text-sm">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-5 w-5 shrink-0 text-blue-700"
-            >
-              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
-              <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path>
-            </svg>
-            Certificates
-          </div>
-          <h2 className="mb-5 font-roboto text-2xl font-semibold text-gray-900 sm:text-3xl lg:text-4xl">
+          <h2 className="mb-5 uppercase  font-semibold text-gray-800 md:text-3xl text-2xl ">
             Awards & Achievements
           </h2>
-          <p className="mx-auto max-w-lg text-sm text-gray-600 lg:text-base">
+          <p className="mx-auto md:px-60 text-sm text-gray-600">
             We are honored to receive industry awards and recognition for our
             commitment to exceptional patient care, innovation, and service.
           </p>

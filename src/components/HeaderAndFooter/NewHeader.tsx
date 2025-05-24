@@ -42,7 +42,7 @@ const NewHeader = () => {
     <header
       className={`   shadow-[0_3px_10px_rgb(0,0,0,0.2)] sticky top-0 z-50 bg-white `}
     >
-      <div className="sjcontainer flex px-5 lg:px-10  h-[13vh] w-full  mx-auto items-center justify-between transition-transform duration-300">
+      <div className="sjcontainer flex px-5 lg:px-10  md:h-[13vh] w-full  mx-auto items-center justify-between transition-transform duration-300">
         <Link href={"/"} className=" max-lg:hidden ">
           {/* <div className="text-[#ffb200] text-4xl font-semibold">Brubish</div> */}
           <div className="w-14">

@@ -58,14 +58,14 @@ const features: Feature[] = [
 
 const AdvantageWeb: React.FC = () => {
   return (
-    <section id="feature" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <section id="feature" className="md:!py-16 py-10 bg-gray-50 p-4 md:p-10">
+      <div className=" mx-auto ">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <span className="inline-block mb-4 bg-blue-100 text-blue-600 text-sm font-semibold px-4 py-2 rounded-full">
+          <span className="inline-block mb-5 md:text-3xl text-2xl font-semibold text-gray-800 uppercase">
             Our Advantages
           </span>
-          <h2 className="text-sm md:text-xl font-normal text-gray-900">
+          <h2 className="text-sm md:px-60 font-normal text-gray-900">
             Our every product is original, in top working condition and of the
             best possible quality, to provide reliable solutions for your marine
             business needs. We offer competitive prices for our valued customers
@@ -99,16 +99,18 @@ const AdvantageWeb: React.FC = () => {
               key={feature.title}
               className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md"
             >
-              <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+              <h3 className="text-2xl font-semibold mb-2 text-gray-800">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 mb-4">{feature.description}</p>
+              <p className="text-gray-600 text-sm mb-4">
+                {feature.description}
+              </p>
               <Image
                 src={feature.image}
                 alt={feature.alt}
                 width={75}
                 height={50}
-                className="w-full max-w-[75px] h-auto"
+                className="w-full max-w-[50px] h-auto"
                 sizes="(max-width: 479px) 100vw, 75px"
               />
             </div>
