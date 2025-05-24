@@ -1,28 +1,31 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
   EmblaCarouselType,
   EmblaEventType,
-  EmblaOptionsType
-} from 'embla-carousel';
-import useEmblaCarousel from 'embla-carousel-react';
-import './EmblaCarousel.css';
-import Image from 'next/image';
-import Subheading from '@/components/shared/Subheading';
+  EmblaOptionsType,
+} from "embla-carousel";
+import useEmblaCarousel from "embla-carousel-react";
+import "./EmblaCarousel.css";
+import Image from "next/image";
+import Subheading from "@/components/shared/Subheading";
 
 const TWEEN_FACTOR_BASE = 0.2;
 
 const data = [
   {
-    img: '/services/freight/24.png',
-    title: 'Instantly compare air, Ocean, and trucking freight quotes from 75+ providers with the perfect balance of price and transit time',
+    img: "/services/freight/frieght-3.webp",
+    title:
+      "Instantly compare air, Ocean, and trucking freight quotes from 75+ providers with the perfect balance of price and transit time",
   },
   {
-    img: '/services/freight/25.png',
-    title: 'Refreshingly easy logistics management with milestone tracking and proactive issue resolution from vetted providers you can trust',
+    img: "/services/freight/frieght-4.webp",
+    title:
+      "Refreshingly easy logistics management with milestone tracking and proactive issue resolution from vetted providers you can trust",
   },
   {
-    img: '/services/freight/26.png',
-    title: 'Our Freight Team is available to help with every step of your shipment process, from document to delivery specifics',
+    img: "/services/freight/frieght-5.webp",
+    title:
+      "Our Freight Team is available to help with every step of your shipment process, from document to delivery specifics",
   },
 ];
 
@@ -44,7 +47,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const setTweenNodes = useCallback((emblaApi: EmblaCarouselType): void => {
     tweenNodes.current = emblaApi
       .slideNodes()
-      .map((slideNode) => slideNode.querySelector('.embla__slide__numberfr') as HTMLElement)
+      .map(
+        (slideNode) =>
+          slideNode.querySelector(".embla__slide__numberfr") as HTMLElement
+      )
       .filter((node) => node !== null);
   }, []);
 
@@ -57,7 +63,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       const engine = emblaApi.internalEngine();
       const scrollProgress = emblaApi.scrollProgress();
       const slidesInView = emblaApi.slidesInView();
-      const isScrollEvent = eventName === 'scroll';
+      const isScrollEvent = eventName === "scroll";
 
       emblaApi.scrollSnapList().forEach((scrollSnap, snapIndex) => {
         let diffToTarget = scrollSnap - scrollProgress;
@@ -115,12 +121,12 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     setTweenFactor(emblaApi);
     tweenScale(emblaApi);
     emblaApi
-      .on('reInit', setTweenNodes)
-      .on('reInit', setTweenFactor)
-      .on('reInit', tweenScale)
-      .on('scroll', tweenScale)
-      .on('slideFocus', tweenScale);
-    emblaApi.on('select', onSelect);
+      .on("reInit", setTweenNodes)
+      .on("reInit", setTweenFactor)
+      .on("reInit", tweenScale)
+      .on("scroll", tweenScale)
+      .on("slideFocus", tweenScale);
+    emblaApi.on("select", onSelect);
   }, [emblaApi, tweenScale, onSelect]);
 
   return (
@@ -131,21 +137,25 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       />
 
       <div className="flex items-center max-w-[800px] justify-around mx-auto md:pl-6 mt-6 md:mt-10 mb-8">
-        {['Compare', 'Manage and Track', 'Get Extra Support']?.map((heading, index) => (
-          <div
-            key={heading}
-            className="embla__slide__numberfr cursor-pointer"
-            onClick={() => scrollToIndex(index)}
-          >
-            <h3
-              className={`duration-500 ${
-                currentIndex === index ? 'text-black scale-110' : 'text-gray-500'
-              } font-[400] text-sm mx-4 pb-1 md:text-xl text-center`}
+        {["Compare", "Manage and Track", "Get Extra Support"]?.map(
+          (heading, index) => (
+            <div
+              key={heading}
+              className="embla__slide__numberfr cursor-pointer"
+              onClick={() => scrollToIndex(index)}
             >
-              {heading}
-            </h3>
-          </div>
-        ))}
+              <h3
+                className={`duration-500 ${
+                  currentIndex === index
+                    ? "text-black scale-110"
+                    : "text-gray-500"
+                } font-[400] text-sm mx-4 pb-1 md:text-xl text-center`}
+              >
+                {heading}
+              </h3>
+            </div>
+          )
+        )}
       </div>
       <div className="embla__viewportfr" ref={emblaRef}>
         <div className="embla__containerfr">

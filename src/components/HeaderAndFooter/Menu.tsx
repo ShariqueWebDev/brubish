@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { ftwzData, productsData, servicesData } from "@/app/layout";
 import Image from "next/image";
 import Link from "next/link";
@@ -244,6 +244,15 @@ const Menu = ({
                       ? "text-amber-600 border-white"
                       : "border-transparent hover:text-amber-600 group"
                   } pb-1`}
+                  onClick={(e) => {
+                    if (item?.name === "About Us") {
+                      e.preventDefault(); // Prevent link navigation
+                      window.scrollTo({
+                        top: window.innerHeight * 0.9,
+                        behavior: "smooth",
+                      });
+                    }
+                  }}
                 >
                   <Link href={item?.url}>{item.name}</Link>
                   <span

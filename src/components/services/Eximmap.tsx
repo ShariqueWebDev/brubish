@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import React from 'react'
-import Subheading from '../shared/Subheading'
+import Image from "next/image";
+import React from "react";
+import Subheading from "../shared/Subheading";
 
 const Eximmap = () => {
   return (
@@ -10,7 +10,7 @@ const Eximmap = () => {
         className=" text-center mb-4 lg:mb-8 mt-4 lg:mt-10"
       />
       <Image
-        src="/eximmap.png"
+        src="/eximap.webp"
         alt="map"
         height={1600}
         width={1400}
@@ -85,6 +85,6 @@ const Eximmap = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Eximmap
+export default Eximmap;

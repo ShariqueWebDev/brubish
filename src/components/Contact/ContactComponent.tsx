@@ -221,7 +221,7 @@ const ContactComp = () => {
                   className="text-sm tracking-wide text-gray-600"
                   data-aos="fade-up"
                 >
-                  Info@bookmylogistic.com
+                  sales@brubish.com
                 </p>
               </div>
             </div>

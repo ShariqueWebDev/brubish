@@ -97,14 +97,14 @@ export const footerftwzData = [
 const Footer = async () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className={` overflow-x-hidden `}>
+    <footer className={` overflow-x-hidden  `}>
       <div className=" border-t mt-10  pt-10 pb-5 container px-4 mx-auto ">
         <div className="space-y-6">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-[20%,80%]">
             <div className="">
               <img
-                src="/logo/logo2.png"
-                className="mr-5 w-[60px] mb-3 "
+                src="/logo/brubish-logo.webp"
+                className="mr-5 w-[150px] mb-3 -ml-2 "
                 alt="Footer Logo"
               />
               <p className="mt-2 text-sm  text-gray-800 ">

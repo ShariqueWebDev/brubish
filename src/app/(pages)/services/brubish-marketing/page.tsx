@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/logo2.png`,
+        url: `${WEBSITE_URL}/logo/brubish-logo.webp`,
         width: 1200,
         height: 630,
         alt: "Brubish Marketing Services",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     title: "Brubish Marketing – Global Sourcing & Commodity Delivery Solutions",
     description:
       "Brubish offers full-spectrum commodity marketing and logistics from sourcing to last-mile delivery. Trusted by pharma, FMCG, electronics, auto, and luxury brands.",
-    images: [`${WEBSITE_URL}/logo/logo2.png`],
+    images: [`${WEBSITE_URL}/logo/brubish-logo.webp`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/services/brubish-marketing`,

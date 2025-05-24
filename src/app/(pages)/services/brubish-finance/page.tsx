@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/logo2.png`,
+        url: `${WEBSITE_URL}/logo/brubish-logo.webp`,
         width: 1200,
         height: 630,
         alt: "Brubish Finance - Trade Credit & Working Capital",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       "Brubish Finance – Flexible Trade Credit & Working Capital Solutions",
     description:
       "Get unsecured working capital, flexible credit limits, and fast approvals with Brubish Finance. Perfect for SMEs needing hassle-free financing.",
-    images: [`${WEBSITE_URL}/logo/logo2.png`],
+    images: [`${WEBSITE_URL}/logo/brubish-logo.webp`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/services/finance`,
@@ -117,7 +117,7 @@ const Page = () => {
         description="Brubish Finance offers trade credit, financing, and flexible payment options. Manage cash flow and grow your business with ease."
         buttontext="Get Started"
         buttonlink="/services"
-        bannerImage="/services/finance/banner.png"
+        bannerImage="/services/finance/brubish-banner.webp"
       />
       <Submenu sections={sections} />
       <div className="scroll-mt-[25vh] md:scroll-mt-[22vh]" id="section1">

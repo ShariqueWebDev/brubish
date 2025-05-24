@@ -25,7 +25,7 @@ export async function sendContactEnquiry({
 
   try {
     await sendmail({
-      to: "shariquedev966@gmail.com",
+      to: "sales@brubish.com",
       name: "Brubish",
       subject: "Contact Form Enquiry (Brubish)",
       body: emailBody,

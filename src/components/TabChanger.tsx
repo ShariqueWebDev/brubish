@@ -331,7 +331,7 @@ const AnimatedTab = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
 
   return (
-    <div className="min-h-screen flex gap-10 md:flex-row flex-col justify-center md:px-20 px-4 mt-16 text-black">
+    <div className="min-h- flex gap-10 md:flex-row flex-col justify-center md:px-20 px-4 !my-16 text-black">
       {/* Left 50% - Text Content */}
       <div className="w-full lg:w-1/2 space-y-10  text-sm leading-relaxed">
         {/* Shared Item Template */}

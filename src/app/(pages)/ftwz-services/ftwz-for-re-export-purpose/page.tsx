@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/logo2.png`,
+        url: `${WEBSITE_URL}/logo/brubish-logo.webp`,
         width: 1200,
         height: 630,
         alt: "FTWZ Re-Export Services Brubish",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Re-Export Services from FTWZ India | Brubish Logistics",
     description:
       "Enable re-export efficiency via Brubish FTWZ: enjoy GST exemptions, income tax waivers, and advanced processing like kitting, packaging, labeling, and repairs for global logistics.",
-    images: [`${WEBSITE_URL}/logo/logo2.png`],
+    images: [`${WEBSITE_URL}/logo/brubish-logo.webp`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/ftwz-services/ftwz-for-re-export-purpose`,
@@ -73,7 +73,7 @@ const Page = () => {
     <div className="overflow-x-hidden">
       <div className="aspect-[2.67] max-md:hidden ">
         <Image
-          src="/ftwz/banners/reexports.png"
+          src="/ftwz/banners/ftwz-11.webp"
           width={1600}
           height={1000}
           alt="Small Square"
@@ -82,7 +82,7 @@ const Page = () => {
       </div>
       <div className="aspect-[1]  md:hidden ">
         <Image
-          src="/ftwz/banners/reexports-mobile.png"
+          src="/ftwz/banners/ftwz-18.webp"
           width={1600}
           height={1000}
           alt="Small Square"

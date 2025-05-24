@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/logo2.png`,
+        url: `${WEBSITE_URL}/logo/brubish-logo.webp`,
         width: 1200,
         height: 630,
         alt: "Brubish FTWZ for Indian Exporters",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "FTWZ Solutions for Indian Exporters | Brubish Logistics",
     description:
       "FTWZ logistics tailored for Indian exporters. Access global markets, reduce overhead, get GST-free services, and ensure quality with Brubish FTWZ.",
-    images: [`${WEBSITE_URL}/logo/logo2.png`],
+    images: [`${WEBSITE_URL}/logo/brubish-logo.webp`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/ftwz-services/ftwz-for-indian-exporters`,
@@ -76,7 +76,7 @@ const Page = () => {
       {/* <Ftwzbanner title="FTWZ For Indian Exporters" bgImg="/about/about.jpg" /> */}
       <div className="aspect-[2.67] max-md:hidden ">
         <Image
-          src="/ftwz/banners/indianexporters.png"
+          src="/ftwz/ftwz-6.webp"
           width={1600}
           height={1000}
           alt="Small Square"
@@ -85,7 +85,7 @@ const Page = () => {
       </div>
       <div className="aspect-[1]  md:hidden ">
         <Image
-          src="/ftwz/banners/indian-exporters-mobile.png"
+          src="/ftwz/banners/ftwz-14.webp"
           width={1600}
           height={1000}
           alt="Small Square"
