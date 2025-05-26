@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/brubish-logo.webp`,
+        url: `${WEBSITE_URL}/logo/logo1.png`,
         width: 1200,
         height: 630,
         alt: "Brubish Logistics",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Brubish Logistics",
     description:
       "Brubish offer duty free economic activity in line with local trade and commerce regulations.",
-    images: [`${WEBSITE_URL}/logo/brubish-logo.webp`],
+    images: [`${WEBSITE_URL}/logo/logo1.png`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}`,

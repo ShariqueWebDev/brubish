@@ -103,8 +103,8 @@ const Footer = async () => {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-[20%,80%]">
             <div className="">
               <img
-                src="/logo/brubish-logo.webp"
-                className="mr-5 w-[150px] mb-3 -ml-2 "
+                src="/logo/logo1.png"
+                className="mr-5 w-[200px] mb-3 -ml-2 "
                 alt="Footer Logo"
               />
               <p className="mt-2 text-sm  text-gray-800 ">
@@ -243,7 +243,7 @@ const Footer = async () => {
             </div>
           </div>
           <hr />
-          <p className="mt- text-sm xl:text-sm md:text-center">
+          <p className="mt- text-sm xl:text-sm text-center">
             © {currentYear} All Rights Reserved{" "}
             <a href="/" className="text-amber-500" target="_blank">
               Brubish

@@ -45,9 +45,9 @@ const NewHeader = () => {
       <div className="sjcontainer flex px-5 lg:px-10  md:h-[13vh] w-full  mx-auto items-center justify-between transition-transform duration-300">
         <Link href={"/"} className=" max-lg:hidden ">
           {/* <div className="text-[#ffb200] text-4xl font-semibold">Brubish</div> */}
-          <div className="w-36 !-ml-1.5">
+          <div className="w-52 !ml-1.5 mt-">
             <Image
-              src={"/logo/brubish-logo.webp"}
+              src={"/logo/logo1.png"}
               className="w-full h-full bg-cover bg-center"
               width={300}
               height={400}
@@ -96,11 +96,11 @@ const NewHeader = () => {
           <SocialIcons />
         </div> */}
           <Link href={"/"} className="block  lg:hidden">
-            <div className="w-28 !-ml-1">
+            <div className="w-40 mt-2 !-ml-4">
               <Image
                 width={300}
                 height={400}
-                src="/logo/brubish-logo.webp"
+                src="/logo/logo1.png"
                 className="w-full h-full object-cover object-center"
                 alt="Brubish"
                 onClick={() => setMobileMenu(false)}

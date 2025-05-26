@@ -35,13 +35,13 @@ const ProductPage = () => {
     <section>
       <ServiceNew />
       {/* <AboutTech /> */}
+      <AwardWay />
       <div className="md:px-16 px-4  py-10">
         <WhyChooseUsSection />
       </div>
       <div className="md:px-20 px-4">
         <AdvantageWeb />
       </div>
-      <AwardWay />
 
       {currentGallery?.products?.map((item: any, index: number) => {
         // console.log(item);

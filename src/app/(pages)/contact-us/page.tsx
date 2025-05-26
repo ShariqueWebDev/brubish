@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/brubish-logo.webp`,
+        url: `${WEBSITE_URL}/logo/logo1.png`,
         width: 1200,
         height: 630,
         alt: "Brubish Logistics",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Contact Brubish Logistics | Global Supply Chain & Delivery Experts",
     description:
       "Partner with Brubish to transform your logistics—from sourcing to delivery. Secure, reliable, tech-powered solutions tailored to your business.",
-    images: [`${WEBSITE_URL}/logo/brubish-logo.webp`],
+    images: [`${WEBSITE_URL}/logo/logo1.png`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/contact`,

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/brubish-logo.webp`,
+        url: `${WEBSITE_URL}/logo/logo1.png`,
         width: 1200,
         height: 630,
         alt: "Brubish FTWZ Warehousing Services",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
       "Brubish FTWZ Services – Duty-Free Warehousing & Global Trade Solutions",
     description:
       "Brubish Free Trade Warehousing Zone (FTWZ) offers value-added services, duty-free import storage, and re-export flexibility for global traders and logistics providers.",
-    images: [`${WEBSITE_URL}/logo/brubish-logo.webp`],
+    images: [`${WEBSITE_URL}/logo/logo1.png`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/services/ftwz-services`,

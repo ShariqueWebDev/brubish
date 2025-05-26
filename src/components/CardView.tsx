@@ -8,6 +8,7 @@ import "lightgallery/css/lg-thumbnail.css";
 import lightGallery from "lightgallery";
 import lgZoom from "lightgallery/plugins/zoom";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
+// import Image from "next/image";
 import { Image } from "antd";
 
 export default function Lightbox({
@@ -61,11 +62,13 @@ export default function Lightbox({
               onClick={() => openGallery(index)}
               className="cursor-pointer bg-gray-100 border border-gray-100 text-gray-900 rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105"
             >
-              <div className="max-w-[300px] ">
+              <div className="max-w-[350px] ">
                 <Image
+                  // width={500}
+                  // height={500}
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-full object-contain"
+                  className="!w-full !h-full object-cover object-center"
                 />
               </div>
 
