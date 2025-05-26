@@ -96,7 +96,7 @@ const NewHeader = () => {
           <SocialIcons />
         </div> */}
           <Link href={"/"} className="block  lg:hidden">
-            <div className="w-40 mt-2 !-ml-4">
+            <div className="w-40 mt-2 ">
               <Image
                 width={300}
                 height={400}
