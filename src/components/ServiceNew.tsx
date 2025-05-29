@@ -8,7 +8,7 @@ interface Slide {
   alt: string;
 }
 
-const ServiceNew: React.FC = () => {
+const ServiceNew = ({ imgData }: { imgData: any }) => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
   const images: Slide[] = [
     {
@@ -44,18 +44,22 @@ const ServiceNew: React.FC = () => {
     <section
       className=" pt-10 pb-20  "
       style={{
-        backgroundColor: "#f7f7f9",
-        backgroundImage:
-          "radial-gradient(circle closest-corner at 60% 40%, #f5d14254, #fff0 52%),  radial-gradient(circle farthest-side at 0 100%, #866bf04d, #fff0 31%)",
+        // backgroundColor: "#f7f7f9",
+        backgroundImage: `url(${imgData})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        position: "relative",
+        // "radial-gradient(circle closest-corner at 60% 40%, #f5d14254, #fff0 52%),  radial-gradient(circle farthest-side at 0 100%, #866bf04d, #fff0 31%)",
       }}
     >
+      <div className="absolute top-0 left-0 bg-black/70 inset-0"></div>
       <div className="container mx-auto px-4 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left Content */}
-          <div className="w-full lg:w-1/2 space-y-8 md:pl-22">
+          <div className="w-full relative lg:w-1/2 space-y-8 md:pl-22">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <span className="bg-[#feba0d] !text-xs text-black inline-block font-semibold px-3 py-1 rounded-full">
+                <span className="bg-[#feba0d]  !text-xs text-black inline-block font-semibold px-3 py-1 rounded-full">
                   Brubish India Private Limited
                 </span>
                 <div className="w-2 h-2 bg-gray-300 rounded-full" />
@@ -67,11 +71,11 @@ const ServiceNew: React.FC = () => {
               </div>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl  sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Leaders in shipping Solution
             </h1>
 
-            <p className="text-sm text-gray-600 max-w-xl tracking-wide leading-6">
+            <p className="text-sm text-gray-300 max-w-xl tracking-wide leading-6">
               Our vision is to become a leader in the field of{" "}
               <span className="font-semibold">shipping </span> solutions with
               timely supply of high quality services to the marine business

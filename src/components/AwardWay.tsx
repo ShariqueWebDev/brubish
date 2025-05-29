@@ -138,11 +138,14 @@ export default function AwardWay(): JSX.Element {
         {/* Header Section */}
         <div className="mb-10 text-center">
           <h2 className="mb-5 uppercase  font-semibold text-gray-800 md:text-3xl text-2xl ">
-            Awards & Achievements
+            Certifications
           </h2>
           <p className="mx-auto md:px-60 text-sm text-gray-600">
-            We are honored to receive industry awards and recognition for our
-            commitment to exceptional patient care, innovation, and service.
+            We are proud to be ISO 14001:2015 and ISO 45001:2018 certified,
+            demonstrating our commitment to environmental responsibility and
+            occupational health and safety. These certifications reflect our
+            dedication to maintaining high standards in sustainable operations
+            and ensuring a safe working environment
           </p>
         </div>
 

@@ -15,6 +15,11 @@ import {
   galleryItems,
 } from "../../../../lib/productsData/products_data";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection/WhyChooseUsSection";
+import ProductSectionChooseUs from "@/components/WhyChooseUsSection/ProductSectionChooseUs";
+import {
+  // pageDataDetials,
+  ProductPageDataDetials,
+} from "../../../../lib/productsData/pageData";
 
 const ProductPage = () => {
   const params = useParams();
@@ -23,6 +28,11 @@ const ProductPage = () => {
   const currentGallery = galleryItems.find(
     (item: GalleryItem3) => item.slug === slug
   );
+
+  const pageSectionData = ProductPageDataDetials.find(
+    (item: any) => item.slug === slug
+  );
+
   // console.log(currentGallery);
 
   if (!currentGallery) {
@@ -33,11 +43,14 @@ const ProductPage = () => {
 
   return (
     <section>
-      <ServiceNew />
+      <ServiceNew imgData={pageSectionData?.bgImg} />
       {/* <AboutTech /> */}
       <AwardWay />
       <div className="md:px-16 px-4  py-10">
-        <WhyChooseUsSection />
+        {/* <WhyChooseUsSection /> */}
+        <div className="">
+          <ProductSectionChooseUs data={pageSectionData} />
+        </div>
       </div>
       <div className="md:px-20 px-4">
         <AdvantageWeb />
