@@ -37,7 +37,7 @@ const ProductSectionChooseUs = ({ data }: { data: any }) => {
                 <p className="text-sm mt-5 leading-7 text-gray-700">
                   {data?.whyChooseUs?.desc1}
                 </p>
-                <p className="text-sm mt- leading-7 text-gray-700">
+                <p className="text-sm mt-2 leading-7 text-gray-700">
                   {data?.whyChooseUs?.desc2}
                 </p>
               </div>

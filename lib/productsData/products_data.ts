@@ -443,4 +443,112 @@ export const galleryItems: GalleryItem3[] = [
       },
     ],
   },
+  {
+    page_name: "Vessel Spares & Parts",
+    slug: "agri-products",
+    products: [
+      // Focus Products
+      {
+        main_title: "Agriculture & Products",
+        product_detail: [
+          {
+            title: "Micro Nutrients",
+            image: "/productSectionImage/agriculture/nutrient.webp",
+          },
+          {
+            title: "Water Soluble",
+            image: "/productSectionImage/agriculture/water-sol.webp",
+          },
+          {
+            title: "Organic & Bio Products",
+            image: "/productSectionImage/agriculture/bio.webp",
+          },
+          {
+            title: "High Density",
+            image: "/productSectionImage/agriculture/hd.webp",
+          },
+          {
+            title: "Crop Specific",
+            image: "/productSectionImage/agriculture/crop.webp",
+          },
+          {
+            title: "Fertilizer Pastilles",
+            image: "/productSectionImage/agriculture/fertilizer.webp",
+          },
+          {
+            title: "Plant Protection",
+            image: "/productSectionImage/agriculture/protection.webp",
+          },
+          {
+            title: "Aqua Culture & Animal Nutrition",
+            image: "/productSectionImage/agriculture/cultural.webp",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    page_name: "Vessel Spares & Parts",
+    slug: "paper-pulp",
+    products: [
+      // Focus Products
+      {
+        main_title: "Paper & Pulp",
+        product_detail: [
+          {
+            title: "Bio-Based Textile fibres",
+            image: "/productSectionImage/paper-pulp/bio-based.webp",
+          },
+          {
+            title: "Board & Packaging",
+            image: "/productSectionImage/paper-pulp/board-pack.webp",
+          },
+          {
+            title: "Paper Industry",
+            image: "/productSectionImage/paper-pulp/paper-indus.webp",
+          },
+          {
+            title: "Pulp Industry",
+            image: "/productSectionImage/paper-pulp/pulp-indus.webp",
+          },
+          {
+            title: "Tissue & Sanitary Products",
+            image: "/productSectionImage/paper-pulp/tissue.webp",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    page_name: "Vessel Spares & Parts",
+    slug: "steel",
+    products: [
+      // Focus Products
+      {
+        main_title: "Paper & Pulp",
+        product_detail: [
+          {
+            title: "Bio-Based Textile fibres",
+            image: "/productSectionImage/paper-pulp/bio-based.webp",
+          },
+          {
+            title: "Board & Packaging",
+            image: "/productSectionImage/paper-pulp/board-pack.webp",
+          },
+          {
+            title: "Paper Industry",
+            image: "/productSectionImage/paper-pulp/paper-indus.webp",
+          },
+          {
+            title: "Pulp Industry",
+            image: "/productSectionImage/paper-pulp/pulp-indus.webp",
+          },
+          {
+            title: "Tissue & Sanitary Products",
+            image: "/productSectionImage/paper-pulp/tissue.webp",
+          },
+        ],
+      },
+    ],
+  },
 ];

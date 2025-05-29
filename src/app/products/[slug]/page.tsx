@@ -20,6 +20,7 @@ import {
   // pageDataDetials,
   ProductPageDataDetials,
 } from "../../../../lib/productsData/pageData";
+import Image from "next/image";
 
 const ProductPage = () => {
   const params = useParams();
@@ -41,10 +42,37 @@ const ProductPage = () => {
     );
   }
 
+  console.log(pageSectionData);
+
   return (
     <section>
       <ServiceNew imgData={pageSectionData?.bgImg} />
       {/* <AboutTech /> */}
+
+      <div className="relative md:mt-16 mt-10 h-[300px]">
+        {/* Background Image */}
+        <Image
+          src={pageSectionData?.bottomImg || ""}
+          width={1600}
+          height={700}
+          alt=""
+          className="object-cover w-full h-[300px]"
+        />
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/70"></div>
+
+        {/* Text Content Overlay */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 text-white ">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            {pageSectionData?.topTitle}
+          </h2>
+          <p className=" text-sm text-gray-300 md:px-60 ">
+            {pageSectionData?.topDesc}
+          </p>
+        </div>
+      </div>
+
       <AwardWay />
       <div className="md:px-16 px-4  py-10">
         {/* <WhyChooseUsSection /> */}
