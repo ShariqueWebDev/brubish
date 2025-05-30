@@ -42,17 +42,26 @@ const ServiceNew = ({ imgData }: { imgData: any }) => {
 
   return (
     <section
-      className=" pt-10 pb-20  "
+      className=" py-20 md:h-[90vh] h-[80vh] overflow-hidden "
       style={{
         // backgroundColor: "#f7f7f9",
-        backgroundImage: `url(${imgData})`,
+        // backgroundImage: `url(${imgData})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         position: "relative",
         // "radial-gradient(circle closest-corner at 60% 40%, #f5d14254, #fff0 52%),  radial-gradient(circle farthest-side at 0 100%, #866bf04d, #fff0 31%)",
       }}
     >
-      <div className="absolute top-0 left-0 bg-black/70 inset-0"></div>
+      <div className="absolute left-0 top-0 !overflow-hidden">
+        <Image
+          src={imgData}
+          width={2000}
+          height={1000}
+          alt=""
+          className="w-full md:!h-full h-[90vh] object-cover object-center"
+        />
+      </div>
+      <div className="bg-gradient-to-r from-black/80 via-black/60 absolute top-0 left-0  inset-0"></div>
       <div className="container mx-auto px-4 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left Content */}
@@ -96,89 +105,9 @@ const ServiceNew = ({ imgData }: { imgData: any }) => {
               />
             </a>
           </div>
-
-          {/* Right Slider */}
-          <div className="w-full lg:w-1/2 relative">
-            <div className="relative w-full h-[230px]  md:!h-[450px]  overflow-hidden rounded-lg">
-              {/* {images.map((image, index) => (
-                <div
-                  key={index}
-                  className={`absolute inset-0 transition-opacity duration-500 ${
-                    index === currentSlide ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-                  />
-                </div>
-              ))} */}
-
-              {images.map((image) => (
-                <div
-                  key={image.src}
-                  className={`absolute inset-0 transition-opacity rounded-lg overflow-hidden duration-500 ${
-                    image === images[currentSlide] ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-contain rounded-lg"
-                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-                  />
-                </div>
-              ))}
-            </div>
-
-            {/* Slider Navigation */}
-            <div className="absolute md:-bottom-12 -bottom-14 xl:-bottom-8 left-0 right-0 flex justify-center gap-4 ">
-              <button
-                onClick={prevSlide}
-                className="bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md transition-colors"
-                aria-label="Previous Slide"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 19l-7-7 7-7"
-                  />
-                </svg>
-              </button>
-              <button
-                onClick={nextSlide}
-                className="bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md transition-colors"
-                aria-label="Next Slide"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
+      <div className="">{/* <Image src={} /> */}</div>
     </section>
   );
 };

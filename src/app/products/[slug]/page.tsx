@@ -21,6 +21,8 @@ import {
   ProductPageDataDetials,
 } from "../../../../lib/productsData/pageData";
 import Image from "next/image";
+import AutoHorizontalScrollingSection from "@/components/Others/AutoHorizontalScrollingSection";
+import EmblaCarouselProductCarousel from "@/components/Others/EmblaProductCarousel.tsx/EmblaProductCarousel";
 
 const ProductPage = () => {
   const params = useParams();
@@ -44,13 +46,24 @@ const ProductPage = () => {
 
   console.log(pageSectionData);
 
+  const creatives = [
+    "/pictures/1.webp",
+    "/pictures/2.webp",
+    "/pictures/3.webp",
+    "/pictures/4.webp",
+    "/pictures/5.webp",
+    "/pictures/6.webp",
+    "/pictures/7.webp",
+  ];
+
   return (
     <section>
       <ServiceNew imgData={pageSectionData?.bgImg} />
+      <EmblaCarouselProductCarousel slides={currentGallery?.products[0]} />
       {/* <AboutTech /> */}
-
+      {/* <AutoHorizontalScrollingSection gallery={currentGallery?.products} /> */}
+      {/* 
       <div className="relative md:mt-16 mt-10 h-[300px]">
-        {/* Background Image */}
         <Image
           src={pageSectionData?.bottomImg || ""}
           width={1600}
@@ -59,10 +72,8 @@ const ProductPage = () => {
           className="object-cover w-full h-[300px]"
         />
 
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/70"></div>
 
-        {/* Text Content Overlay */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 text-white ">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             {pageSectionData?.topTitle}
@@ -71,7 +82,7 @@ const ProductPage = () => {
             {pageSectionData?.topDesc}
           </p>
         </div>
-      </div>
+      </div> */}
 
       <AwardWay />
       <div className="md:px-16 px-4  py-10">

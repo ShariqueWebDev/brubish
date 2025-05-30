@@ -22,7 +22,7 @@ const WhyChooseUsSection = () => {
         <div className="w-full flex justify-center gap-5 items-center md:flex-row flex-col ">
           <div className="md:w-[50%] w-full ">
             <h3 className="text-primary font-semibold md:text-2xl text-base uppercase">
-              Why Choose Us
+              Why Choose Us – Brubish India Pvt. Ltd
             </h3>
 
             <div className="md:mt-5 mt-1">
@@ -34,13 +34,10 @@ const WhyChooseUsSection = () => {
                 Globally
               </h4>
               <p className="text-sm mt-5 leading-7 text-gray-700">
-                At Brubish, we combine innovative solutions, reliable services,
-                and a robust network to empower businesses. From optimized
-                logistics to tailored marketing strategies, we ensure your
-                success on every front. Our commitment to excellence drives us
-                to deliver seamless supply chain management, real-time insights,
-                and personalized support, enabling you to focus on growing your
-                business.
+                At Brubish India Pvt. Ltd., we specialize in providing reliable,
+                efficient, and high-quality support for the marine and shipping
+                industry. Here’s why vessel owners, operators, and marine
+                engineers choose us:
               </p>
             </div>
             <Link href={"/contact-us"}>
@@ -106,48 +103,56 @@ const WhyChooseUsSection = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full grid md:grid-cols-3 grid-cols-1 gap-3 md:gap-10 md:mt-16 mt-7 md:bg-[#f4f5f6] rounded-lg md:p-10">
+        <div className="w-full grid md:grid-cols-3 grid-cols-1 gap-3 md:gap-10 md:mt-16 mt-7 md:bg-[#f4f5f6] rounded-lg ">
           <WhyChooseCard
-            icon={GiDeliveryDrone}
-            title="Fast  Delivery"
-            description="Our swift and efficient delivery services ensure your packages reach their destinations safely, on time, and with real-time tracking for peace of mind at every step."
+            icon={"/whychoose-icon/marine.png"}
+            title="Marine Industry Expertise"
+            description="With deep-rooted knowledge of vessel operations, maintenance, and procurement needs, we offer solutions tailored specifically for the shipping and offshore sectors.
+"
             iconColor="white"
             iconSize={70}
           />
           <WhyChooseCard
-            icon={GiWorld}
-            title="Global  Network"
-            description="Our robust global logistics network connects your business to international markets, offering seamless transportation solutions that span continents and ensure your goods are delivered without any delays."
+            icon={"/whychoose-icon/supply.png"}
+            title="Reliable Supply Chain"
+            description="We ensure timely supply of marine spares, equipment, and consumables—minimizing downtime and keeping your vessels operational."
             iconColor="white"
             iconSize={70}
           />
           <WhyChooseCard
-            icon={GiForklift}
-            title="Warehousing Solutions"
-            description="We offer secure, state-of-the-art warehousing facilities tailored to your needs, with efficient inventory management systems that optimize storage and streamline the distribution process for ultimate convenience."
+            icon={"/whychoose-icon/global.png"}
+            title="Global Standards"
+            description="Our products and services meet international maritime quality and safety standards, ensuring full compliance with classification societies and port regulations."
             iconColor="white"
             iconSize={70}
           />
           <WhyChooseCard
-            icon={GiCargoShip}
-            title="Specialized  Services"
-            description="Our specialized freight services cater to unique shipping requirements, ensuring safe, reliable, and cost-effective transport solutions for all types of cargo, from standard shipments to oversized loads."
-            iconColor="white"
-            iconSize={70}
-          />
-
-          <WhyChooseCard
-            icon={GiPathDistance}
-            title="Efficient Supply Chain"
-            description="Streamline your supply chain with our optimized logistics solutions, ensuring seamless coordination between sourcing, storage, and delivery for maximum business efficiency and customer satisfaction."
+            icon={"/whychoose-icon/port.png"}
+            title="Port-to-Deck Delivery"
+            description="We understand the urgency of ship requirements. Our logistics are streamlined to deliver directly to vessels at port or offshore locations with minimal lead time."
             iconColor="white"
             iconSize={70}
           />
 
           <WhyChooseCard
-            icon={GiTruck}
-            title="Innovative Transportation"
-            description="Utilizing cutting-edge technology and eco-friendly practices, we provide advanced transportation services tailored to modern logistics challenges and evolving customer expectations."
+            icon={"/whychoose-icon/24.png"}
+            title="24/7 Support"
+            description="Ships don’t wait—and neither do we. Our team is available around the clock to handle urgent requests, technical queries, and support needs."
+            iconColor="white"
+            iconSize={70}
+          />
+
+          <WhyChooseCard
+            icon={"/whychoose-icon/team.png"}
+            title="Experienced Team"
+            description="Our marine professionals understand the complexities of vessel management and are equipped to offer the right solutions, the first time."
+            iconColor="white"
+            iconSize={70}
+          />
+          <WhyChooseCard
+            icon={"/whychoose-icon/trust.png"}
+            title="Trusted by Industry Leaders"
+            description="Brubish is the preferred partner for several fleet managers, ship chandlers, and offshore operators across key maritime hubs."
             iconColor="white"
             iconSize={70}
           />

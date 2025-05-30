@@ -145,6 +145,13 @@ export const productsData = [
     url: "steel",
   },
   {
+    id: 2,
+    logo: "/products-icons/metal.png",
+
+    name: "Metal",
+    url: "metal",
+  },
+  {
     id: 3,
     logo: "/products-icons/paper.png",
 
@@ -180,7 +187,6 @@ export const productsData = [
     url: "fashion",
   },
 ];
-
 
 export default async function RootLayout({
   children,

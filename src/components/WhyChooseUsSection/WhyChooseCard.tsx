@@ -1,7 +1,8 @@
+import Image from "next/image";
 import React from "react";
 
 interface WhyChooseCardProps {
-  icon: React.ElementType;
+  icon: string;
   title: string;
   description: string;
   iconColor?: string;
@@ -9,7 +10,7 @@ interface WhyChooseCardProps {
 }
 
 const WhyChooseCard: React.FC<WhyChooseCardProps> = ({
-  icon: Icon,
+  icon,
   title,
   description,
   iconColor = "#000",
@@ -24,7 +25,10 @@ const WhyChooseCard: React.FC<WhyChooseCardProps> = ({
           height: iconSize,
         }}
       >
-        <Icon size={40} color={"#ffb200 "} />
+        {/* <Icon size={40} color={"#ffb200 "} /> */}
+        <div className=" w-12 h-12">
+          <Image src={icon} width={100} height={100} alt="" />
+        </div>
         <h4 className="text-2xl font-semibold">{title}</h4>
       </div>
       <hr className="mb-5 mt-1" />

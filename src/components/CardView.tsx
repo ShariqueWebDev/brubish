@@ -60,15 +60,15 @@ export default function Lightbox({
             <div
               key={index}
               onClick={() => openGallery(index)}
-              className="cursor-pointer bg-gray-100 border border-gray-100 text-gray-900 rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105"
+              className="cursor-pointer  bg-gray-100 border border-gray-100 text-gray-900 rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105"
             >
-              <div className="max-w-[350px] ">
+              <div className="!max-w-[350px] overflow-hidden h-[200px] ">
                 <Image
                   // width={500}
                   // height={500}
                   src={item.image}
                   alt={item.title}
-                  className="!w-full !h-full object-cover object-center"
+                  className="!w-full !h-full !object-cover object-center"
                 />
               </div>
 

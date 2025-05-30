@@ -525,27 +525,155 @@ export const galleryItems: GalleryItem3[] = [
     products: [
       // Focus Products
       {
-        main_title: "Paper & Pulp",
+        main_title: "Brubish Steel",
         product_detail: [
           {
-            title: "Bio-Based Textile fibres",
-            image: "/productSectionImage/paper-pulp/bio-based.webp",
+            title: "Carbon Steel",
+            image: "/productSectionImage/steel/carbon.webp",
           },
           {
-            title: "Board & Packaging",
-            image: "/productSectionImage/paper-pulp/board-pack.webp",
+            title: "Alloy Steel",
+            image: "/productSectionImage/steel/alloy.webp",
           },
           {
-            title: "Paper Industry",
-            image: "/productSectionImage/paper-pulp/paper-indus.webp",
+            title: "Mild Steel",
+            image: "/productSectionImage/steel/mild.webp",
           },
           {
-            title: "Pulp Industry",
-            image: "/productSectionImage/paper-pulp/pulp-indus.webp",
+            title: "Stainless Steel",
+            image: "/productSectionImage/steel/stainless.webp",
           },
           {
-            title: "Tissue & Sanitary Products",
-            image: "/productSectionImage/paper-pulp/tissue.webp",
+            title: "Structural Steel",
+            image: "/productSectionImage/steel/structral.webp",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    page_name: "Vessel Spares & Parts",
+    slug: "consumer-goods",
+    products: [
+      // Focus Products
+      {
+        main_title: "Consumer Goods",
+        product_detail: [
+          {
+            title: "Carbon Steel",
+            image: "/productSectionImage/steel/carbon.webp",
+          },
+          {
+            title: "Alloy Steel",
+            image: "/productSectionImage/steel/alloy.webp",
+          },
+          {
+            title: "Mild Steel",
+            image: "/productSectionImage/steel/mild.webp",
+          },
+          {
+            title: "Stainless Steel",
+            image: "/productSectionImage/steel/stainless.webp",
+          },
+          {
+            title: "Structural Steel",
+            image: "/productSectionImage/steel/structral.webp",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    page_name: "Vessel Spares & Parts",
+    slug: "metal",
+    products: [
+      // Focus Products
+      {
+        main_title: "Ferrous Metals",
+        product_detail: [
+          {
+            title: "Carbon Steel",
+            image: "/productSectionImage/metal/ferrous.webp",
+          },
+          {
+            title: "Non Ferrous Metals",
+            image: "/productSectionImage/metal/non.webp",
+          },
+          {
+            title: "Alloy Metals",
+            image: "/productSectionImage/metal/alloy-metal.webp",
+          },
+          {
+            title: " Sheet Metals",
+            image: "/productSectionImage/metal/sheet.webp",
+          },
+          {
+            title: " Structural Steel",
+            image: "/productSectionImage/metal/structural-metal.webp",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    page_name: "Vessel Spares & Parts",
+    slug: "household-appliances",
+    products: [
+      // Focus Products
+      {
+        main_title: "Ferrous Metals",
+        product_detail: [
+          {
+            title: "Carbon Steel",
+            image: "/productSectionImage/metal/ferrous.webp",
+          },
+          {
+            title: "Non Ferrous Metals",
+            image: "/productSectionImage/metal/non.webp",
+          },
+          {
+            title: "Alloy Metals",
+            image: "/productSectionImage/metal/alloy-metal.webp",
+          },
+          {
+            title: " Sheet Metals",
+            image: "/productSectionImage/metal/sheet.webp",
+          },
+          {
+            title: " Structural Steel",
+            image: "/productSectionImage/metal/structural-metal.webp",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    page_name: "Vessel Spares & Parts",
+    slug: "fashion",
+    products: [
+      // Focus Products
+      {
+        main_title: "Ferrous Metals",
+        product_detail: [
+          {
+            title: "Carbon Steel",
+            image: "/productSectionImage/metal/ferrous.webp",
+          },
+          {
+            title: "Non Ferrous Metals",
+            image: "/productSectionImage/metal/non.webp",
+          },
+          {
+            title: "Alloy Metals",
+            image: "/productSectionImage/metal/alloy-metal.webp",
+          },
+          {
+            title: " Sheet Metals",
+            image: "/productSectionImage/metal/sheet.webp",
+          },
+          {
+            title: " Structural Steel",
+            image: "/productSectionImage/metal/structural-metal.webp",
           },
         ],
       },
