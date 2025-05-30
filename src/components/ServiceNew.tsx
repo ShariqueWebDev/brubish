@@ -45,14 +45,14 @@ const ServiceNew = ({ imgData }: { imgData: any }) => {
       className=" py-20 md:h-[90vh] h-[80vh] overflow-hidden "
       style={{
         // backgroundColor: "#f7f7f9",
-        // backgroundImage: `url(${imgData})`,
+        backgroundImage: `url(${imgData})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         position: "relative",
         // "radial-gradient(circle closest-corner at 60% 40%, #f5d14254, #fff0 52%),  radial-gradient(circle farthest-side at 0 100%, #866bf04d, #fff0 31%)",
       }}
     >
-      <div className="absolute left-0 top-0 !overflow-hidden">
+      {/* <div className="absolute left-0 top-0 !overflow-hidden">
         <Image
           src={imgData}
           width={2000}
@@ -60,7 +60,7 @@ const ServiceNew = ({ imgData }: { imgData: any }) => {
           alt=""
           className="w-full md:!h-full h-[90vh] object-cover object-center"
         />
-      </div>
+      </div> */}
       <div className="bg-gradient-to-r from-black/80 via-black/60 absolute top-0 left-0  inset-0"></div>
       <div className="container mx-auto px-4 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center gap-12">
