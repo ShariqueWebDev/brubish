@@ -96,7 +96,7 @@ export const ProductPageDataDetials = [
     },
   },
   {
-    bgImg: "/productSectionImage/paper-pulp/paper-pulp-bg.webp",
+    bgImg: "/productSectionImage/paper-pulp/corrugate.webp",
     bottomImg: "/productSectionImage/paper-pulp/bottom-banner-paper.webp",
     topTitle: "Brubish Pulp and Paper Plants",
     topDesc:
@@ -192,8 +192,8 @@ export const ProductPageDataDetials = [
     },
   },
   {
-    bgImg: "/productSectionImage/consumer/cosumer-bgimg.webp",
-    bottomImg: "/productSectionImage/consumer/consumer-bottom.webp",
+    bgImg: "/productSectionImage/consumer/consumer-bgimg.webp",
+    bottomImg: "/productSectionImage/consumer/consumer-bottom1.webp",
     topTitle: "Consumer Goods",
     topDesc:
       "Brubish India manufactures specialised steel for a wide variety of products in the consumer goods industry, including domestic appliances, electronics and furniture.",
@@ -201,40 +201,25 @@ export const ProductPageDataDetials = [
     whyChooseUs: {
       title: "We Deliver Excellence Globally",
       desc1:
-        "In a rapidly growing economy when customers are getting more quality conscious and demanding every day, Brubish India makes sure that it keeps renewing its product range with customised developments and innovations to suit specific requirements. The Company manufactures and processes steel for a wide range of customers across the Consumer Goods sector worldwide. These include domestic appliances, manufactured goods, packaging and many other applications.",
+        "Brubish India manufactures specialised steel for a wide variety of products in the consumer goods industry, including domestic appliances, electronics and furniture.",
       desc2:
-        "These products are primarily used in white goods, lighting, furniture, office equipment, and IT hardware. Customers in this sector want a variety of quality products - often customised to suit their specifications - reliability and flexibility in supply and service; innovation, and technical support to provide them with differentiation and competitive advantage. To cater to this, Brubish has organised its product and service offerings to be market focused and reflect specific market needs.",
-      imgPath: "/productSectionImage/steel/steel-whychoose.webp",
+        "In the electronics and furniture sectors, Brubish steel supports innovation and style. Our precision-engineered steel components offer sleek finishes, corrosion resistance, and optimal weight-to-strength ratios—ideal for products like televisions, computer casings, modular workstations, and contemporary home décor. By prioritizing quality and adaptability, we help manufacturers produce smarter, stronger, and more visually appealing consumer products that align with the expectations of today’s market.",
+      imgPath: "/productSectionImage/consumer/consumer-whychoose.webp",
       PartSpeciality: [
         {
-          title: "Everyday Essentials, Expertly Delivered",
-          desc: "At Brubish, we focus on the everyday items that matter most. Our consumer goods are designed to simplify your routines, offering durability, functionality, and value all in one dependable package.",
-          icon: "/products-icons/consumer/consumer1.png",
+          title: "Precision Steel for Advanced Electronics",
+          desc: "Brubish India provides high-grade steel tailored for electronic devices like televisions, computer hardware, and mobile components. Our steel ensures optimal thermal conductivity, durability, and a sleek aesthetic.",
+          icon: "/products-icons/consumer/electronics.png",
         },
         {
-          title: "Quality You Can Feel",
-          desc: "onsumer goods should do more than just serve a purpose they should serve you well. Brubish handpicks products that combine performance with ease, so your daily life feels smoother, cleaner, and better.",
-          icon: "/products-icons/consumer/consumer2.png",
+          title: "Domestic Appliances",
+          desc: "From refrigerators and washing machines to microwaves and air conditioners, Brubish offers steel that enhances product lifespan, safety, and functionality. Our material ensures consistent quality for high-demand daily usage in every household.",
+          icon: "/products-icons/consumer/kitchen.png",
         },
         {
-          title: "The Smarter Choice for Daily Living",
-          desc: "Brubish brings smart solutions to simple needs. Our range of consumer goods is carefully selected to help you live more efficiently, comfortably, and affordably every single day.",
-          icon: "/products-icons/consumer/consumer3.png",
-        },
-        {
-          title: "Reliable Goods for Real Life",
-          desc: "Built for everyday use, trusted for lasting quality — Brubish delivers consumer products that match the pace and practicality of real life. Because what you use daily should never let you down.",
-          icon: "/products-icons/consumer/consumer4.png",
-        },
-        {
-          title: "Where Everyday Meets Exceptional",
-          desc: "At Brubish, we redefine consumer goods by offering more than the basics. Our products are chosen for their quality, consistency, and value — giving your everyday routine an upgrade you can rely on.",
-          icon: "/products-icons/consumer/consumer5.png",
-        },
-        {
-          title: "Your Trusted Source for Everyday Products",
-          desc: "rom kitchenware to personal care, Brubish ensures every product you use is one you can count on. We believe that small things make a big difference — and that’s why we deliver excellence, one item at a time.",
-          icon: "/products-icons/consumer/consumer6.png",
+          title: "Furniture",
+          desc: "Brubish India supplies refined steel used in modular furniture, storage units, and seating solutions. Known for strength and formability, our steel supports sleek designs and long-lasting performance in both residential and office environments.",
+          icon: "/products-icons/consumer/sofa.png",
         },
       ],
     },
@@ -336,7 +321,7 @@ export const ProductPageDataDetials = [
     },
   },
   {
-    bgImg: "/productSectionImage/household/house-bgimg.webp",
+    bgImg: "/productSectionImage/household/household-bgimg.webp",
     bottomImg: "/productSectionImage/household/house-bottom.webp",
     topTitle: "Efficiency Meets Elegance",
     topDesc:
@@ -345,47 +330,47 @@ export const ProductPageDataDetials = [
     whyChooseUs: {
       title: "We Deliver Excellence Globally",
       desc1:
-        "At Brubish, we specialize in the efficient handling and global movement of non-ferrous metals. Whether transported as break bulk or containerized cargo, our solutions are designed to ensure seamless transit by vessel, barge, truck, or rail. Our end-to-end services include professional stevedoring, freight forwarding, and secure warehousing, backed by an experienced logistics network that spans across continents.",
+        "Brubish India plays a vital role in powering the household appliance industry by supplying specialized steel for a wide range of products. From refrigerators, washing machines, air conditioners, microwave ovens, and water heaters to smaller appliances like mixers, grinders, and electric irons our steel forms the backbone of everyday convenience.",
       desc2:
-        "With Brubish, you gain a trusted partner committed to reliability, precision, and global reach — ensuring your industrial metals arrive safely, efficiently, and on time..",
+        "With a deep understanding of industry trends and manufacturing standards, Brubish collaborates closely with appliance manufacturers to offer tailored steel solutions that optimize performance and aesthetics.",
       imgPath: "/productSectionImage/household/house-whychoose.webp",
       PartSpeciality: [
         {
-          title: "Expert Handling of Non-Ferrous Metals",
-          desc: "We specialize in the transportation and management of non-ferrous metals, ensuring safe and efficient handling across all logistics modes — from vessels to railcars.",
+          title: "Precision for Cooling Solutions",
+          desc: "Brubish provides high-quality materials ideal for both exterior and interior components of modern refrigerators, ensuring long-lasting performance and visual appeal.",
           icon: "/products-icons/metal/metals.png",
         },
         {
-          title: " Global Logistics & Freight Forwarding",
-          desc: "With an international network of freight partners, Brubish provides reliable forwarding services that keep your metal cargo moving smoothly across borders.",
+          title: " Washing Machines",
+          desc: "Our materials are developed to endure moisture, vibration, and constant usage, making them a perfect choice for both top and front-load washing machines.",
           icon: "/products-icons/metal/global.png",
         },
         {
-          title: " End-to-End Supply Chain Support",
-          desc: "From port to final destination, we manage the full journey of your metal shipments, offering transparency, tracking, and dedicated customer support throughout.",
+          title: " Microwave Ovens",
+          desc: "Engineered to handle high temperatures and rapid heating cycles, our components support safe, efficient, and stylish microwave oven designs.",
           icon: "/products-icons/metal/supply.png",
         },
         {
-          title: "Embracing change and trust",
-          desc: "Base Metals has traditionally been Brubish largest division. Jan Hein shares his vision for the division and the industry, emphasizing the importance of change. Brubish is evolving, which is positive.",
+          title: "Air Conditioners",
+          desc: "Brubish delivers corrosion-resistant solutions for internal and external parts of air conditioning units, ensuring durability in any weather condition.",
           icon: "/products-icons/metal/trust.png",
         },
         {
-          title: "Seamless solutions through strong networks",
-          desc: "the importance of a valuable network, both within the company’s own locations and with reliable partners. “We collaborate closely with all Brubish divisions worldwide. Our global network enables us to provide comprehensive solutions to our customers.",
+          title: "Water Heaters",
+          desc: "Our materials are chosen to withstand pressure and heat over time, providing lasting reliability in both residential and commercial water heaters.",
           icon: "/products-icons/metal/network.png",
         },
         {
-          title: "Base Metals Asia",
-          desc: "Another strategically successful region within Brubish, where metals are stored and distributed, is Asia. The division’s coverage extends to various key locations in Asia, including China major locations Thailand, Malaysia, Korea, Singapore, and an expansion into Indonesia due to its vast raw material potential.",
+          title: "Mixers & Grinders",
+          desc: " We offer components that are lightweight yet durable, suited for the performance needs of food processors, grinders, and blenders.",
           icon: "/products-icons/metal/asia.png",
         },
       ],
     },
   },
   {
-    bgImg: "/productSectionImage/household/house-bgimg.webp",
-    bottomImg: "/productSectionImage/household/house-bottom.webp",
+    bgImg: "/productSectionImage/fashion/fashion-bgimg1.webp",
+    // bottomImg: "/productSectionImage/fashion/fashion-bottom.webp",
     topTitle: "Efficiency Meets Elegance",
     topDesc:
       "Engineered to perform, built to last — Brubish keeps your home running smoothly.",
@@ -393,40 +378,40 @@ export const ProductPageDataDetials = [
     whyChooseUs: {
       title: "We Deliver Excellence Globally",
       desc1:
-        "At Brubish, we specialize in the efficient handling and global movement of non-ferrous metals. Whether transported as break bulk or containerized cargo, our solutions are designed to ensure seamless transit by vessel, barge, truck, or rail. Our end-to-end services include professional stevedoring, freight forwarding, and secure warehousing, backed by an experienced logistics network that spans across continents.",
+        "Brubish plays a strategic role in the fashion industry by supplying high-performance materials used in the production of a wide range of apparel, accessories, and footwear. From durable components in casual and sportswear to refined finishes for luxury fashion items, Brubish partners with manufacturers to deliver solutions that meet the evolving demands of fashion trends, comfort, and sustainability.",
       desc2:
-        "With Brubish, you gain a trusted partner committed to reliability, precision, and global reach — ensuring your industrial metals arrive safely, efficiently, and on time..",
-      imgPath: "/productSectionImage/household/house-whychoose.webp",
+        "In addition to supplying raw materials, Brubish collaborates closely with fashion brands and designers to ensure compatibility with seasonal collections, diverse fabric textures, and evolving consumer expectations.",
+      imgPath: "/productSectionImage/fashion/fashion-bottom.webp",
       PartSpeciality: [
         {
-          title: "Expert Handling of Non-Ferrous Metals",
-          desc: "We specialize in the transportation and management of non-ferrous metals, ensuring safe and efficient handling across all logistics modes — from vessels to railcars.",
-          icon: "/products-icons/metal/metals.png",
+          title: "Apparel Clothing",
+          desc: "Brubish supplies high-quality materials for stylish and durable garments across everyday and special wear.",
+          icon: "/products-icons/fashion/clothing.png",
         },
         {
-          title: " Global Logistics & Freight Forwarding",
-          desc: "With an international network of freight partners, Brubish provides reliable forwarding services that keep your metal cargo moving smoothly across borders.",
-          icon: "/products-icons/metal/global.png",
+          title: " Footwear",
+          desc: "We offer reliable materials for all types of footwear, combining style, support, and comfort.",
+          icon: "/products-icons/fashion/footwear.png",
         },
         {
-          title: " End-to-End Supply Chain Support",
-          desc: "From port to final destination, we manage the full journey of your metal shipments, offering transparency, tracking, and dedicated customer support throughout.",
-          icon: "/products-icons/metal/supply.png",
+          title: " Accessories",
+          desc: "Brubish supports fashion accessories with strong, flexible, and fashionable materials.",
+          icon: "/products-icons/fashion/accessories.png",
         },
         {
-          title: "Embracing change and trust",
-          desc: "Base Metals has traditionally been Brubish largest division. Jan Hein shares his vision for the division and the industry, emphasizing the importance of change. Brubish is evolving, which is positive.",
-          icon: "/products-icons/metal/trust.png",
+          title: "Seasonal & Occasion Wear",
+          desc: "Specialized fabrics for festive, bridal, and climate-specific clothing needs.",
+          icon: "/products-icons/fashion/occasion.png",
         },
         {
-          title: "Seamless solutions through strong networks",
-          desc: "the importance of a valuable network, both within the company’s own locations and with reliable partners. “We collaborate closely with all Brubish divisions worldwide. Our global network enables us to provide comprehensive solutions to our customers.",
-          icon: "/products-icons/metal/network.png",
+          title: "Foundations & Base Products",
+          desc: "Brubish offers high-quality ingredients and packaging solutions for foundation formulas including creams, liquids, and powders.",
+          icon: "/products-icons/fashion/foundation.png",
         },
         {
-          title: "Base Metals Asia",
-          desc: "Another strategically successful region within Brubish, where metals are stored and distributed, is Asia. The division’s coverage extends to various key locations in Asia, including China major locations Thailand, Malaysia, Korea, Singapore, and an expansion into Indonesia due to its vast raw material potential.",
-          icon: "/products-icons/metal/asia.png",
+          title: "Makeup Tools & Accessories",
+          desc: "Brubish supplies ergonomic, durable components and materials for beauty tools and brushes.",
+          icon: "/products-icons/fashion/makeup.png",
         },
       ],
     },

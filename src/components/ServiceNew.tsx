@@ -42,7 +42,7 @@ const ServiceNew = ({ imgData }: { imgData: any }) => {
 
   return (
     <section
-      className=" py-20 md:h-[90vh] h-[80vh] overflow-hidden "
+      className=" py-20 md:h-[90vh] h-[70vh] overflow-hidden "
       style={{
         // backgroundColor: "#f7f7f9",
         backgroundImage: `url(${imgData})`,

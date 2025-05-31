@@ -106,7 +106,7 @@ const ProductSectionChooseUs = ({ data }: { data: any }) => {
               </ul>
             </div>
           </div>
-          <div className="w-full grid md:grid-cols-3 grid-cols-1 gap-3 md:gap-10 md:mt-16 mt-7 md:bg-[#f4f5f6] rounded-lg ">
+          <div className="w-full grid md:grid-cols-3 grid-cols-1 gap-3 md:gap-10 md:mt-16 mt-7 md:bg-[#f4f5f6] rounded-lg md:p-7 p-4 ">
             {data?.whyChooseUs?.PartSpeciality?.map(
               (item: any, index: number) => {
                 return <WhyChooseCardProductsection key={index} data={item} />;

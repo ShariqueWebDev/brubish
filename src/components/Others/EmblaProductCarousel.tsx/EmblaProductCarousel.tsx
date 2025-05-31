@@ -58,11 +58,11 @@ const EmblaCarouselProductCarousel: React.FC<PropType> = ({
           {slides?.product_detail?.map((item: any, index: number) => (
             <div
               key={index}
-              className="md:flex-[0_0_20%] flex-[0_0_100%] min-w-0 pl-1"
+              className="md:flex-[0_0_20%] flex-[0_0_50%] min-w-0 pl-1"
               style={{ transform: "translate3d(0, 0, 0)" }}
             >
               <div className="flex items-center justify-center h-[10rem] select-none rounded-md">
-                <div className="h-[150px] border rounded-md border-gray-100 shadow-md">
+                <div className="md:h-[150px] h-[120px] max-sm:max-w-[170px] border rounded-md border-gray-100 shadow-md">
                   <Image
                     src={item?.image}
                     width={800}

@@ -16,6 +16,7 @@ export interface GalleryItem3 {
 }
 
 export const galleryItems: GalleryItem3[] = [
+  // Vessel Spares & Parts
   {
     page_name: "Vessel Spares & Parts",
     slug: "vessel-spares",
@@ -443,6 +444,7 @@ export const galleryItems: GalleryItem3[] = [
       },
     ],
   },
+  // Agriculture & Products
   {
     page_name: "Vessel Spares & Parts",
     slug: "agri-products",
@@ -487,6 +489,7 @@ export const galleryItems: GalleryItem3[] = [
       },
     ],
   },
+  // Paper & Pulp
   {
     page_name: "Vessel Spares & Parts",
     slug: "paper-pulp",
@@ -495,6 +498,10 @@ export const galleryItems: GalleryItem3[] = [
       {
         main_title: "Paper & Pulp",
         product_detail: [
+          {
+            title: "Corrugated Materials",
+            image: "/productSectionImage/paper-pulp/corrugate-prod.webp",
+          },
           {
             title: "Bio-Based Textile fibres",
             image: "/productSectionImage/paper-pulp/bio-based.webp",
@@ -519,6 +526,7 @@ export const galleryItems: GalleryItem3[] = [
       },
     ],
   },
+  // Brubish Steel
   {
     page_name: "Vessel Spares & Parts",
     slug: "steel",
@@ -551,6 +559,7 @@ export const galleryItems: GalleryItem3[] = [
       },
     ],
   },
+  // Consumer Goods
   {
     page_name: "Vessel Spares & Parts",
     slug: "consumer-goods",
@@ -560,36 +569,29 @@ export const galleryItems: GalleryItem3[] = [
         main_title: "Consumer Goods",
         product_detail: [
           {
-            title: "Carbon Steel",
-            image: "/productSectionImage/steel/carbon.webp",
+            title: "Domestic Appliance",
+            image: "/productSectionImage/consumer/domestic-app.webp",
           },
           {
-            title: "Alloy Steel",
-            image: "/productSectionImage/steel/alloy.webp",
+            title: "Electronics",
+            image: "/productSectionImage/consumer/electronics.webp",
           },
           {
-            title: "Mild Steel",
-            image: "/productSectionImage/steel/mild.webp",
-          },
-          {
-            title: "Stainless Steel",
-            image: "/productSectionImage/steel/stainless.webp",
-          },
-          {
-            title: "Structural Steel",
-            image: "/productSectionImage/steel/structral.webp",
+            title: "Furniture",
+            image: "/productSectionImage/consumer/furniture.webp",
           },
         ],
       },
     ],
   },
+  // Metal
   {
     page_name: "Vessel Spares & Parts",
     slug: "metal",
     products: [
       // Focus Products
       {
-        main_title: "Ferrous Metals",
+        main_title: "Metals",
         product_detail: [
           {
             title: "Carbon Steel",
@@ -615,65 +617,140 @@ export const galleryItems: GalleryItem3[] = [
       },
     ],
   },
+  // Household Appliances
   {
     page_name: "Vessel Spares & Parts",
     slug: "household-appliances",
     products: [
       // Focus Products
       {
-        main_title: "Ferrous Metals",
+        main_title: "Household Appliances",
         product_detail: [
           {
-            title: "Carbon Steel",
-            image: "/productSectionImage/metal/ferrous.webp",
+            title: "Mixer",
+            image: "/productSectionImage/household/mixer.webp",
           },
           {
-            title: "Non Ferrous Metals",
-            image: "/productSectionImage/metal/non.webp",
+            title: "Air Conditioners",
+            image: "/productSectionImage/household/ac.webp",
           },
           {
-            title: "Alloy Metals",
-            image: "/productSectionImage/metal/alloy-metal.webp",
+            title: "Grinders",
+            image: "/productSectionImage/household/grinders.webp",
           },
           {
-            title: " Sheet Metals",
-            image: "/productSectionImage/metal/sheet.webp",
+            title: " Heater",
+            image: "/productSectionImage/household/heater.webp",
           },
           {
-            title: " Structural Steel",
-            image: "/productSectionImage/metal/structural-metal.webp",
+            title: "Microwave Ovens",
+            image: "/productSectionImage/household/oven.webp",
+          },
+          {
+            title: "Washing Machines",
+            image: "/productSectionImage/household/w-machine.webp",
+          },
+          {
+            title: "Blender",
+            image: "/productSectionImage/household/blendor.webp",
+          },
+          {
+            title: "Hair Dryer",
+            image: "/productSectionImage/household/dryer.webp",
+          },
+          {
+            title: "Fan",
+            image: "/productSectionImage/household/fan.webp",
+          },
+          {
+            title: "induction",
+            image: "/productSectionImage/household/induction.webp",
+          },
+          {
+            title: "Juicer",
+            image: "/productSectionImage/household/juicer.webp",
+          },
+          {
+            title: "Electric Kettle",
+            image: "/productSectionImage/household/kettle.webp",
+          },
+          {
+            title: "Toaster",
+            image: "/productSectionImage/household/toaster.webp",
+          },
+          {
+            title: "Vaccum Cleaner",
+            image: "/productSectionImage/household/vaccum.webp",
+          },
+          {
+            title: "Water Purifier",
+            image: "/productSectionImage/household/water-pur.webp",
           },
         ],
       },
     ],
   },
+  // Fasion
   {
     page_name: "Vessel Spares & Parts",
     slug: "fashion",
     products: [
       // Focus Products
       {
-        main_title: "Ferrous Metals",
+        main_title: "Our Products",
         product_detail: [
           {
-            title: "Carbon Steel",
-            image: "/productSectionImage/metal/ferrous.webp",
+            title: "Clothing",
+            image: "/productSectionImage/fashion/clothing.webp",
           },
           {
-            title: "Non Ferrous Metals",
-            image: "/productSectionImage/metal/non.webp",
+            title: "Makeup Accessories",
+            image: "/productSectionImage/fashion/accessories.webp",
           },
           {
-            title: "Alloy Metals",
-            image: "/productSectionImage/metal/alloy-metal.webp",
+            title: "Lip Products",
+            image: "/productSectionImage/fashion/lipstick.webp",
           },
           {
-            title: " Sheet Metals",
-            image: "/productSectionImage/metal/sheet.webp",
+            title: "Footwear",
+            image: "/productSectionImage/fashion/footwear.webp",
           },
           {
-            title: " Structural Steel",
-            image: "/productSectionImage/metal/structural-metal.webp",
+            title: "Foudations & Base Products",
+            image: "/productSectionImage/fashion/foundation.webp",
+          },
+          {
+            title: "Seasonal & Occasion Wear",
+            image: "/productSectionImage/fashion/occasion.webp",
+          },
+          {
+            title: "Eye Makeup",
+            image: "/productSectionImage/fashion/eyeliner.webp",
+          },
+          {
+            title: "Face Enhancers",
+            image: "/productSectionImage/fashion/enhancer.webp",
+          },
+          {
+            title: "Makeup Tools",
+            image: "/productSectionImage/fashion/tools.webp",
+          },
+          {
+            title: "Makeup Removers & Cleansers",
+            image: "/productSectionImage/fashion/cleaner.webp",
+          },
+          {
+            title: "Kids Wear",
+            image: "/productSectionImage/fashion/kids.webp",
+          },
+          {
+            title: "Denims Wear",
+            image: "/productSectionImage/fashion/denim.webp",
+          },
+
+          {
+            title: " Luxury & Designer Wear",
+            image: "/productSectionImage/fashion/luxury.webp",
           },
         ],
       },
