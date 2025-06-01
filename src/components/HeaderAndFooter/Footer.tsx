@@ -182,7 +182,7 @@ const Footer = async () => {
                     return (
                       <Link
                         className="hover:text-amber-600 text-gray-800"
-                        href={`/services/${data?.url}`}
+                        href={`/products/${data?.url}`}
                       >
                         {data?.name}
                       </Link>
