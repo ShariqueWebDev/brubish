@@ -23,7 +23,7 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: 22
         script: |
-          cd /var/www/brubish.demo-web.live/htdocs
+          cd /var/www/brubish.com/htdocs
           git pull origin main
           git status
           export NVM_DIR=/home/${{ secrets.USERNAME }}/.nvm
@@ -31,4 +31,4 @@ jobs:
           nvm use 20.15.1
           npm install
           npm run build
-          pm2 reload brubish.demo-web.live
+          pm2 reload brubish.com
