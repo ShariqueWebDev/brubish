@@ -1,14 +1,12 @@
-"use client"
-import React, { useState } from 'react'
+"use client";
+import React, { useState } from "react";
 // import EmblaCarousel from '../emblathumbnail/EmblaCarousel'
-import { EmblaOptionsType } from 'embla-carousel'
-import EmblaCarousel from '@/components/emblathumbnail/EmblaCarousel'
-import { Shield, PackageCheck, Truck, Box, Settings } from 'lucide-react';
-import Heading from '@/components/shared/Heading';
-const OPTIONS: EmblaOptionsType = {}
-const SLIDE_COUNT = 3
-
-
+import { EmblaOptionsType } from "embla-carousel";
+import EmblaCarousel from "@/components/emblathumbnail/EmblaCarousel";
+import { Shield, PackageCheck, Truck, Box, Settings } from "lucide-react";
+import Heading from "@/components/shared/Heading";
+const OPTIONS: EmblaOptionsType = {};
+const SLIDE_COUNT = 3;
 
 const SLIDES = [
   {
@@ -59,35 +57,39 @@ const SLIDES = [
   },
 ];
 
-
 const Truckthree = () => {
+  const [activeindex, setActiveindex] = useState(1);
 
-    const [activeindex, setActiveindex] = useState(1)
-    console.log(activeindex);
-
-    return (
-        <div className='  '>
-            
-                               
-                                <div className='sjcontainer py-12'>
-                                    
-            <Heading className=' ml-16  mb-12 text-left max-md:text-2xl md:text-center' title={<span>From First-Mile to Last-Mile, <br/>We've Got You Covered!</span>} />
-            <div className='flex items-center  flex-col-reverse md:flex-row'>
-                <div className='md:w-[40%] md:mt-32   mx-auto text-center p-4'>
-                    <h2 className=' text-xl max-md:mt-4 md:text-3xl font-[500]'>{SLIDES[activeindex].title}</h2>
-                    {/* <p className=' px-2 text-xs md:text-base mt-5 text-gray-500'>{SLIDES[activeindex].description}</p> */}
-                </div>
-                <div className='md:w-[60%]'>
-                    <EmblaCarousel setActiveindex={setActiveindex} slides={SLIDES} options={OPTIONS} />
-                </div>
-            </div>
-            </div>
-            
+  return (
+    <div className="  ">
+      <div className="sjcontainer py-12">
+        <Heading
+          className=" ml-16  mb-12 text-left max-md:text-2xl md:text-center"
+          title={
+            <span>
+              From First-Mile to Last-Mile, <br />
+              We've Got You Covered!
+            </span>
+          }
+        />
+        <div className="flex items-center  flex-col-reverse md:flex-row">
+          <div className="md:w-[40%] md:mt-32   mx-auto text-center p-4">
+            <h2 className=" text-xl max-md:mt-4 md:text-3xl font-[500]">
+              {SLIDES[activeindex].title}
+            </h2>
+            {/* <p className=' px-2 text-xs md:text-base mt-5 text-gray-500'>{SLIDES[activeindex].description}</p> */}
+          </div>
+          <div className="md:w-[60%]">
+            <EmblaCarousel
+              setActiveindex={setActiveindex}
+              slides={SLIDES}
+              options={OPTIONS}
+            />
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-
-
-
-export default Truckthree
+export default Truckthree;

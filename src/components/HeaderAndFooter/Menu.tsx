@@ -56,7 +56,6 @@ const Menu = ({
       <div className="hidden lg:flex items-center gap-8 ">
         {data.map((item: any) => {
           const isActive = path === item.url;
-          console.log(item);
 
           return (
             <div key={item.id} className="">
@@ -202,8 +201,6 @@ const Menu = ({
 
                           <div className="bg-white rounded-lg pb-2 mt-4 transition-all ease-in-out text-gray-800 tracking-wide  w-full shadow-lg border border-t-2 border-amber-500">
                             {productsData?.map((proItem, index) => {
-                              console.log(proItem?.url);
-
                               return (
                                 <Link
                                   key={proItem?.id}
