@@ -1,6 +1,9 @@
 export const ProductPageDataDetials = [
   {
     bgImg: "/productSectionImage/vessel-banner2.webp",
+    banner_title: "Leaders in shipping Solution",
+    banner_desc:
+      "Our vision is to become a leader in the field of shipping solutions with timely supply of high quality services to the marine business keeping our feet firm in the track of innovative exposition",
     bottomImg: "/productSectionImage/vessel-bottom.webp",
     topTitle: "Experts in vessel management solutions",
     topDesc:
@@ -49,54 +52,60 @@ export const ProductPageDataDetials = [
   },
   {
     bgImg: "/productSectionImage/agriculture/agri-bgimg.webp",
+    banner_title: "Your Trusted Source for Farm Fresh Products",
+    banner_desc:
+      "Experience the finest in farm-fresh quality with Brubish. From spices to coffee, we deliver purity, flavor, and consistency you can trust.",
     bottomImg: "/productSectionImage/agriculture/agri-bottomimg.webp",
-    topTitle: "Crops We Nourish",
+    topTitle: "Our Farming Products",
     topDesc:
       "Aries offers diverse crop nourishment products ranging from Chelates to water soluble micronutrients & fertilizers",
     slug: "agri-products",
     whyChooseUs: {
       title: "",
       desc1:
-        "At Brubish, we offer a comprehensive portfolio of advanced agricultural solutions tailored to meet the evolving needs of modern farming. Our product range includes micronutrients, water-soluble fertilizers, organic and bio-products, and high-density inputs — all designed to enhance crop performance, soil health, and sustainable yield. ",
+        "At Brubish, we take pride in supplying high-quality agricultural products that meet the needs of global markets. From groundnuts and cashew nuts to cocoa, coffee, tea, spices, and sugar — every product is carefully sourced, processed, and handled to preserve its natural value. Our commitment to quality, traceability, and sustainability ensures that every shipment meets international standards and exceeds client expectations. ",
       desc2:
-        "Our crop-specific formulations provide targeted nutrition, ensuring optimal results for a wide variety of crops. We specialize in slow-release fertilizer pastilles that improve nutrient efficiency and reduce leaching, supporting long-term soil fertility. In addition, Brubish is committed to environmentally responsible agriculture through bio-stimulants, plant protection products, and organic alternatives that are safe, effective, and aligned with international farming standards.",
-      imgPath: "/productSectionImage/agriculture/agri-whychoose.webp",
+        "What sets us apart is our deep-rooted network of trusted farmers, ethical sourcing practices, and a supply chain that prioritizes freshness and reliability. Whether you're sourcing bulk corn, premium tobacco, or organically harvested coconuts, Brubish ensures timely delivery, competitive pricing, and unmatched customer support.",
+      imgPath: "/productSectionImage/agriculture/agri-whychoose1.webp",
       PartSpeciality: [
         {
-          title: "Micronutrients",
-          desc: "At Brubish, our multi micronutrient formulations are scientifically designed to correct hidden deficiencies, improve nutrient uptake, and enhance crop quality and yield. Ideal for a wide range of crops, they ensure balanced growth and improved resilience against environmental stress.",
-          icon: "/products-icons/agri/nutrients.png",
+          title: "Premium Quality Selection",
+          desc: "We source only the finest agricultural commodities from groundnuts and cashew nuts to spices and tea ensuring consistent quality with every shipment.",
+          icon: "/products-icons/agri/premium.png",
         },
         {
-          title: "Water Soluble NPK Fertilizers",
-          desc: "Brubish Water Soluble Fertilizers (WSFs) are fully dissolvable in water and ideal for fertigation in high-value field and horticultural crops. They offer a balanced mix of primary, secondary, and micronutrients with a low salt index and are compatible with most agrochemicals. WSFs enable precise, efficient nutrient delivery, improving uptake and enhancing crop yield and quality.",
-          icon: "/products-icons/agri/soluble.png",
+          title: "Trusted Global Supply Chain",
+          desc: "Our robust logistics and global network guarantee timely delivery and efficient handling, no matter the destination.",
+          icon: "/products-icons/agri/trust.png",
         },
         {
-          title: "Organic & Bio Products",
-          desc: "Brubish Organic Fertilizers are derived from plant residues, animal manures, and agricultural by-products, offering a natural source of essential nutrients. They release nutrients gradually, improve soil structure, and promote healthy microbial activity. Ideal for vegetables, fruits, grains, plantation, and cash crops.",
-          icon: "/products-icons/agri/100-percent.png",
+          title: "Ethical & Sustainable Sourcing",
+          desc: "We partner with responsible farmers and cooperatives that follow eco-friendly and ethical farming practices.",
+          icon: "/products-icons/agri/ethically-sourced.png",
         },
         {
-          title: "High Density Inputs",
-          desc: "Brubish HD Inputs are developed with the “Less is More” approach, using advanced technology that alters particle size and density for superior absorption through plant stomata. These inputs leave no residue, reduce environmental impact, and avoid nutrient fixation in soil. Compact, easy to transport, and highly efficient. ",
-          icon: "/products-icons/agri/high-den.png",
+          title: "Diverse Product Range",
+          desc: "From daily essentials like sugar and corn to export-grade cocoa, coffee, and tobacco — Brubish offers a wide variety under one roof. ",
+          icon: "/products-icons/agri/commodity.png",
         },
         {
-          title: "Slow Release Fertilizers (Pastilles)",
-          desc: "Brubish Slow-Release Fertilizers (SRFs) provide a controlled and sustained release of essential nutrients like phosphorus, potassium, calcium, and magnesium. Suitable for all types of crops and plantations, SRFs enhance soil health and plant growth over time. ",
-          icon: "/products-icons/agri/fertilizer.png",
+          title: "Strict Quality Control",
+          desc: "Each product batch undergoes rigorous inspection and testing to meet international standards in hygiene, moisture levels, and purity. ",
+          icon: "/products-icons/agri/quality-con.png",
         },
         {
-          title: "Crop Specific",
-          desc: "Brubish Crop-Specific Fertilizers are scientifically formulated to meet the unique nutrient needs of individual crops. By supplying essential nutrients in precise proportions, these blends ensure optimal plant growth, improved soil fertility, and higher-quality yields. ",
-          icon: "/products-icons/agri/wheat.png",
+          title: "Customer-Centric Approach",
+          desc: "We believe in long-term partnerships by offering transparent communication, competitive pricing, and flexible fulfillment solutions.q ",
+          icon: "/products-icons/agri/consumer-centric.png",
         },
       ],
     },
   },
   {
     bgImg: "/productSectionImage/paper-pulp/corrugate.webp",
+    banner_title: "Reliable Source for Premium Paper Pulp",
+    banner_desc:
+      "Brubish supplies high-grade paper pulp trusted by industries worldwide. Consistent quality, timely delivery, and sustainable sourcing you can rely on.",
     bottomImg: "/productSectionImage/paper-pulp/bottom-banner-paper.webp",
     topTitle: "Brubish Pulp and Paper Plants",
     topDesc:
@@ -145,6 +154,9 @@ export const ProductPageDataDetials = [
   },
   {
     bgImg: "/productSectionImage/steel/steel-bgimg.webp",
+    banner_title: "Reliable Steel, Unmatched Quality",
+    banner_desc:
+      "Brubish delivers high-performance steel products built for strength and durability. Trusted by industries for unmatched quality and reliability.",
     bottomImg: "/productSectionImage/steel/steel-bottom.webp",
     topTitle: "Brubish Steel",
     topDesc:
@@ -193,6 +205,9 @@ export const ProductPageDataDetials = [
   },
   {
     bgImg: "/productSectionImage/consumer/consumer-bgimg.webp",
+    banner_title: "Consumer Goods that Enrich Lives",
+    banner_desc:
+      "Brubish offers a wide range of quality consumer goods designed to bring comfort, convenience, and value to everyday life.",
     bottomImg: "/productSectionImage/consumer/consumer-bottom1.webp",
     topTitle: "Consumer Goods",
     topDesc:
@@ -226,6 +241,9 @@ export const ProductPageDataDetials = [
   },
   {
     bgImg: "/productSectionImage/metal/metal-bgimg.webp",
+    banner_title: "Strength in Every Sheet and Structure",
+    banner_desc:
+      "Brubish provides durable metal solutions engineered for performance. From sheets to structural components, strength you can build on.",
     bottomImg: "/productSectionImage/metal/metal-bottom.webp",
     topTitle: "Engineered Metal. Trusted Strength.",
     topDesc:
@@ -272,56 +290,60 @@ export const ProductPageDataDetials = [
       ],
     },
   },
-  {
-    bgImg: "/productSectionImage/metal/metal-bgimg.webp",
-    bottomImg: "/productSectionImage/metal/metal-bottom.webp",
-    topTitle: "Engineered Metal. Trusted Strength.",
-    topDesc:
-      "At Brubish, our metals are more than materials. they’re the backbone of strength, durability, and progress.",
-    slug: "metal",
-    whyChooseUs: {
-      title: "We Deliver Excellence Globally",
-      desc1:
-        "At Brubish, we specialize in the efficient handling and global movement of non-ferrous metals. Whether transported as break bulk or containerized cargo, our solutions are designed to ensure seamless transit by vessel, barge, truck, or rail. Our end-to-end services include professional stevedoring, freight forwarding, and secure warehousing, backed by an experienced logistics network that spans across continents.",
-      desc2:
-        "With Brubish, you gain a trusted partner committed to reliability, precision, and global reach — ensuring your industrial metals arrive safely, efficiently, and on time..",
-      imgPath: "/productSectionImage/steel/steel-whychoose.webp",
-      PartSpeciality: [
-        {
-          title: "Expert Handling of Non-Ferrous Metals",
-          desc: "We specialize in the transportation and management of non-ferrous metals, ensuring safe and efficient handling across all logistics modes — from vessels to railcars.",
-          icon: "/products-icons/metal/metals.png",
-        },
-        {
-          title: " Global Logistics & Freight Forwarding",
-          desc: "With an international network of freight partners, Brubish provides reliable forwarding services that keep your metal cargo moving smoothly across borders.",
-          icon: "/products-icons/metal/global.png",
-        },
-        {
-          title: " End-to-End Supply Chain Support",
-          desc: "From port to final destination, we manage the full journey of your metal shipments, offering transparency, tracking, and dedicated customer support throughout.",
-          icon: "/products-icons/metal/supply.png",
-        },
-        {
-          title: "Embracing change and trust",
-          desc: "Base Metals has traditionally been Brubish largest division. Jan Hein shares his vision for the division and the industry, emphasizing the importance of change. Brubish is evolving, which is positive.",
-          icon: "/products-icons/metal/trust.png",
-        },
-        {
-          title: "Seamless solutions through strong networks",
-          desc: "the importance of a valuable network, both within the company’s own locations and with reliable partners. “We collaborate closely with all Brubish divisions worldwide. Our global network enables us to provide comprehensive solutions to our customers.",
-          icon: "/products-icons/metal/network.png",
-        },
-        {
-          title: "Base Metals Asia",
-          desc: "Another strategically successful region within Brubish, where metals are stored and distributed, is Asia. The division’s coverage extends to various key locations in Asia, including China major locations Thailand, Malaysia, Korea, Singapore, and an expansion into Indonesia due to its vast raw material potential.",
-          icon: "/products-icons/metal/asia.png",
-        },
-      ],
-    },
-  },
+  // {
+  //   bgImg: "/productSectionImage/metal/metal-bgimg.webp",
+  //   banner_title: "/productSectionImage/paper-pulp/corrugate.webp",
+  //   bottomImg: "/productSectionImage/metal/metal-bottom.webp",
+  //   topTitle: "Engineered Metal. Trusted Strength.",
+  //   topDesc:
+  //     "At Brubish, our metals are more than materials. they’re the backbone of strength, durability, and progress.",
+  //   slug: "metal",
+  //   whyChooseUs: {
+  //     title: "We Deliver Excellence Globally",
+  //     desc1:
+  //       "At Brubish, we specialize in the efficient handling and global movement of non-ferrous metals. Whether transported as break bulk or containerized cargo, our solutions are designed to ensure seamless transit by vessel, barge, truck, or rail. Our end-to-end services include professional stevedoring, freight forwarding, and secure warehousing, backed by an experienced logistics network that spans across continents.",
+  //     desc2:
+  //       "With Brubish, you gain a trusted partner committed to reliability, precision, and global reach — ensuring your industrial metals arrive safely, efficiently, and on time..",
+  //     imgPath: "/productSectionImage/steel/steel-whychoose.webp",
+  //     PartSpeciality: [
+  //       {
+  //         title: "Expert Handling of Non-Ferrous Metals",
+  //         desc: "We specialize in the transportation and management of non-ferrous metals, ensuring safe and efficient handling across all logistics modes — from vessels to railcars.",
+  //         icon: "/products-icons/metal/metals.png",
+  //       },
+  //       {
+  //         title: " Global Logistics & Freight Forwarding",
+  //         desc: "With an international network of freight partners, Brubish provides reliable forwarding services that keep your metal cargo moving smoothly across borders.",
+  //         icon: "/products-icons/metal/global.png",
+  //       },
+  //       {
+  //         title: " End-to-End Supply Chain Support",
+  //         desc: "From port to final destination, we manage the full journey of your metal shipments, offering transparency, tracking, and dedicated customer support throughout.",
+  //         icon: "/products-icons/metal/supply.png",
+  //       },
+  //       {
+  //         title: "Embracing change and trust",
+  //         desc: "Base Metals has traditionally been Brubish largest division. Jan Hein shares his vision for the division and the industry, emphasizing the importance of change. Brubish is evolving, which is positive.",
+  //         icon: "/products-icons/metal/trust.png",
+  //       },
+  //       {
+  //         title: "Seamless solutions through strong networks",
+  //         desc: "the importance of a valuable network, both within the company’s own locations and with reliable partners. “We collaborate closely with all Brubish divisions worldwide. Our global network enables us to provide comprehensive solutions to our customers.",
+  //         icon: "/products-icons/metal/network.png",
+  //       },
+  //       {
+  //         title: "Base Metals Asia",
+  //         desc: "Another strategically successful region within Brubish, where metals are stored and distributed, is Asia. The division’s coverage extends to various key locations in Asia, including China major locations Thailand, Malaysia, Korea, Singapore, and an expansion into Indonesia due to its vast raw material potential.",
+  //         icon: "/products-icons/metal/asia.png",
+  //       },
+  //     ],
+  //   },
+  // },
   {
     bgImg: "/productSectionImage/household/household-bgimg.webp",
+    banner_title: "Powering Modern Living",
+    banner_desc:
+      "Brubish delivers smart, reliable household appliances that make daily life easier, more efficient, and more comfortable.",
     bottomImg: "/productSectionImage/household/house-bottom.webp",
     topTitle: "Efficiency Meets Elegance",
     topDesc:
@@ -370,6 +392,9 @@ export const ProductPageDataDetials = [
   },
   {
     bgImg: "/productSectionImage/fashion/fashion-bgimg1.webp",
+    banner_title: "Your Style. Our Passion.",
+    banner_desc:
+      "Brubish brings you fashion that speaks your identity. Trend-forward, quality-driven, and crafted with passion for every style.",
     // bottomImg: "/productSectionImage/fashion/fashion-bottom.webp",
     topTitle: "Efficiency Meets Elegance",
     topDesc:

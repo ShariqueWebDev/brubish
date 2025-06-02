@@ -59,7 +59,11 @@ const ProductPage = () => {
 
   return (
     <section>
-      <ServiceNew imgData={pageSectionData?.bgImg} />
+      <ServiceNew
+        imgData={pageSectionData?.bgImg}
+        banner_title={pageSectionData?.banner_title}
+        banner_desc={pageSectionData?.banner_desc}
+      />
       <EmblaCarouselProductCarousel slides={currentGallery?.products[0]} />
       <div className="px-20">
         <ProductPoints data={pageSectionData} />
@@ -111,7 +115,7 @@ const ProductPage = () => {
         <AdvantageWeb />
       </div>
 
-      <TabChanger />
+      {slug === "vessel-spares" && <TabChanger />}
     </section>
   );
 };

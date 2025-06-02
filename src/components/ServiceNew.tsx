@@ -8,7 +8,15 @@ interface Slide {
   alt: string;
 }
 
-const ServiceNew = ({ imgData }: { imgData: any }) => {
+const ServiceNew = ({
+  imgData,
+  banner_title,
+  banner_desc,
+}: {
+  imgData: any;
+  banner_title: any;
+  banner_desc: any;
+}) => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
   const images: Slide[] = [
     {
@@ -81,14 +89,11 @@ const ServiceNew = ({ imgData }: { imgData: any }) => {
             </div>
 
             <h1 className="text-4xl  sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Leaders in shipping Solution
+              {banner_title}
             </h1>
 
             <p className="text-sm text-gray-300 max-w-xl tracking-wide leading-6">
-              Our vision is to become a leader in the field of{" "}
-              <span className="font-semibold">shipping </span> solutions with
-              timely supply of high quality services to the marine business
-              keeping our feet firm in the track of innovative exposition
+              {banner_desc}
             </p>
 
             <a

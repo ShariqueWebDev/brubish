@@ -454,36 +454,44 @@ export const galleryItems: GalleryItem3[] = [
         main_title: "Agriculture & Products",
         product_detail: [
           {
-            title: "Micro Nutrients",
-            image: "/productSectionImage/agriculture/nutrient.webp",
+            title: "Cocoa",
+            image: "/productSectionImage/agriculture/coca.webp",
           },
           {
-            title: "Water Soluble",
-            image: "/productSectionImage/agriculture/water-sol.webp",
+            title: "Coconut",
+            image: "/productSectionImage/agriculture/coconut.webp",
           },
           {
-            title: "Organic & Bio Products",
-            image: "/productSectionImage/agriculture/bio.webp",
+            title: "Coffee",
+            image: "/productSectionImage/agriculture/Coffee.webp",
           },
           {
-            title: "High Density",
-            image: "/productSectionImage/agriculture/hd.webp",
+            title: "Corn",
+            image: "/productSectionImage/agriculture/corn.webp",
           },
           {
-            title: "Crop Specific",
-            image: "/productSectionImage/agriculture/crop.webp",
+            title: "Ground Nuts",
+            image: "/productSectionImage/agriculture/groundnut.webp",
           },
           {
-            title: "Fertilizer Pastilles",
-            image: "/productSectionImage/agriculture/fertilizer.webp",
+            title: "Spices",
+            image: "/productSectionImage/agriculture/spices.webp",
           },
           {
-            title: "Plant Protection",
-            image: "/productSectionImage/agriculture/protection.webp",
+            title: "Sugar",
+            image: "/productSectionImage/agriculture/sugar.webp",
           },
           {
-            title: "Aqua Culture & Animal Nutrition",
-            image: "/productSectionImage/agriculture/cultural.webp",
+            title: "Tabacoo",
+            image: "/productSectionImage/agriculture/tabacoo.webp",
+          },
+          {
+            title: "Tea",
+            image: "/productSectionImage/agriculture/tea.webp",
+          },
+          {
+            title: "Onion",
+            image: "/productSectionImage/agriculture/onion.webp",
           },
         ],
       },
@@ -580,6 +588,10 @@ export const galleryItems: GalleryItem3[] = [
             title: "Furniture",
             image: "/productSectionImage/consumer/furniture.webp",
           },
+          {
+            title: "FMCG",
+            image: "/productSectionImage/consumer/fmcg.webp",
+          },
         ],
       },
     ],
@@ -665,6 +677,14 @@ export const galleryItems: GalleryItem3[] = [
           {
             title: "induction",
             image: "/productSectionImage/household/induction.webp",
+          },
+          {
+            title: "TV",
+            image: "/productSectionImage/household/tv.webp",
+          },
+          {
+            title: "Refrigerator",
+            image: "/productSectionImage/household/frigde.webp",
           },
           {
             title: "Juicer",
