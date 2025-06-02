@@ -463,7 +463,7 @@ export const galleryItems: GalleryItem3[] = [
           },
           {
             title: "Coffee",
-            image: "/productSectionImage/agriculture/Coffee.webp",
+            image: "/productSectionImage/agriculture/coffee.webp",
           },
           {
             title: "Corn",
