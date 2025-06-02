@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface Slide {
@@ -96,8 +97,8 @@ const ServiceNew = ({
               {banner_desc}
             </p>
 
-            <a
-              href="/contact"
+            <Link
+              href="/contact-us"
               className="inline-flex items-center bg-[#fdcc4f] text-white px-5 py-2 rounded-lg hover:bg-[#9f833b] transition-colors duration-300 group"
             >
               <span className="text-sm font-medium">Inquire Now</span>
@@ -108,7 +109,7 @@ const ServiceNew = ({
                 height={10}
                 className="ml-2 group-hover:translate-x-1 transition-transform"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
