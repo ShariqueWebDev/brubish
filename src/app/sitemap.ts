@@ -26,6 +26,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "vessel-spares",
     "steel",
     "paper-pulp",
+    "metal",
     "consumer-goods",
     "household-appliances",
     "agri-products",

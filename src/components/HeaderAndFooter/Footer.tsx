@@ -211,7 +211,7 @@ const Footer = async () => {
               <div className="space-y-2">
                 <p className="font-bold text-amber-500 text-lg">Contact Info</p>
                 <div className="w-20 h-0.5 bg-amber-500 rounded-full"></div>
-                <div className="space-y-3 text-gray-800 mt-4 text-[12px] xl:text-[14px]">
+                <div className="space-y-3 text-gray-800 mt-4 text-[14px] xl:text-[14px]">
                   <div className="flex  items-center space-x-2">
                     <div>
                       <MapPin size={17} color="#000" className="min-w-5" />
