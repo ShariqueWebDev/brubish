@@ -96,11 +96,12 @@ const ContactComp = () => {
             >
               Need to get in touch? We'd love to hear from you! Please fill out
               the form or email{" "}
-              <a
-                href="mailto:Info@bookmylogistic.com"
-                className="text-lightGolden"
-              >
-                Info@bookmylogistic.com
+              <a href="mailto:sales@brubish.com" className="text-primary">
+                sales@brubish.com
+              </a>{" "}
+              &{" "}
+              <a href="mailto:spares@brubish.com" className="text-primary">
+                spares@brubish.com
               </a>
               , and our customer service team will respond within shortly.
             </p>
@@ -165,7 +166,7 @@ const ContactComp = () => {
                   className="text-sm tracking-wide text-gray-600"
                   data-aos="fade-up"
                 >
-                  +7901790164
+                  +91 7901790164
                 </p>
               </div>
             </div>
@@ -193,7 +194,7 @@ const ContactComp = () => {
                   className="text-sm tracking-wide text-gray-600"
                   data-aos="fade-up"
                 >
-                  9631963163
+                  +91 9631963163
                 </p>
               </div>
             </div>
@@ -222,6 +223,34 @@ const ContactComp = () => {
                   data-aos="fade-up"
                 >
                   sales@brubish.com
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              className="bg-gray-100
+       flex items-center gap-5 px-3 py-4 rounded-xl "
+            >
+              <div>
+                <div
+                  className="bg-gradient-to-r from-darkGolden to-lightGolden p-3 rounded-lg"
+                  data-aos="fade-up"
+                >
+                  <Mail color="#ffb200" />
+                </div>
+              </div>
+              <div>
+                <h3
+                  className="text-lightGolden text-lg uppercase font-semibold tracking-wider text-gray-900"
+                  data-aos="fade-up"
+                >
+                  Email
+                </h3>
+                <p
+                  className="text-sm tracking-wide text-gray-600"
+                  data-aos="fade-up"
+                >
+                  spares@brubish.com
                 </p>
               </div>
             </div>

@@ -21,9 +21,9 @@ const WhyChooseUsSection = () => {
       <div className=" md:pb-10 md:pt-6 md:px-4 ">
         <div className="w-full flex justify-center gap-5 items-center md:flex-row flex-col ">
           <div className="md:w-[50%] w-full ">
-            <h3 className="text-primary font-semibold md:text-2xl text-base uppercase">
+            {/* <h3 className="text-primary font-semibold md:text-2xl text-base uppercase">
               Why Choose Us – Brubish India Pvt. Ltd
-            </h3>
+            </h3> */}
 
             <div className="md:mt-5 mt-1">
               <h4 className="md:text-5xl text-2xl font-bold md:leading-[50px] leading-0">
@@ -34,10 +34,10 @@ const WhyChooseUsSection = () => {
                 Globally
               </h4>
               <p className="text-sm mt-5 leading-7 text-gray-700">
-                At Brubish India Pvt. Ltd., we specialize in providing reliable,
-                efficient, and high-quality support for the marine and shipping
-                industry. Here’s why vessel owners, operators, and marine
-                engineers choose us:
+                At Brubish, we specialize in providing reliable, efficient, and
+                high-quality support for the marine and shipping industry.
+                Here’s why vessel owners, operators, and marine engineers choose
+                us:
               </p>
             </div>
             <Link href={"/contact-us"}>

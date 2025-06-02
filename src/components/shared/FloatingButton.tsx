@@ -13,21 +13,28 @@ const FloatingButton = () => {
       <a
         target="_blank"
         href={"https://wa.me/9631963163"}
-        className="absolute rounded-full transition-all cursor-pointer duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16   flex  p-2.5 hover:p-3 bg-green-500 scale-100 hover:bg-green-400 text-white"
+        className="absolute rounded-full transition-all cursor-pointer duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 group-hover:translate-y-5 flex  p-2.5 hover:p-3 bg-green-500 scale-100 hover:bg-green-400 text-white"
       >
         <FaWhatsapp className="text-2xl" />
       </a>
       <a
         target="_blank"
-        href={"tel:9631963163"}
-        className="absolute rounded-full transition-all cursor-pointer duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex  p-2.5 hover:p-3 bg-blue-500 hover:bg-blue-400  text-white"
+        href={"tel:+919631963163"}
+        className="absolute rounded-full transition-all cursor-pointer duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16 group-hover:translate-x-5  flex  p-2.5 hover:p-3 bg-blue-500 hover:bg-blue-400  text-white"
       >
         <MdCall className="text-2xl" />
       </a>
       <a
         target="_blank"
-        href={"mailto:Info@bookmylogistic.com"}
-        className="absolute rounded-full transition-all cursor-pointer duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-14 group-hover:-translate-x-14   flex  p-2.5 hover:p-3 bg-red-500 hover:bg-red-400 text-white"
+        href={"tel:+917901790164"}
+        className="absolute rounded-full transition-all cursor-pointer duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16 group-hover:-translate-x-8  flex  p-2.5 hover:p-3 bg-yellow-500 hover:bg-yellow-400  text-white"
+      >
+        <MdCall className="text-2xl" />
+      </a>
+      <a
+        target="_blank"
+        href={"mailto:sales@brubish.com, spares@brubish.com"}
+        className="absolute rounded-full transition-all cursor-pointer duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-7 group-hover:-translate-x-16   flex  p-2.5 hover:p-3 bg-red-500 hover:bg-red-400 text-white"
       >
         <CgMail className="text-2xl" />
       </a>
