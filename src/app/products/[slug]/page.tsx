@@ -23,6 +23,7 @@ import {
 import Image from "next/image";
 import AutoHorizontalScrollingSection from "@/components/Others/AutoHorizontalScrollingSection";
 import EmblaCarouselProductCarousel from "@/components/Others/EmblaProductCarousel.tsx/EmblaProductCarousel";
+import ProductPoints from "@/components/WhyChooseUsSection/ProductPoints";
 
 const ProductPage = () => {
   const params = useParams();
@@ -60,6 +61,21 @@ const ProductPage = () => {
     <section>
       <ServiceNew imgData={pageSectionData?.bgImg} />
       <EmblaCarouselProductCarousel slides={currentGallery?.products[0]} />
+      <div className="px-20">
+        <ProductPoints data={pageSectionData} />
+      </div>
+      {currentGallery?.products?.map((item: any, index: number) => {
+        // console.log(item);
+
+        return (
+          <CardView
+            key={index}
+            // title={section.main_title}
+            main_title={item?.main_title}
+            product_detials={item?.product_detail}
+          />
+        );
+      })}
       {/* <AboutTech /> */}
       {/* <AutoHorizontalScrollingSection gallery={currentGallery?.products} /> */}
       {/* 
@@ -94,19 +110,6 @@ const ProductPage = () => {
       <div className="md:px-20 px-4">
         <AdvantageWeb />
       </div>
-
-      {currentGallery?.products?.map((item: any, index: number) => {
-        // console.log(item);
-
-        return (
-          <CardView
-            key={index}
-            // title={section.main_title}
-            main_title={item?.main_title}
-            product_detials={item?.product_detail}
-          />
-        );
-      })}
 
       <TabChanger />
     </section>

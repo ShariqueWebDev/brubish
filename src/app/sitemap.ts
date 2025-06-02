@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { servicesData } from "./layout";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const pages = ["about", "knowledge-center", "contact-us"];
+  const pages = ["about", "contact-us"];
 
   const servicesDataArray = [
     "brubish-marketing",

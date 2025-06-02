@@ -135,15 +135,6 @@ const Footer = async () => {
                   {/* <Link className=" flex items-center hover:text-amber-600 gap-1 hover:ml-1 duration-200" href={"/a"}>
                     <ArrowRight size={16} /><span className="hover:text-amber-600">About Us</span>
                   </Link> */}
-                  <Link
-                    className=" flex items-center hover:text-amber-600 gap-1 hover:ml-1 duration-200"
-                    href={"/knowledge-center"}
-                  >
-                    <ArrowRight size={16} />
-                    <span className="hover:text-amber-600">
-                      Knowledge Center
-                    </span>
-                  </Link>
 
                   <Link
                     className="flex items-center hover:text-amber-600 gap-1 hover:ml-1 duration-200"

@@ -35,11 +35,6 @@ const data = [
   },
 
   {
-    id: 4,
-    name: "Knowledge Center",
-    url: "/knowledge-center",
-  },
-  {
     id: 5,
     name: "Contact Us",
     url: "/contact-us",

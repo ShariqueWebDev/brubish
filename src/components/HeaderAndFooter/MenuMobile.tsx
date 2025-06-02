@@ -9,7 +9,7 @@ const data = [
   { id: 1, name: "Services", subMenu: true },
   { id: 3, name: "FTWZ Services", ftwz: true },
   { id: 3, name: "Products", productsMenu: true },
-  { id: 5, name: "Knowledge Center", url: "/knowledge-center" },
+
   { id: 6, name: "Contact Us", url: "/contact-us" },
 ];
 
