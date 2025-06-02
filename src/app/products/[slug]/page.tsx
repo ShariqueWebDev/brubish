@@ -65,7 +65,7 @@ const ProductPage = () => {
         banner_desc={pageSectionData?.banner_desc}
       />
       <EmblaCarouselProductCarousel slides={currentGallery?.products[0]} />
-      <div className="px-20">
+      <div className="md:px-20 px-4">
         <ProductPoints data={pageSectionData} />
       </div>
       {currentGallery?.products?.map((item: any, index: number) => {
