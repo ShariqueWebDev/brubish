@@ -4,10 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-interface Slide {
-  src: string;
-  alt: string;
-}
+// interface Slide {
+//   src: string;
+//   alt: string;
+// }
 
 const ServiceNew = ({
   imgData,
@@ -18,37 +18,6 @@ const ServiceNew = ({
   banner_title: any;
   banner_desc: any;
 }) => {
-  const [currentSlide, setCurrentSlide] = useState<number>(0);
-  const images: Slide[] = [
-    {
-      src: "/service-new_img/aerial-view-container-cargo-ship-sea_335224-735.avif",
-      alt: "Slide 1",
-    },
-    {
-      src: "/service-new_img/WhatsApp Image 2025-05-23 at 15.44.16_3ddec24f.jpg",
-      alt: "Slide 2",
-    },
-    {
-      src: "/service-new_img/WhatsApp Image 2025-05-23 at 15.44.16_811eeea6.jpg",
-      alt: "Slide 3",
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [images.length]);
-
-  const nextSlide = (): void => {
-    setCurrentSlide((prev) => (prev + 1) % images.length);
-  };
-
-  const prevSlide = (): void => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
-  };
-
   return (
     <section
       className=" py-20 md:h-[90vh] h-[70vh] overflow-hidden "
