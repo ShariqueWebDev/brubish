@@ -1,5 +1,5 @@
-import React from 'react'
-import Heading from '../shared/Heading';
+import React from "react";
+import Heading from "../shared/Heading";
 
 const data = [
   {
@@ -43,7 +43,7 @@ const data = [
 const Whybml = () => {
   return (
     <div
-      className={`  bg-[url('/background/map.svg')]  sjcontainer pb-6 pt-6  md:py-16 `}
+      className={`  bg-[url('/background/map.webp')]  sjcontainer pb-6 pt-6  md:py-16 `}
     >
       {/* <h2 className=' text-2xl md:text-3xl '></h2> */}
       <Heading title="Why Brubish" className="text-center" />
@@ -68,4 +68,4 @@ const Whybml = () => {
   );
 };
 
-export default Whybml
+export default Whybml;

@@ -9,7 +9,7 @@ import React from "react";
 const Page = () => {
   return (
     <div className="">
-      <Bannerfull2 title="About Us" bgImg="/about/about.jpg" page="About Us" />
+      <Bannerfull2 title="About Us" bgImg="/about/about.webp" page="About Us" />
       <Aboutsection2 />
       <Aboutgoals />
       <Aboutsection4 />

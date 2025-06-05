@@ -64,7 +64,7 @@ const Aboutsection2 = () => {
           </p>
           <div className="relative  inline-block mt-3 lg:hidden font-medium group">
             <Image
-              src="/about/2.png"
+              src="/about/2.webp"
               alt="banner"
               className="!object-cover group-hover:scale-105 duration-300 w-full h-full md:min-h-[300px] md:max-w-[450px]"
               width={600}
@@ -88,7 +88,7 @@ const Aboutsection2 = () => {
         </div>
         <div className="relative max-md:mx-4 lg:inline-block hidden font-medium group">
           <Image
-            src="/about/2.png"
+            src="/about/2.webp"
             alt="banner"
             className="!object-cover group-hover:scale-105 duration-300 w-full h-full md:min-h-[300px] md:max-w-[550px] px-4"
             width={600}
