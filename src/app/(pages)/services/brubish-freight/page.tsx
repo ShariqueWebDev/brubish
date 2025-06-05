@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/logo1.png`,
+        url: `${WEBSITE_URL}/logo/brubish-favicon.jpeg`,
         width: 1200,
         height: 630,
         alt: "Brubish Freight Services",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "Brubish Freight – Seamless Ocean & Air Freight Forwarding Solutions",
     description:
       "Get instant freight quotes, transparent pricing, and real-time shipment updates with Brubish Freight’s comprehensive logistics platform.",
-    images: [`${WEBSITE_URL}/logo/logo1.png`],
+    images: [`${WEBSITE_URL}/logo/brubish-favicon.jpeg`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/services/brubish-freight`,

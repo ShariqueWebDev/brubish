@@ -10,7 +10,7 @@ import NewHeader from "@/components/HeaderAndFooter/NewHeader";
 import { Open_Sans, DM_Sans } from "next/font/google";
 
 import AosComp from "@/components/AOS/Aos";
-export const WEBSITE_URL = "https://brubish.demo-web.live";
+export const WEBSITE_URL = "https://brubish.com";
 
 // import {Urbanist} from 'next/font/google'
 

@@ -13,8 +13,6 @@ import {
   PhoneCall,
   User,
 } from "lucide-react";
-import { Metadata } from "next";
-import Link from "next/link";
 
 import { sendContactEnquiry } from "../Contact/sendContactEnquiry";
 // import { message } from "antd";

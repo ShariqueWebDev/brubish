@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/logo1.png`,
+        url: `${WEBSITE_URL}/logo/brubish-favicon.jpeg`,
         width: 1200,
         height: 630,
         alt: "Brubish Logistics FTWZ",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "FTWZ Benefits for Indian Importers | Brubish Logistics",
     description:
       "Explore duty deferment, GST exemptions, and advanced warehousing through Brubish FTWZ. Ideal for importers looking to optimize cost and efficiency.",
-    images: [`${WEBSITE_URL}/logo/logo1.png`],
+    images: [`${WEBSITE_URL}/logo/brubish-favicon.jpeg`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/ftwz-services/ftwz-for-indian-importers`,

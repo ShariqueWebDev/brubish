@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { useParams } from "next/navigation";
 // import { galleryItems } from "@/app/layout";
@@ -13,22 +11,65 @@ import TabChanger from "@/components/TabChanger";
 import {
   GalleryItem3,
   galleryItems,
-} from "../../../../lib/productsData/products_data";
+} from "../../../../../lib/productsData/products_data";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection/WhyChooseUsSection";
 import ProductSectionChooseUs from "@/components/WhyChooseUsSection/ProductSectionChooseUs";
 import {
   // pageDataDetials,
   ProductPageDataDetials,
-} from "../../../../lib/productsData/pageData";
+} from "../../../../../lib/productsData/pageData";
 import Image from "next/image";
 import AutoHorizontalScrollingSection from "@/components/Others/AutoHorizontalScrollingSection";
 import EmblaCarouselProductCarousel from "@/components/Others/EmblaProductCarousel.tsx/EmblaProductCarousel";
 import ProductPoints from "@/components/WhyChooseUsSection/ProductPoints";
 import Link from "next/link";
+import { WEBSITE_URL } from "@/app/layout";
+import { Metadata } from "next";
 
-const ProductPage = () => {
-  const params = useParams();
-  const { slug } = params as { slug: string };
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const slug = params.slug;
+
+  return {
+    title:
+      "Brubish Logistics | FTWZ, Consolidation, VMI & Trade Solutions in India",
+    description:
+      "Brubish is your trusted partner for FTWZ logistics, consolidation, vendor-managed inventory (VMI), international trade facilitation, and duty-free supply chain solutions across India.",
+    openGraph: {
+      title:
+        "Brubish Logistics | FTWZ, Consolidation, VMI & Trade Solutions in India",
+      description:
+        "Empowering global trade with Brubish: FTWZ logistics, multi-vendor consolidation, VMI, JIT delivery, and duty-free inventory management tailored for Indian and international businesses.",
+      url: `${WEBSITE_URL}/products/${slug}`, // Update path if different
+      type: "website",
+      images: [
+        {
+          url: `${WEBSITE_URL}/logo/brubish-favicon.jpeg`,
+          width: 1200,
+          height: 630,
+          alt: "Brubish Logistics - FTWZ & Trade Solutions",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Brubish Logistics | FTWZ, Consolidation, VMI & Trade Solutions",
+      description:
+        "Unlock seamless trade and logistics with Brubish: Consolidation, VMI, FTWZ warehousing, and optimized global supply chain management across India.",
+      images: [`${WEBSITE_URL}/logo/brubish-favicon.jpeg`],
+    },
+    alternates: {
+      canonical: `${WEBSITE_URL}/products/${slug}`, // Dynamically inserted slug
+    },
+  };
+}
+
+const ProductPage = ({ params: { slug } }: { params: { slug: string } }) => {
+  // const params = useParams();
+  // const { slug } = params as { slug: string };
 
   const currentGallery = galleryItems.find(
     (item: GalleryItem3) => item.slug === slug

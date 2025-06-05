@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/logo1.png`,
+        url: `${WEBSITE_URL}/logo/brubish-favicon.jpeg`,
         width: 1200,
         height: 630,
         alt: "Brubish FTWZ for Indian Exporters",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "FTWZ Solutions for Indian Exporters | Brubish Logistics",
     description:
       "FTWZ logistics tailored for Indian exporters. Access global markets, reduce overhead, get GST-free services, and ensure quality with Brubish FTWZ.",
-    images: [`${WEBSITE_URL}/logo/logo1.png`],
+    images: [`${WEBSITE_URL}/logo/brubish-favicon.jpeg`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/ftwz-services/ftwz-for-indian-exporters`,
