@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Brubish Logistics",
     description:
       "Brubish offer duty free economic activity in line with local trade and commerce regulations.",
-    images: [`${WEBSITE_URL}/logo/brubish-favicon.jpeg`],
+    images: [`${WEBSITE_URL}/logo/brubish-favicon.png`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}`,
