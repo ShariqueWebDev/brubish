@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${WEBSITE_URL}/logo/brubish-favicon.jpeg`,
+        url: `${WEBSITE_URL}/logo/brubish-favicon.png`,
         width: 1200,
         height: 630,
         alt: "Brubish FTWZ for eCommerce",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     title: "FTWZ Solutions for e-Commerce Companies | Brubish Logistics",
     description:
       "Optimize global e-commerce supply chains using Brubish FTWZ. Achieve 20% cost savings, reduced duty burden, faster deliveries, and seamless return management.",
-    images: [`${WEBSITE_URL}/logo/brubish-favicon.jpeg`],
+    images: [`${WEBSITE_URL}/logo/brubish-favicon.png`],
   },
   alternates: {
     canonical: `${WEBSITE_URL}/ftwz-services/ftwz-for-ecommerce-companies`,

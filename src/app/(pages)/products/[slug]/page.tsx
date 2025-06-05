@@ -47,7 +47,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: `${WEBSITE_URL}/logo/brubish-favicon.jpeg`,
+          url: `${WEBSITE_URL}/logo/brubish-favicon.png`,
           width: 1200,
           height: 630,
           alt: "Brubish Logistics - FTWZ & Trade Solutions",
@@ -59,7 +59,7 @@ export async function generateMetadata({
       title: "Brubish Logistics | FTWZ, Consolidation, VMI & Trade Solutions",
       description:
         "Unlock seamless trade and logistics with Brubish: Consolidation, VMI, FTWZ warehousing, and optimized global supply chain management across India.",
-      images: [`${WEBSITE_URL}/logo/brubish-favicon.jpeg`],
+      images: [`${WEBSITE_URL}/logo/brubish-favicon.png`],
     },
     alternates: {
       canonical: `${WEBSITE_URL}/products/${slug}`, // Dynamically inserted slug
