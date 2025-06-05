@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   title: "Brubish Logistics",
   description:
     "Brubish offer duty free economic activity in line with local trade and commerce regulations.",
-  icons: {
-    icon: "/logo/brubish-favicon.png", // Correct way to add a favicon
-  },
+  // icons: {
+  //   icon: `${WEBSITE_URL}/logo/brubish-favicon.png`, // Correct way to add a favicon
+  // },
   openGraph: {
     title: "Brubish Logistics",
     description:
